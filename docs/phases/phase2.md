@@ -1,29 +1,33 @@
-# Phase 2: Viewing Blogs and Posts
+# Phase 2: Viewing and Creating Activity Reviews
 
 ## Rails
 ### Models
 
 ### Controllers
-Api::BlogsController (create, destroy, index, show)
-Api::PostsController (create, destroy, show, update)
+Api::ActivitiesController (create, destroy, index, show)
+Api::ReviewsController (create, destroy, show, update)
 
 ### Views
-* blogs/show.json.jbuilder
+* activities/show.json.jbuilder
+* activities/index.json.jbuilder
 
 ## Backbone
 ### Models
-* Blog (parses nested `posts` association)
-* Post
+* Activity (parses nested `reviews` association)
+* Review
 
 ### Collections
-* Blogs
-* Posts
+* Activities
+* Reviews
 
 ### Views
-* BlogForm
-* BlogShow (composite view, contains PostsIndex subview)
-* PostsIndex (composite view, contains PostsIndexItem subviews)
-* PostsIndexItem
-* PostShow
+* ActivitiesIndex (composite view containing ActivitiesIndexItem subviews)
+* ActivitiesIndexItem
+* ActivityShow (composite view containing ReviewsIndex and Review Form subview)
+* ReviewForm
+* ReviewIndex (composite view containing ReviewsIndexItem subviews)
+* ReviewIndexItem
 
 ## Gems/Libraries
+* backbone-on-rails
+* serializeJSON

@@ -3,8 +3,8 @@
 ## New Session
 ![new-session]
 
-## Feed Show (landing page)
-![feed-show]
+## activities Index (landing page)
+![activities_index]
 
 ## Blog Show
 ![blog-show]
@@ -19,7 +19,7 @@
 ![search-results]
 
 [new-session]: ./wireframes/new_session.png
-[feed-show]: ./wireframes/feed_show.png
+[activities_index]: ./wireframes/activities_index.png
 [blog-show]: ./wireframes/blog_show.png
 [post-show]: ./wireframes/post_show.png
 [post-form]: ./wireframes/post_form.png

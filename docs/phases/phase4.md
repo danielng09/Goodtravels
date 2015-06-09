@@ -1,20 +1,32 @@
-# Phase 4: User Feeds
+# Phase 4: Filtering Activities
 
 ## Rails
 ### Models
+* Bookmark
 
 ### Controllers
-Api::PostsController (feed)
+Api::BookmarksController
+Api::ActivitiesController (most_reviewed)
+Api::ActivitiesController (top_reviewed)
 
 ### Views
-posts/feed.json.jbuilder
+users/show.json.jbuilder
+activities/most_reviewed.json.jbuilder
+activities/most_viewed.json.jbuilder
 
 ## Backbone
+
 ### Models
+* User (parse nested `bookmarks` and `reviews` associations)
+* Bookmark
 
 ### Collections
+* Bookmarks
 
 ### Views
-* FeedShow (composite view, contains PostsIndex subview)
+* BookmarksIndex (composite view, contains BookmarksIndexItem subview)
+* BookmarksIndexItem
+* ReviewedIndex (composite view, contains ReviewedIndexItem subview)
+* ReviewedIndexItem
 
 ## Gems/Libraries

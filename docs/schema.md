@@ -1,45 +1,34 @@
 # Schema Information
 
-## blogs
+## activities
 column name | data type | details
 ------------|-----------|-----------------------
 id          | integer   | not null, primary key
-owner_id    | integer   | not null, foreign key (references users)
 title       | string    | not null
+location    | string    | not null
+description | text      |
+image_url   | string    |
 
-## followings
+## reviews
 column name | data type | details
 ------------|-----------|-----------------------
 id          | integer   | not null, primary key
-blog_id     | integer   | not null, foreign key (references blogs)
-follower_id | integer   | not null, foreign key (references users)
+activity_id | integer   | not null, foreign key (references activities)
+user_id     | integer   | not null, foreign key (references users)
+body        | text      |
+rating      | integer   | range from 0 - 5
 
-## posts
+## bookmarks
 column name | data type | details
 ------------|-----------|-----------------------
 id          | integer   | not null, primary key
-author_id   | integer   | not null, foreign key (references users)
-title       | string    | not null
-body        | string    |
-
-## tags
-column name | data type | details
-------------|-----------|-----------------------
-id          | integer   | not null, primary key
-label       | string    | not null, unique
-
-## taggings
-column name | data type | details
-------------|-----------|-----------------------
-id          | integer   | not null, primary key
-post_id     | integer   | not null, foreign key (references posts)
-tag_id      | integer   | not null, foreign key (references tags)
+user_id     | integer   | not null, foreign key (references users)
+activity_id | integer   | not null, foreign key (references activities)
 
 ## users
 column name     | data type | details
 ----------------|-----------|-----------------------
 id              | integer   | not null, primary key
-email           | string    | not null, unique
+user_name       | string    | not null, unique
 password_digest | string    | not null
 session_token   | string    | not null, unique
-

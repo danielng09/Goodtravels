@@ -1,9 +1,10 @@
-# Phase 3: Editing and Displaying Posts
+# Phase 3: Searching for Activities
 
 ## Rails
 ### Models
 
 ### Controllers
+Api::ActivitiesController (search)
 
 ### Views
 
@@ -13,9 +14,6 @@
 ### Collections
 
 ### Views
-* PostForm
+* SearchBar (subview of ActivitiesIndex composite view)
 
 ## Gems/Libraries
-* Filepicker
-* Markdown-js
-* Bootstrap Markdown

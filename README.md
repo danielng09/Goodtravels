@@ -1,24 +1,26 @@
-# Flux-capacitr
+# Goodtravels
 
-[Heroku link][heroku]
+[Goodtravels link][heroku]
 
-[heroku]: http://flux-capacitr.herokuapp.com
+[heroku]: #
 
 ## Minimum Viable Product
-Flux-capacitr is a clone of Tumblr built on Rails and Backbone. Users can:
+Goodtravels is a clone of Good Reads built on Rails and Backbone. Users review
+travel related content and can:
 
 <!-- This is a Markdown checklist. Use it to keep track of your progress! -->
 
-- [x] Create accounts
-- [x] Create sessions (log in)
-- [x] Create blogs
-- [x] Create blog posts
-- [ ] View blogs and posts
-- [ ] Subscribe to blogs
-- [ ] View a feed of subscribed blogs
-- [ ] Tag blog posts
-- [ ] Search for blogs by title
-- [ ] Search for posts by tag
+- [ ] Create accounts
+- [ ] Log in
+- [ ] View list of activities
+- [ ] View reviews on an activity
+- [ ] View average rating and number of reviews
+- [ ] Review activity
+- [ ] Give rating to activity
+- [ ] View list of activities done/reviewed
+- [ ] Bookmark activity
+- [ ] View list of bookmarked activities
+- [ ] Search for activity by name
 
 ## Design Docs
 * [View Wireframes][views]
@@ -29,63 +31,61 @@ Flux-capacitr is a clone of Tumblr built on Rails and Backbone. Users can:
 
 ## Implementation Timeline
 
-### Phase 1: User Authentication, Blog Creation (~1 day)
-I will implement user authentication in Rails based on the practices learned at
-App Academy. By the end of this phase, users will be able to create blogs using
-a simple text form in a Rails view. The most important part of this phase will
-be pushing the app to Heroku and ensuring that everything works before moving on
-to phase 2.
+### Phase 1: User Authentication and Activity Views (~1 day)
+I will use Rails to implement user authentication and log in. By the end of
+this phase, users will be able to access two views - a list of all activities
+and show page for a specific activity. The most important part of this phase
+will be pushing the app to Heroku and ensuring that everything works before
+moving on to phase 2.
 
 [Details][phase-one]
 
-### Phase 2: Viewing Blogs and Posts (~2 days)
-I will add API routes to serve blog and post data as JSON, then add Backbone
+### Phase 2: Viewing and Creating Activity Reviews (~2 days)
+I will add API routes to serve activity and review data as JSON, then add Backbone
 models and collections that fetch data from those routes. By the end of this
-phase, users will be able to create blogs and view both blogs and posts, all
-inside a single Backbone app.
+phase, users will be able to view activities as well as rate and review
+those activities within a single Backbone app.
 
 [Details][phase-two]
 
-### Phase 3: Editing and Displaying Posts (~2 days)
-I plan to use third-party libraries to add functionality to the `PostForm` and
-`PostShow` views in this phase. First I'll need to add a Markdown editor to the
-`PostForm`, and make sure that the Markdown is properly escaped and formatted in
-the `PostShow` view. I also plan to integrate Filepicker for file upload so
-users can add images to blog posts.
+### Phase 3: Searching for Activities (~1 days)
+I will add a search function for activities. Users should be able to search for
+activities by name.
 
 [Details][phase-three]
 
-### Phase 4: User Feeds (~1-2 days)
-I'll start by adding a `feed` route that uses the `current_user`'s
-`subscribed_blogs` association to serve a list of blog posts ordered
-chronologically. On the Backbone side, I'll make a `FeedShow` view whose `posts`
-collection fetches from the new route.  Ultimately, this will be the page users
-see after logging in.
+### Phase 4: Filtering Activities (~1-2 days)
+I will enable users to view activities by selecting filters. Filters will include
+their list of bookmarked activities, activities they have reviewed, top rated
+activities, and most popular activities.
 
 [Details][phase-four]
 
-### Phase 5: Searching for Blogs and Posts (~2 days)
-I'll need to add `search` routes to both the Blogs and Posts controllers. On the
-Backbone side, there will be a `SearchResults` composite view has `BlogsIndex`
-and `PostsIndex` subviews. These views will use plain old `blogs` and `posts`
-collections, but they will fetch from the new `search` routes.
+### Phase 5: Styling and Bonus Features (~2 days)
+I will add styling to the application and implement bonus features if
+time permits.
 
 [Details][phase-five]
 
 ### Bonus Features (TBD)
-- [ ] "Like" button and counter for posts
-- [ ] Custom blog urls
+- [ ] Create new activities
+- [ ] Users can upload photos onto activity page
+- [ ] Carousel feature for images in activity detail
 - [ ] Pagination/infinite scroll
-- [ ] Activity history (e.g. likes, reblogs, taggings)
-- [ ] Post types (image posts, quote posts, etc)
-- [ ] Reblogging
-- [ ] Multiple sessions/session management
 - [ ] User avatars
+- [ ] Google map with pins for activity location
+- [ ] Allow friend association between users
+- [ ] View another users activities
+- [ ] Display closest activities
+- [ ] Feed of friend reviews
 - [ ] Typeahead search bar
+- [ ] Group and search activities by type
+- [ ] Add more details to activity such as cost and hours
+- [ ] User can comment on another user's review
+- [ ] User receives suggested activity based on preferences filter
 
 [phase-one]: ./docs/phases/phase1.md
 [phase-two]: ./docs/phases/phase2.md
 [phase-three]: ./docs/phases/phase3.md
 [phase-four]: ./docs/phases/phase4.md
 [phase-five]: ./docs/phases/phase5.md
-
