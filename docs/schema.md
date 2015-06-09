@@ -18,7 +18,7 @@ user_id     | integer   | not null, foreign key (references users)
 body        | text      |
 rating      | integer   | range from 0 - 5
 
-## bookmarks
+## wants
 column name | data type | details
 ------------|-----------|-----------------------
 id          | integer   | not null, primary key
