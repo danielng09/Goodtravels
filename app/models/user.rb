@@ -15,6 +15,9 @@ class User < ActiveRecord::Base
   validates :username, uniqueness: true
   validate :ensure_session_token
   after_initialize :ensure_session_token
+  has_many :reviews
+  has_many :activity_wants, through: :wants, source: :activity
+  has_many :wants
 
   attr_reader :password
 

@@ -12,4 +12,7 @@
 #
 
 class Review < ActiveRecord::Base
+  validates :activity_id, :user_id, presence: true
+  belongs_to :activity
+  belongs_to :users
 end
