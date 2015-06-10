@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 
 gem 'backbone-on-rails'
 gem 'bcrypt'
-gem 'bootstrap-sass'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'font-awesome-rails'
 gem 'jquery-rails'
@@ -12,6 +11,7 @@ gem 'rails', '4.2.0'
 gem 'sass-rails', '~> 4.0.0'
 gem 'pg'
 gem 'uglifier', '>= 1.3.0'
+gem 'bootstrap-sass'
 
 group :doc do
   gem 'sdoc', require: false

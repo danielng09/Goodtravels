@@ -1,17 +1,19 @@
-<h1>Sign In</h1>
+<div class='col-md-2 col-md-offset-5'>
+  <h1>Sign In</h1>
 
-<form action="<%= session_url %>" method="POST">
-  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <form action="<%= session_url %>" method="POST">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
 
-  <label>Username
-  <input type="text"
-         name="user[username]"
-  </label><br>
+    <label>Username
+    <input type="text"
+           name="user[username]"
+    </label><br>
 
-  <label>Password
-  <input type="password"
-         name="user[password]">
-  </label><br>
+    <label>Password
+    <input type="password"
+           name="user[password]">
+    </label><br>
 
-  <input type="submit" class="btn btn-primary" value="Submit">
-</form>
+    <input type="submit" class="btn btn-primary" value="Submit">
+  </form>
+</div>
