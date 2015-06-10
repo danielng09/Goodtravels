@@ -16,7 +16,10 @@
      <%= link_to "Sign In", new_session_url %>
    <% end %>
    <br>
-
+   <script>
+      window.CURRENT_USER_ID = <%= current_user.id %>;
+      window.CURRENT_USERNAME = "<%= current_user.username %>"
+   </script>
 </nav>
 
 <body>

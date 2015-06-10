@@ -6,7 +6,9 @@ Goodtravels.Views.Nav = Backbone.CompositeView.extend({
   },
 
   render: function () {
-    this.$el.html(this.template());
+    this.$el.html(this.template({
+      username: window.CURRENT_USERNAME
+    }));
 
     return this;
   }
