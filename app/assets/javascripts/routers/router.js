@@ -5,13 +5,36 @@ Goodtravels.Routers.Router = Backbone.Router.extend({
   },
 
   routes: {
-    '': 'index'
+    '': 'index',
+    'activities/new':'newActivity',
+    'activities/:id/edit':'editActivity',
+    'activities/:id':'showActivity'
   },
 
   index: function () {
-    var indexView = new Goodtravels.Views.
+    this.activities.fetch();
+    var indexView = new Goodtravels.Views.ActivitiesIndex({
+      collection: this.activities
+    });
 
     this._swapView(indexView);
+  },
+
+  newActivity: function () {
+
+  },
+
+  editActivity: function () {
+
+  },
+
+  showActivity: function (id) {
+    var activity = this.activities.getOrFetch(id);
+    var showView = new Goodtravels.Views.ShowActivity({
+      model: activity
+    });
+
+    this._swapView(showView);
   },
 
   _swapView: function (view) {

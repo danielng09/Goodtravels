@@ -7,7 +7,7 @@ window.Goodtravels = {
     var activities = new Goodtravels.Collections.Activities();
 
     var router = new Goodtravels.Routers.Router({
-        $rootEl: $('#content'),
+        $rootEl: $('.backdrop'),
         activities: activities
     });
 
@@ -17,6 +17,7 @@ window.Goodtravels = {
     });
 
     $('#nav').html(navbar.render().$el);
+    Backbone.history.start();
   }
 };
 
