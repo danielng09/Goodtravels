@@ -1,9 +1,8 @@
 Goodtravels.Views.ActivitiesIndexItem = Backbone.View.extend({
-  tagName: 'div',
   className: 'activities-index-item',
   template: JST['activities/indexItem'],
   events: {
-    'click div':'linkToActivity'
+    'click':'linkToActivity'
   },
 
   initialize: function (options) {
@@ -17,7 +16,7 @@ Goodtravels.Views.ActivitiesIndexItem = Backbone.View.extend({
   },
 
   linkToActivity: function (event) {
-    var activityId = $(event.target).data('id');
+    var activityId = $(event.currentTarget).data('id');
     Backbone.history.navigate('activities/'+ activityId, { trigger: true });
   }
 
