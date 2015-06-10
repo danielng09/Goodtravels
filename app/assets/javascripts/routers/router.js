@@ -1,10 +1,17 @@
 Goodtravels.Routers.Router = Backbone.Router.extend({
-  initialize: function () {
-
+  initialize: function (options) {
+    this.$rootEl = options.$rootEl;
+    this.activities = options.activities;
   },
 
   routes: {
+    '': 'index'
+  },
 
+  index: function () {
+    var indexView = new Goodtravels.Views.
+
+    this._swapView(indexView);
   },
 
   _swapView: function (view) {

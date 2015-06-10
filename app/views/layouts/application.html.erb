@@ -8,7 +8,7 @@
   <%= csrf_meta_tags %>
 </head>
 
-<nav>
+<nav id='nav'>
   <% if current_user %>
      Logged in as <%= current_user.username %>
      <%= link_to "Log Out", session_url, method:"delete" %>
