@@ -1,3 +1,5 @@
+require_relative 'yelp_data.rb'
+
 User.destroy_all
 Activity.destroy_all
 Review.destroy_all
@@ -42,3 +44,7 @@ Review.create(activity_id: 2,
 Want.create(user_id: 4, activity_id: 1)
 
 Want.create(user_id: 4, activity_id: 2)
+
+parse_yelp.each do |data|
+  Activity.create(data)
+end
