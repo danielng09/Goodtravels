@@ -1,19 +1,34 @@
+// .index-item {
+//   text-overflow: ellipsis;
+//   overflow: hidden;
+//   white-space: nowrap;
+// }
+
+h4.index-item {
+  margin-top: 0px;
+  padding: 15px 15px;
+  background: rgba(0, 0, 0, .3s);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
 div.activities-index-item {
+  padding: 0px 0px;
   float: left;
   width: 290px;
-  height: 300px;
+  height: 250px;
   // top right bottom left
   margin: 0px 5px 10px 5px;
   border-radius: 10px;
   background-color: #fff;
-  color: black;
+  color: white;
   font-size: 12px;
-  box-shadow: 0 1px 2px #5b5b5b;
-
+  box-shadow: 0 1px 1px #626262;
+  // -moz-box-shadow: rgba(0,0,0,0.8) 0 0 10px;
 }
 
 div.activities-index-item:hover {
-  background-color: #eaeaea;
+  opacity: 0.5;
   cursor: pointer;
   cursor: hand;
 }
@@ -22,3 +37,14 @@ div.activities-index-item img{
   width: 100px;
   height: 100px;
 }
+
+div.vertically-center {
+  height: 200px;
+  line-height: 200px;
+  vertical-align: bottom;
+}
+// p.index-item-description {
+//   height: 100px;
+//   position: absolute;
+//   margin-bottom: 0px;
+// }

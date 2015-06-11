@@ -1,4 +1,5 @@
 Goodtravels.Views.ActivitiesIndexItem = Backbone.View.extend({
+
   className: 'activities-index-item col-md-3',
   template: JST['activities/indexItem'],
   events: {
@@ -7,6 +8,8 @@ Goodtravels.Views.ActivitiesIndexItem = Backbone.View.extend({
 
   initialize: function (options) {
     this.$el.attr('data-id', this.model.id);
+    this.$el.css('background', 'url("' + this.model.escape('image_url') + '")');
+    this.$el.css("background-size", "cover");
   },
 
   render: function () {
