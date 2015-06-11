@@ -3,7 +3,7 @@ module Api
 
     def create
       @review = current_activity.reviews.new(review_params)
-
+      @review.user_id = current_user.id
       if @review.save
         render json: @review
       else
@@ -30,12 +30,7 @@ module Api
     private
 
     def current_activity
-      if params[:id]
-        @review = Review.find(params[:id])
-        @activity = @review.activity
-      elsif params[:review]
-        @activity = Activity.find(params[:review][:activity_id])
-      end
+      @activity = Activity.find(params[:activity_id])
     end
 
     def review_params

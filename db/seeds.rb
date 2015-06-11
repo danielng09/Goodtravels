@@ -23,14 +23,14 @@ Activity.create(title: "Twin Peaks",
                 description: "Renowned, 180-degree views of the Bay Area are offered at this 64-acre park with hiking trails.",
                 image_url: 'http://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Twinpeaks_longexposure.jpg/1599px-Twinpeaks_longexposure.jpg'
                 )
-                
+
 Review.create(activity_id: 1,
-              user_id: 1,
+              user_id: 3,
               body: "I was part of the April 2015 cohort and had an awesome time!",
               rating: 5)
 
 Review.create(activity_id: 2,
-              user_id: 1,
+              user_id: 4,
               body: "Went on a nice day and walked acrossed the bridge. I had a great view of SF while walking across the bridge",
               rating: 4)
 

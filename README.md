@@ -10,10 +10,10 @@ travel related content and can:
 
 <!-- This is a Markdown checklist. Use it to keep track of your progress! -->
 
-- [ ] Create accounts
-- [ ] Log in
-- [ ] View list of activities
-- [ ] View reviews on an activity
+- [x] Create accounts
+- [x] Log in
+- [x] View list of activities
+- [x] View reviews on an activity
 - [ ] View average rating and number of reviews
 - [ ] Review activity
 - [ ] Give rating to activity

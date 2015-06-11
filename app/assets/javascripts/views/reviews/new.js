@@ -2,7 +2,11 @@ Goodtravels.Views.NewReview = Backbone.View.extend({
   template: JST['reviews/new'],
 
   events: {
-    'click button': 'submitReview'
+    'submit .new-review': 'submitReview'
+  },
+
+  initialize: function (options) {
+    this.activity_id = options.activity_id;
   },
 
   render: function () {
@@ -13,14 +17,17 @@ Goodtravels.Views.NewReview = Backbone.View.extend({
 
   submitReview: function (event) {
     event.preventDefault();
-    var formData = this.$el.serializeJSON();
+    var formData = this.$el.children().serializeJSON();
     var review = new Goodtravels.Models.Review();
     review.set(formData);
-
+    review.set({ "activity_id": this.activity_id });
     var that = this;
-    review.model.save({}, {
+    review.save({}, {
       success: function () {
         that.collection.add(review);
+      },
+      error: function () {
+
       }
     });
   }
