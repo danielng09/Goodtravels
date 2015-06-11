@@ -11,12 +11,6 @@ window.Goodtravels = {
         activities: activities
     });
 
-    var navbar = new Goodtravels.Views.Nav({
-      router: router,
-      collection: activities
-    });
-
-    $('#nav').html(navbar.render().$el);
     Backbone.history.start();
   }
 };

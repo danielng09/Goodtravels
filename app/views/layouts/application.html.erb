@@ -8,23 +8,18 @@
   <%= csrf_meta_tags %>
 </head>
 
-<nav id='nav'>
-  <% if current_user %>
-     Logged in as <%= current_user.username %>
-     <%= link_to "Log Out", session_url, method:"delete" %>
-   <% else %>
-     <%= link_to "Sign In", new_session_url %>
-   <% end %>
-   <br>
-   <script>
-      <% if current_user %>
+  <!-- //  <script> -->
+      <!-- <% if current_user %>
         window.CURRENT_USER_ID = <%= current_user.id %>;
         window.CURRENT_USERNAME = "<%= current_user.username %>"
-      <% end %>
-   </script>
-</nav>
+      <% end %> -->
+  <!-- //  </script> -->
 
 <body>
+  <nav id='nav'>
+    <%= render partial: "layouts/header" %>
+  </nav>
+  
   <% if flash[:errors] %>
     <% flash[:errors].each do |error| %>
       <%= error %>

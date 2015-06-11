@@ -25,9 +25,6 @@ Goodtravels.Views.NewReview = Backbone.View.extend({
     review.save({}, {
       success: function () {
         that.collection.add(review);
-      },
-      error: function () {
-
       }
     });
   }
