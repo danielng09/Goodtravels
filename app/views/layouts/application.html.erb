@@ -17,8 +17,10 @@
    <% end %>
    <br>
    <script>
-      window.CURRENT_USER_ID = <%= current_user.id %>;
-      window.CURRENT_USERNAME = "<%= current_user.username %>"
+      <% if current_user %>
+        window.CURRENT_USER_ID = <%= current_user.id %>;
+        window.CURRENT_USERNAME = "<%= current_user.username %>"
+      <% end %>
    </script>
 </nav>
 

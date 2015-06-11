@@ -13,8 +13,8 @@ Goodtravels.Views.ShowActivity = Backbone.CompositeView.extend({
     this.addSubview('div.activity-details', reviewDetailView);
 
     this.model.reviews().each(function(review) {
-      addReviewSubView(review);
-    });
+      this.addReviewSubView(review);
+    }.bind(this));
 
     var newReviewView = new Goodtravels.Views.NewReview({
       collection: this.model.reviews()

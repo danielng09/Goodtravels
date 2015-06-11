@@ -18,6 +18,12 @@ Activity.create(title: "Golden Gate Bridge",
                 description: "The iconic landmark of San Francisco!",
                 image_url: "http://upload.wikimedia.org/wikipedia/commons/0/0c/GoldenGateBridge-001.jpg")
 
+Activity.create(title: "Twin Peaks",
+                location: "501 Twin Peaks Boulevard, San Francisco, CA 94114",
+                description: "Renowned, 180-degree views of the Bay Area are offered at this 64-acre park with hiking trails.",
+                image_url: 'http://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Twinpeaks_longexposure.jpg/1599px-Twinpeaks_longexposure.jpg'
+                )
+                
 Review.create(activity_id: 1,
               user_id: 1,
               body: "I was part of the April 2015 cohort and had an awesome time!",
