@@ -6,13 +6,17 @@ h4.index-item {
   border-top-right-radius: 10px;
 }
 
-.activities-index-item {
+#activity-title {
+  margin-left: 6%;
+}
+
+div.activities-index-item {
   padding: 0px 0px;
   float: left;
-  width: 290px;
+  width: 300px;
   height: 250px;
   // top right bottom left
-  margin: 0px 5px 10px 5px;
+  margin: 0px 10px 20px 10px;
   border-radius: 10px;
   background-color: #fff;
   color: white;
@@ -31,19 +35,3 @@ h4.index-item {
   line-height: 200px;
   vertical-align: bottom;
 }
-
-.index-item-stars {
-  z-index: 100px;
-}
-
-// .index-item {
-//   text-overflow: ellipsis;
-//   overflow: hidden;
-//   white-space: nowrap;
-// }
-
-// p.index-item-description {
-//   height: 100px;
-//   position: absolute;
-//   margin-bottom: 0px;
-// }

@@ -9,6 +9,7 @@ User.create(username: 'admin', password: 'password')
 User.create(username: 'vince', password: 'password')
 User.create(username: 'e', password: 'password')
 User.create(username: 'turtle', password: 'password')
+User.create(username: 'guest', password: "JA0sl294j2s")
 
 Activity.create(title: "App Academy",
                 location: "1061 Market St #4, San Francisco, CA 94103",

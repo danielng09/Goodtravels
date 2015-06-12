@@ -932,8 +932,898 @@ def yelp
             },
             "state_code": "CA"
         }
-    }
-  ]
+    },
+            {
+                "is_claimed": true,
+                "rating": 4.5,
+                "mobile_url": "http://m.yelp.com/biz/magowans-infinite-mirror-maze-san-francisco",
+                "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+                "review_count": 209,
+                "name": "Magowan's Infinite Mirror Maze",
+                "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+                "url": "http://www.yelp.com/biz/magowans-infinite-mirror-maze-san-francisco",
+                "is_closed": false,
+                "phone": "4158350019",
+                "snippet_text": "I got a Groupon for 4 people for $10! What a steal =] the usual price is $5 a person too.I came here on a Sunday evening in November and Pier 39 has never...",
+                "image_url": "http://s3-media3.fl.yelpcdn.com/bphoto/MnhICGx-vqQ5_UpGCdJ_Tw/ms.jpg",
+                "categories": [
+                    [
+                        "Arts & Entertainment",
+                        "arts"
+                    ],
+                    [
+                        "Tours",
+                        "tours"
+                    ]
+                ],
+                "display_phone": "+1-415-835-0019",
+                "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+                "id": "magowans-infinite-mirror-maze-san-francisco",
+                "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/kbZL75BFQjAlrjey0uYzVg/ms.jpg",
+                "location": {
+                    "city": "San Francisco",
+                    "display_address": [
+                        "Pier 39",
+                        "North Beach/Telegraph Hill",
+                        "San Francisco, CA 94133"
+                    ],
+                    "geo_accuracy": 9.5,
+                    "neighborhoods": [
+                        "North Beach/Telegraph Hill",
+                        "Fisherman's Wharf"
+                    ],
+                    "postal_code": "94133",
+                    "country_code": "US",
+                    "address": [
+                        "Pier 39"
+                    ],
+                    "coordinate": {
+                        "latitude": 37.809906859556996,
+                        "longitude": -122.41020709276201
+                    },
+                    "state_code": "CA"
+                }
+            },
+            {
+                "is_claimed": true,
+                "rating": 5.0,
+                "mobile_url": "http://m.yelp.com/biz/marrakech-magic-theater-san-francisco-3",
+                "rating_img_url": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+                "review_count": 230,
+                "name": "Marrakech Magic Theater",
+                "rating_img_url_small": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+                "url": "http://www.yelp.com/biz/marrakech-magic-theater-san-francisco-3",
+                "is_closed": false,
+                "phone": "9259846504",
+                "snippet_text": "It's sometimes the spontaneous unplanned activities that end up being the best. I came here after seeing the stellar Yelp reviews and wasn't too sure what...",
+                "image_url": "http://s3-media2.fl.yelpcdn.com/bphoto/9zPGHgdE5uHOaFZW02hGbg/ms.jpg",
+                "categories": [
+                    [
+                        "Performing Arts",
+                        "theater"
+                    ],
+                    [
+                        "Comedy Clubs",
+                        "comedyclubs"
+                    ],
+                    [
+                        "Magicians",
+                        "magicians"
+                    ]
+                ],
+                "display_phone": "+1-925-984-6504",
+                "rating_img_url_large": "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+                "id": "marrakech-magic-theater-san-francisco-3",
+                "snippet_image_url": "http://s3-media1.fl.yelpcdn.com/photo/O4ZOSgIQz32SUVZCvT7V4g/ms.jpg",
+                "location": {
+                    "cross_streets": "Taylor St & Shannon St",
+                    "city": "San Francisco",
+                    "display_address": [
+                        "419 O'Farrell St",
+                        "Tenderloin",
+                        "San Francisco, CA 94102"
+                    ],
+                    "geo_accuracy": 8.0,
+                    "neighborhoods": [
+                        "Tenderloin"
+                    ],
+                    "postal_code": "94102",
+                    "country_code": "US",
+                    "address": [
+                        "419 O'Farrell St"
+                    ],
+                    "coordinate": {
+                        "latitude": 37.7858124,
+                        "longitude": -122.4117966
+                    },
+                    "state_code": "CA"
+                }
+            },
+            {
+                "is_claimed": true,
+                "rating": 4.5,
+                "mobile_url": "http://m.yelp.com/biz/exploratorium-san-francisco-2",
+                "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+                "review_count": 461,
+                "name": "Exploratorium",
+                "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+                "url": "http://www.yelp.com/biz/exploratorium-san-francisco-2",
+                "is_closed": false,
+                "phone": "4155284444",
+                "snippet_text": "A few weeks ago, I went to the Exploratorium for the first time in years! (Last time was during an elementary school field trip) I love the new location...",
+                "image_url": "http://s3-media2.fl.yelpcdn.com/bphoto/7pgSoEdw3icoUNl3APRr3Q/ms.jpg",
+                "categories": [
+                    [
+                        "Museums",
+                        "museums"
+                    ],
+                    [
+                        "Venues & Event Spaces",
+                        "venues"
+                    ]
+                ],
+                "display_phone": "+1-415-528-4444",
+                "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+                "id": "exploratorium-san-francisco-2",
+                "snippet_image_url": "http://s3-media4.fl.yelpcdn.com/photo/2q20fOfjBEhr67NMPVFZiQ/ms.jpg",
+                "location": {
+                    "city": "San Francisco",
+                    "display_address": [
+                        "Pier 15",
+                        "Embarcadero",
+                        "San Francisco, CA 94111"
+                    ],
+                    "geo_accuracy": 9.5,
+                    "neighborhoods": [
+                        "Embarcadero",
+                        "North Beach/Telegraph Hill"
+                    ],
+                    "postal_code": "94111",
+                    "country_code": "US",
+                    "address": [
+                        "Pier 15"
+                    ],
+                    "coordinate": {
+                        "latitude": 37.800875,
+                        "longitude": -122.398619
+                    },
+                    "state_code": "CA"
+                }
+            },
+            {
+                "is_claimed": true,
+                "rating": 5.0,
+                "mobile_url": "http://m.yelp.com/biz/creativity-explored-san-francisco",
+                "rating_img_url": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+                "review_count": 43,
+                "name": "Creativity Explored",
+                "rating_img_url_small": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+                "url": "http://www.yelp.com/biz/creativity-explored-san-francisco",
+                "is_closed": false,
+                "phone": "4158632108",
+                "snippet_text": "Yo painter, I'm really happy for you, I'ma let you finish, But Creativity Explored is Onna the best Studio-galleries uh all taiyme! Uh aaall taaaiyme!",
+                "image_url": "http://s3-media3.fl.yelpcdn.com/bphoto/ViuuwbrEF0QK4i6CiYbBRQ/ms.jpg",
+                "categories": [
+                    [
+                        "Art Galleries",
+                        "galleries"
+                    ]
+                ],
+                "display_phone": "+1-415-863-2108",
+                "rating_img_url_large": "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+                "id": "creativity-explored-san-francisco",
+                "snippet_image_url": "http://s3-media1.fl.yelpcdn.com/photo/_0H2m61LHnTqenv4XJmDoA/ms.jpg",
+                "location": {
+                    "cross_streets": "Spencer St & Dolores St",
+                    "city": "San Francisco",
+                    "display_address": [
+                        "3245 16th St",
+                        "Mission",
+                        "San Francisco, CA 94103"
+                    ],
+                    "geo_accuracy": 8.0,
+                    "neighborhoods": [
+                        "Mission"
+                    ],
+                    "postal_code": "94103",
+                    "country_code": "US",
+                    "address": [
+                        "3245 16th St"
+                    ],
+                    "coordinate": {
+                        "latitude": 37.7646747976542,
+                        "longitude": -122.425077259541
+                    },
+                    "state_code": "CA"
+                }
+            },
+            {
+                "is_claimed": true,
+                "rating": 4.5,
+                "mobile_url": "http://m.yelp.com/biz/the-fillmore-san-francisco",
+                "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+                "review_count": 1046,
+                "name": "The Fillmore",
+                "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+                "url": "http://www.yelp.com/biz/the-fillmore-san-francisco",
+                "is_closed": false,
+                "phone": "4153463000",
+                "snippet_text": "The Fillmore has a rich history dating back to its opening in 1912 having operated as a dance hall, roller rink, music venue, private club and back to its...",
+                "image_url": "http://s3-media1.fl.yelpcdn.com/bphoto/zl5VfqCQooiWuJvk4tVwJg/ms.jpg",
+                "categories": [
+                    [
+                        "Music Venues",
+                        "musicvenues"
+                    ],
+                    [
+                        "Performing Arts",
+                        "theater"
+                    ],
+                    [
+                        "Venues & Event Spaces",
+                        "venues"
+                    ]
+                ],
+                "display_phone": "+1-415-346-3000",
+                "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+                "id": "the-fillmore-san-francisco",
+                "snippet_image_url": "http://s3-media4.fl.yelpcdn.com/photo/u8LLxUqJLnjNbR-eAsfoBg/ms.jpg",
+                "location": {
+                    "cross_streets": "Fillmore St",
+                    "city": "San Francisco",
+                    "display_address": [
+                        "1805 Geary Blvd",
+                        "Western Addition",
+                        "San Francisco, CA 94115"
+                    ],
+                    "geo_accuracy": 9.5,
+                    "neighborhoods": [
+                        "Western Addition"
+                    ],
+                    "postal_code": "94115",
+                    "country_code": "US",
+                    "address": [
+                        "1805 Geary Blvd"
+                    ],
+                    "coordinate": {
+                        "latitude": 37.7841038,
+                        "longitude": -122.4334611
+                    },
+                    "state_code": "CA"
+                }
+            },
+            {
+                "is_claimed": true,
+                "rating": 4.5,
+                "mobile_url": "http://m.yelp.com/biz/palace-of-fine-arts-san-francisco",
+                "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+                "review_count": 631,
+                "name": "Palace Of Fine Arts",
+                "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+                "url": "http://www.yelp.com/biz/palace-of-fine-arts-san-francisco",
+                "is_closed": false,
+                "phone": "4155636504",
+                "snippet_text": "WOWZERS!!!!   What a beautiful place.   Don't get me started with the pictures. This place is fantastic for taking pictures. It is crowded during the...",
+                "image_url": "http://s3-media4.fl.yelpcdn.com/bphoto/l3vvId4C-jH3fNtypDPrRA/ms.jpg",
+                "categories": [
+                    [
+                        "Performing Arts",
+                        "theater"
+                    ],
+                    [
+                        "Parks",
+                        "parks"
+                    ]
+                ],
+                "display_phone": "+1-415-563-6504",
+                "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+                "id": "palace-of-fine-arts-san-francisco",
+                "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/4tOJvogTchpK3-BDaJm9ew/ms.jpg",
+                "location": {
+                    "cross_streets": "Bay St",
+                    "city": "San Francisco",
+                    "display_address": [
+                        "3301 Lyon Street",
+                        "Marina/Cow Hollow",
+                        "San Francisco, CA 94123"
+                    ],
+                    "geo_accuracy": 8.0,
+                    "neighborhoods": [
+                        "Marina/Cow Hollow"
+                    ],
+                    "postal_code": "94123",
+                    "country_code": "US",
+                    "address": [
+                        "3301 Lyon Street"
+                    ],
+                    "coordinate": {
+                        "latitude": 37.8013996034861,
+                        "longitude": -122.447846531868
+                    },
+                    "state_code": "CA"
+                }
+            },
+            {
+                "is_claimed": false,
+                "rating": 4.5,
+                "mobile_url": "http://m.yelp.com/biz/dolores-park-movie-night-san-francisco",
+                "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+                "review_count": 176,
+                "name": "Dolores Park Movie Night",
+                "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+                "url": "http://www.yelp.com/biz/dolores-park-movie-night-san-francisco",
+                "is_closed": false,
+                "snippet_text": "A ridiculously good time.  It was freezing but everyone was free to put on their booze coats and certainly did.  Some technical difficulties made everyone...",
+                "image_url": "http://s3-media2.fl.yelpcdn.com/bphoto/zvb8G0apfqxnTasibp9F_Q/ms.jpg",
+                "categories": [
+                    [
+                        "Cinema",
+                        "movietheaters"
+                    ]
+                ],
+                "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+                "id": "dolores-park-movie-night-san-francisco",
+                "snippet_image_url": "http://s3-media1.fl.yelpcdn.com/photo/FERLjKbPoc-VEKcQSQIBCA/ms.jpg",
+                "location": {
+                    "city": "San Francisco",
+                    "display_address": [
+                        "Dolores Park",
+                        "20th St & Dolores St",
+                        "Castro",
+                        "San Francisco, CA 94114"
+                    ],
+                    "geo_accuracy": 7.0,
+                    "neighborhoods": [
+                        "Castro"
+                    ],
+                    "postal_code": "94114",
+                    "country_code": "US",
+                    "address": [
+                        "Dolores Park",
+                        "20th St & Dolores St"
+                    ],
+                    "coordinate": {
+                        "latitude": 37.758210003376,
+                        "longitude": -122.425830289721
+                    },
+                    "state_code": "CA"
+                }
+            },
+            {
+                "is_claimed": true,
+                "rating": 4.5,
+                "mobile_url": "http://m.yelp.com/biz/the-walt-disney-family-museum-san-francisco",
+                "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+                "review_count": 579,
+                "name": "The Walt Disney Family Museum",
+                "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+                "url": "http://www.yelp.com/biz/the-walt-disney-family-museum-san-francisco",
+                "is_closed": false,
+                "phone": "4153456800",
+                "snippet_text": "This was truly a highlight of our visit to San Francisco.  The size of this archive is a bit overwhelming even for a Disney fan but, wow, what a collection...",
+                "image_url": "http://s3-media2.fl.yelpcdn.com/bphoto/x3X1IQAatHJ56Nwy4JzOLg/ms.jpg",
+                "categories": [
+                    [
+                        "Museums",
+                        "museums"
+                    ]
+                ],
+                "display_phone": "+1-415-345-6800",
+                "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+                "id": "the-walt-disney-family-museum-san-francisco",
+                "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/F6Q0OkRr8TWlYmb6ZOoz1g/ms.jpg",
+                "location": {
+                    "city": "San Francisco",
+                    "display_address": [
+                        "Presidio of San Francisco",
+                        "104 Montgomery St",
+                        "Presidio",
+                        "San Francisco, CA 94129"
+                    ],
+                    "geo_accuracy": 9.5,
+                    "neighborhoods": [
+                        "Presidio"
+                    ],
+                    "postal_code": "94129",
+                    "country_code": "US",
+                    "address": [
+                        "Presidio of San Francisco",
+                        "104 Montgomery St"
+                    ],
+                    "coordinate": {
+                        "latitude": 37.8009002347234,
+                        "longitude": -122.458505630493
+                    },
+                    "state_code": "CA"
+                }
+            },
+            {
+                "is_claimed": true,
+                "rating": 4.0,
+                "mobile_url": "http://m.yelp.com/biz/cartoon-art-museum-san-francisco",
+                "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+                "review_count": 183,
+                "name": "Cartoon Art Museum",
+                "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+                "url": "http://www.yelp.com/biz/cartoon-art-museum-san-francisco",
+                "is_closed": false,
+                "phone": "4152278666",
+                "snippet_text": "What a wonderful hidden gem of a museum that's tucked away in between SOMA and FiDi areas. I seriously have walked by this location multiple times and...",
+                "image_url": "http://s3-media3.fl.yelpcdn.com/bphoto/FDxvuNBCFcOcV-2YDfUkBQ/ms.jpg",
+                "categories": [
+                    [
+                        "Museums",
+                        "museums"
+                    ]
+                ],
+                "display_phone": "+1-415-227-8666",
+                "rating_img_url_large": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+                "id": "cartoon-art-museum-san-francisco",
+                "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/-hLBBva6IkLgpL9t0N4n5w/ms.jpg",
+                "location": {
+                    "cross_streets": "New Montgomery St & Annie St",
+                    "city": "San Francisco",
+                    "display_address": [
+                        "655 Mission St",
+                        "Financial District",
+                        "San Francisco, CA 94105"
+                    ],
+                    "geo_accuracy": 8.0,
+                    "neighborhoods": [
+                        "Financial District",
+                        "SoMa"
+                    ],
+                    "postal_code": "94105",
+                    "country_code": "US",
+                    "address": [
+                        "655 Mission St"
+                    ],
+                    "coordinate": {
+                        "latitude": 37.7870638668537,
+                        "longitude": -122.400890439749
+                    },
+                    "state_code": "CA"
+                }
+            },
+            {
+                "is_claimed": true,
+                "rating": 4.5,
+                "mobile_url": "http://m.yelp.com/biz/san-francisco-botanical-garden-san-francisco-2",
+                "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+                "review_count": 375,
+                "name": "San Francisco Botanical Garden",
+                "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+                "url": "http://www.yelp.com/biz/san-francisco-botanical-garden-san-francisco-2",
+                "is_closed": false,
+                "phone": "4156611316",
+                "snippet_text": "Beautiful!!   Located in the Golden Gate Park, the SF Botanical Gardens are simply breathtaking and worth visiting at least once. Plan on being here at...",
+                "image_url": "http://s3-media2.fl.yelpcdn.com/bphoto/YkXkhOUKHiP63VZXjuMOGg/ms.jpg",
+                "categories": [
+                    [
+                        "Botanical Gardens",
+                        "gardens"
+                    ],
+                    [
+                        "Museums",
+                        "museums"
+                    ]
+                ],
+                "display_phone": "+1-415-661-1316",
+                "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+                "id": "san-francisco-botanical-garden-san-francisco-2",
+                "snippet_image_url": "http://s3-media4.fl.yelpcdn.com/photo/rofy6YM0XQ3uxTIkoNW2sQ/ms.jpg",
+                "location": {
+                    "city": "San Francisco",
+                    "display_address": [
+                        "9th Ave & Lincoln Way",
+                        "Golden Gate Park",
+                        "San Francisco, CA 94122"
+                    ],
+                    "geo_accuracy": 9.5,
+                    "postal_code": "94122",
+                    "country_code": "US",
+                    "address": [
+                        "9th Ave & Lincoln Way",
+                        "Golden Gate Park"
+                    ],
+                    "coordinate": {
+                        "latitude": 37.7669237221112,
+                        "longitude": -122.466648816609
+                    },
+                    "state_code": "CA"
+                }
+            },
+            {
+                "is_claimed": false,
+                "rating": 4.5,
+                "mobile_url": "http://m.yelp.com/biz/wondercon-san-francisco",
+                "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+                "review_count": 90,
+                "name": "WonderCon",
+                "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+                "url": "http://www.yelp.com/biz/wondercon-san-francisco",
+                "is_closed": false,
+                "snippet_text": "Awesome it was my 1st time going to WonderCon  it was so AWESOME :D  I recommending people to buy there tickets early because it's cheaper ...   It also...",
+                "image_url": "http://s3-media2.fl.yelpcdn.com/bphoto/hyW4RaDKmpVtfE9d5QuJvQ/ms.jpg",
+                "categories": [
+                    [
+                        "Festivals",
+                        "festivals"
+                    ]
+                ],
+                "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+                "id": "wondercon-san-francisco",
+                "snippet_image_url": "http://s3-media4.fl.yelpcdn.com/photo/fK7vl8M4wMq52rCqlhwmIQ/ms.jpg",
+                "location": {
+                    "city": "San Francisco",
+                    "display_address": [
+                        "Moscone Center West",
+                        "800 Howard St",
+                        "SoMa",
+                        "San Francisco, CA 94103"
+                    ],
+                    "geo_accuracy": 8.0,
+                    "neighborhoods": [
+                        "SoMa"
+                    ],
+                    "postal_code": "94103",
+                    "country_code": "US",
+                    "address": [
+                        "Moscone Center West",
+                        "800 Howard St"
+                    ],
+                    "coordinate": {
+                        "latitude": 37.7832048386335,
+                        "longitude": -122.402863204479
+                    },
+                    "state_code": "CA"
+                }
+            },
+            {
+                "is_claimed": true,
+                "rating": 4.5,
+                "mobile_url": "http://m.yelp.com/biz/bay-to-breakers-san-francisco-2",
+                "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+                "review_count": 558,
+                "name": "Bay to Breakers",
+                "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+                "url": "http://www.yelp.com/biz/bay-to-breakers-san-francisco-2",
+                "is_closed": false,
+                "phone": "4152313130",
+                "snippet_text": "Such a fun run!!! Costumes, friendly people, fresh air and tour of SF!! My best friend actually ran it but I jogged and decided to take in the views and...",
+                "image_url": "http://s3-media2.fl.yelpcdn.com/bphoto/AdE-XXIAxYUOZ2BmPgVrHA/ms.jpg",
+                "categories": [
+                    [
+                        "Festivals",
+                        "festivals"
+                    ]
+                ],
+                "display_phone": "+1-415-231-3130",
+                "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+                "id": "bay-to-breakers-san-francisco-2",
+                "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/_jwUgtXKsxC0Y8zCzgDQig/ms.jpg",
+                "location": {
+                    "cross_streets": "7th St & 8th St",
+                    "city": "San Francisco",
+                    "display_address": [
+                        "600 Townsend St",
+                        "Ste 410",
+                        "SoMa",
+                        "San Francisco, CA 94103"
+                    ],
+                    "geo_accuracy": 8.0,
+                    "neighborhoods": [
+                        "SoMa"
+                    ],
+                    "postal_code": "94103",
+                    "country_code": "US",
+                    "address": [
+                        "600 Townsend St",
+                        "Ste 410"
+                    ],
+                    "coordinate": {
+                        "latitude": 37.7717018,
+                        "longitude": -122.4026794
+                    },
+                    "state_code": "CA"
+                }
+            },
+            {
+                "is_claimed": true,
+                "rating": 4.0,
+                "mobile_url": "http://m.yelp.com/biz/orpheum-theatre-san-francisco",
+                "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+                "review_count": 655,
+                "name": "Orpheum Theatre",
+                "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+                "url": "http://www.yelp.com/biz/orpheum-theatre-san-francisco",
+                "is_closed": false,
+                "phone": "8887461799",
+                "snippet_text": "Came up to San Francisco Orpheum Theater just for the nostalgic atmosphere.  When I decide to purchase season tickets, I will make sure they are 1st row...",
+                "image_url": "http://s3-media1.fl.yelpcdn.com/bphoto/wg8h9uYw8A3x642BjNc-wg/ms.jpg",
+                "categories": [
+                    [
+                        "Performing Arts",
+                        "theater"
+                    ]
+                ],
+                "display_phone": "+1-888-746-1799",
+                "rating_img_url_large": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+                "id": "orpheum-theatre-san-francisco",
+                "snippet_image_url": "http://s3-media1.fl.yelpcdn.com/photo/jb8CzJKrgZDbzZorKoa_Gw/ms.jpg",
+                "location": {
+                    "cross_streets": "Hyde St & Grove St",
+                    "city": "San Francisco",
+                    "display_address": [
+                        "1192 Market St",
+                        "Civic Center",
+                        "San Francisco, CA 94102"
+                    ],
+                    "geo_accuracy": 8.0,
+                    "neighborhoods": [
+                        "Civic Center"
+                    ],
+                    "postal_code": "94102",
+                    "country_code": "US",
+                    "address": [
+                        "1192 Market St"
+                    ],
+                    "coordinate": {
+                        "latitude": 37.7789052575827,
+                        "longitude": -122.414588481188
+                    },
+                    "state_code": "CA"
+                }
+            },
+            {
+                "is_claimed": true,
+                "rating": 4.0,
+                "mobile_url": "http://m.yelp.com/biz/the-dark-room-theater-llc-san-francisco",
+                "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+                "review_count": 92,
+                "name": "The Dark Room Theater, LLC",
+                "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+                "url": "http://www.yelp.com/biz/the-dark-room-theater-llc-san-francisco",
+                "is_closed": false,
+                "phone": "4158900082",
+                "snippet_text": "Bad Movie Night on Sunday, why did it take me this long to discover you?!? And now that I want to make our relationship more permanent you inform me that...",
+                "image_url": "http://s3-media4.fl.yelpcdn.com/bphoto/MFo8ahaRwAb5jQpYon7ARg/ms.jpg",
+                "categories": [
+                    [
+                        "Performing Arts",
+                        "theater"
+                    ],
+                    [
+                        "Comedy Clubs",
+                        "comedyclubs"
+                    ]
+                ],
+                "display_phone": "+1-415-890-0082",
+                "rating_img_url_large": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+                "id": "the-dark-room-theater-llc-san-francisco",
+                "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/uvz2KInVITCHw8IyPElRAA/ms.jpg",
+                "location": {
+                    "cross_streets": "19th St & 18th St",
+                    "city": "San Francisco",
+                    "display_address": [
+                        "2263 Mission St",
+                        "Mission",
+                        "San Francisco, CA 94110"
+                    ],
+                    "geo_accuracy": 8.0,
+                    "neighborhoods": [
+                        "Mission"
+                    ],
+                    "postal_code": "94110",
+                    "country_code": "US",
+                    "address": [
+                        "2263 Mission St"
+                    ],
+                    "coordinate": {
+                        "latitude": 37.7608719,
+                        "longitude": -122.4189072
+                    },
+                    "state_code": "CA"
+                }
+            },
+            {
+                "is_claimed": true,
+                "rating": 5.0,
+                "mobile_url": "http://m.yelp.com/biz/caamfest-san-francisco",
+                "rating_img_url": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+                "review_count": 53,
+                "name": "CAAMFest",
+                "rating_img_url_small": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+                "url": "http://www.yelp.com/biz/caamfest-san-francisco",
+                "is_closed": false,
+                "phone": "4158630814",
+                "snippet_text": "Just saw a preview of a television series coming to PBS called Supper Club. It was terrific! Chef Alvin Leung travels to Hana restaurant (Rohnert Park), the...",
+                "image_url": "http://s3-media4.fl.yelpcdn.com/bphoto/5kAfOaQwEg3lBA2hWjE_Lw/ms.jpg",
+                "categories": [
+                    [
+                        "Festivals",
+                        "festivals"
+                    ]
+                ],
+                "display_phone": "+1-415-863-0814",
+                "rating_img_url_large": "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+                "id": "caamfest-san-francisco",
+                "snippet_image_url": "http://s3-media1.fl.yelpcdn.com/photo/SYlroGWsDJEEIOKzJE-SiA/ms.jpg",
+                "location": {
+                    "cross_streets": "Natoma St & Minna St",
+                    "city": "San Francisco",
+                    "display_address": [
+                        "145 9th St",
+                        "Ste 350",
+                        "SoMa",
+                        "San Francisco, CA 94103"
+                    ],
+                    "geo_accuracy": 8.0,
+                    "neighborhoods": [
+                        "SoMa"
+                    ],
+                    "postal_code": "94103",
+                    "country_code": "US",
+                    "address": [
+                        "145 9th St",
+                        "Ste 350"
+                    ],
+                    "coordinate": {
+                        "latitude": 37.775856,
+                        "longitude": -122.413826
+                    },
+                    "state_code": "CA"
+                }
+            },
+            {
+                "is_claimed": false,
+                "rating": 4.5,
+                "mobile_url": "http://m.yelp.com/biz/cirque-du-soleil-kooza-san-francisco-2",
+                "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+                "review_count": 101,
+                "name": "Cirque du Soleil - Kooza",
+                "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+                "url": "http://www.yelp.com/biz/cirque-du-soleil-kooza-san-francisco-2",
+                "is_closed": false,
+                "snippet_text": "This is my favorite cirque performance from all Cirque du Soleil ones which we have watched.   If you can reserve front seats facing the podium directly, it...",
+                "image_url": "http://s3-media2.fl.yelpcdn.com/bphoto/wuLE3w2se_lO67OiyreLBw/ms.jpg",
+                "categories": [
+                    [
+                        "Performing Arts",
+                        "theater"
+                    ]
+                ],
+                "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+                "id": "cirque-du-soleil-kooza-san-francisco-2",
+                "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/3gA00Lhzg4M2w6veh-LG0w/ms.jpg",
+                "location": {
+                    "city": "San Francisco",
+                    "display_address": [
+                        "Grand Chapiteau at AT&T Park",
+                        "SoMa",
+                        "San Francisco, CA 94107"
+                    ],
+                    "geo_accuracy": 5.0,
+                    "neighborhoods": [
+                        "SoMa",
+                        "South Beach"
+                    ],
+                    "postal_code": "94107",
+                    "country_code": "US",
+                    "address": [
+                        "Grand Chapiteau at AT&T Park"
+                    ],
+                    "coordinate": {
+                        "latitude": 37.7648086547852,
+                        "longitude": -122.394599914551
+                    },
+                    "state_code": "CA"
+                }
+            },
+            {
+                "is_claimed": false,
+                "rating": 4.5,
+                "mobile_url": "http://m.yelp.com/biz/tenderloin-national-forest-san-francisco",
+                "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+                "review_count": 17,
+                "name": "Tenderloin National Forest",
+                "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+                "url": "http://www.yelp.com/biz/tenderloin-national-forest-san-francisco",
+                "is_closed": false,
+                "phone": "4152555971",
+                "snippet_text": "Funny it seems, but by keeping it's dreams,  it learned to breathe fresh air.   Long live the rose that grew from concrete  when no one else ever cared.",
+                "image_url": "http://s3-media2.fl.yelpcdn.com/bphoto/0psovrrhd6Fy51tHajdsEw/ms.jpg",
+                "categories": [
+                    [
+                        "Botanical Gardens",
+                        "gardens"
+                    ]
+                ],
+                "display_phone": "+1-415-255-5971",
+                "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+                "id": "tenderloin-national-forest-san-francisco",
+                "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/CjFQgEOiNwF8l-VWkGLs6A/ms.jpg",
+                "location": {
+                    "cross_streets": "Cohen Pl & Leavenworth St",
+                    "city": "San Francisco",
+                    "display_address": [
+                        "509 Ellis St",
+                        "Tenderloin",
+                        "San Francisco, CA 94109"
+                    ],
+                    "geo_accuracy": 8.0,
+                    "neighborhoods": [
+                        "Tenderloin"
+                    ],
+                    "postal_code": "94109",
+                    "country_code": "US",
+                    "address": [
+                        "509 Ellis St"
+                    ],
+                    "coordinate": {
+                        "latitude": 37.7845948934555,
+                        "longitude": -122.414605244994
+                    },
+                    "state_code": "CA"
+                }
+            },
+            {
+                "is_claimed": true,
+                "rating": 5.0,
+                "mobile_url": "http://m.yelp.com/biz/endgames-improv-san-francisco",
+                "rating_img_url": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+                "review_count": 84,
+                "name": "EndGames Improv",
+                "rating_img_url_small": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+                "url": "http://www.yelp.com/biz/endgames-improv-san-francisco",
+                "is_closed": false,
+                "phone": "4156278147",
+                "snippet_text": "Brilliant !!!!! Byob About relationships!!!!  Go to site for tickets in advance!  ATMOSPHERE: Narrow tiered seating pretty cozy and low key. In the middle...",
+                "image_url": "http://s3-media4.fl.yelpcdn.com/bphoto/3TsWkUULmuaRSwnNaz8tPw/ms.jpg",
+                "categories": [
+                    [
+                        "Performing Arts",
+                        "theater"
+                    ],
+                    [
+                        "Comedy Clubs",
+                        "comedyclubs"
+                    ],
+                    [
+                        "Specialty Schools",
+                        "specialtyschools"
+                    ]
+                ],
+                "display_phone": "+1-415-627-8147",
+                "rating_img_url_large": "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+                "id": "endgames-improv-san-francisco",
+                "snippet_image_url": "http://s3-media4.fl.yelpcdn.com/photo/agLsDtNTCWvrtiyf_XPZRQ/ms.jpg",
+                "location": {
+                    "city": "San Francisco",
+                    "display_address": [
+                        "StageWerx Theater",
+                        "446 Valencia St",
+                        "Mission",
+                        "San Francisco, CA 94103"
+                    ],
+                    "geo_accuracy": 9.5,
+                    "neighborhoods": [
+                        "Mission"
+                    ],
+                    "postal_code": "94103",
+                    "country_code": "US",
+                    "address": [
+                        "StageWerx Theater",
+                        "446 Valencia St"
+                    ],
+                    "coordinate": {
+                        "latitude": 37.7656430440733,
+                        "longitude": -122.422049045563
+                    },
+                    "state_code": "CA"
+                }
+            }
+        ]
   }
   STRING
 end
@@ -942,13 +1832,15 @@ def parse_yelp
   results = yelp['businesses']
   output = []
   results.each do |result|
-    next if result['review_count'] <= 30
+    next if result['review_count'] <= 50
+    next if result['categories'].flatten.any? { |category| category == "festivals" }
     params = Hash.new
     params['title'] = result['name']
     params['location'] = result['location']['display_address'].join(" ")
     params['image_url'] = result['image_url'].gsub(/\/ms.jpg/,'/l.jpg')
     params['description'] = result['snippet_text']
     # params['review_count'] = result['review_count']
+    # params['categories'] = result['categories']
     output.push(params)
   end
   output

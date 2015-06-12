@@ -1,8 +1,51 @@
-img.activity-picture-details {
+.activity-picture-details {
+  float:left;
   width: 300px;
   height: auto;
+  margin-right: 15px;
+}
+
+.activitity-detail-name {
+  text-align: center;
+  float:left;
+  width: 100%;
+  margin: 0px 0px 10px 0px;;
+  padding: 10px 15px;
+  background: rgba(34, 34, 34, .8);
+  color: white;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.activity-details {
+  padding: 0px 0px;
+  height: 320px;
+  float: left;
+  border-radius: 7px;
+  background-color: #fff;
+  box-shadow: 0 1px 1px #626262;
+  margin-bottom: 10px
+}
+
+.activity-reviews {
+  padding: 0px 0px;
 }
 
 .activity-review-item {
+  padding: 10px 10px;
+  float: left;
+  margin: 0px 0px;
+  border-radius: 7px;
+  background-color: #fff;
+  box-shadow: 0 1px 1px #626262;
   width: 100%;
+  margin-bottom: 10px;
+}
+
+.activity-new-review {
+  padding: 10px 10px;
+  float: left;
+  border-radius: 7px;
+  background-color: #fff;
+  box-shadow: 0 1px 1px #626262;
 }

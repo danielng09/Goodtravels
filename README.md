@@ -15,8 +15,8 @@ travel related content and can:
 - [x] View list of activities
 - [x] View reviews on an activity
 - [ ] View average rating and number of reviews
-- [ ] Review activity
-- [ ] Give rating to activity
+- [x] Write review for activity
+- [x] Give rating to activity
 - [ ] View list of activities done/reviewed
 - [ ] Bookmark activity
 - [ ] View list of bookmarked activities
