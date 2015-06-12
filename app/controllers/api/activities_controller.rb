@@ -27,6 +27,19 @@ module Api
       render :show
     end
 
+    def search
+      if params[:query].present?
+        @activities = Activity.where("title ~ ?", params[:query])
+      else
+        @activities = Activity.none
+      end
+
+      respond_to do |format|
+        format.html { render :search }
+        format.json { render :search }
+      end
+    end
+
     private
 
     def activity_params

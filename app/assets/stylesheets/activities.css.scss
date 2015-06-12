@@ -12,19 +12,22 @@ h4.index-item {
   border-top-right-radius: 10px;
 }
 
+#activity-title {
+  margin-left: 6%;
+}
+
 div.activities-index-item {
   padding: 0px 0px;
   float: left;
-  width: 290px;
+  width: 300px;
   height: 250px;
   // top right bottom left
-  margin: 0px 5px 10px 5px;
+  margin: 0px 10px 20px 10px;
   border-radius: 10px;
   background-color: #fff;
   color: white;
   font-size: 12px;
   box-shadow: 0 1px 1px #626262;
-  // -moz-box-shadow: rgba(0,0,0,0.8) 0 0 10px;
 }
 
 div.activities-index-item:hover {
@@ -43,8 +46,3 @@ div.vertically-center {
   line-height: 200px;
   vertical-align: bottom;
 }
-// p.index-item-description {
-//   height: 100px;
-//   position: absolute;
-//   margin-bottom: 0px;
-// }
