@@ -1,4 +1,4 @@
-<p>Author: <%= review.get('user_id') %></p>
+<p>Written by <a href="users/" + <%= user.get('id') %>><%= user.get('username') %></a></p>
 
 <p>Rating: <%= review.escape('rating') %></p>
 

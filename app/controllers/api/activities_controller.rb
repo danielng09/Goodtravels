@@ -23,7 +23,7 @@ module Api
 
     def show
       @activity = Activity.find(params[:id])
-      # render json: @activity, include: :reviews
+      @reviews = @activity.reviews.includes(:user)
       render :show
     end
 

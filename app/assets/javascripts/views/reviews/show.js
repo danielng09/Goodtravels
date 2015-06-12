@@ -4,7 +4,8 @@ Goodtravels.Views.ReviewItem = Backbone.View.extend({
 
   render: function () {
     var content = this.template({
-      review: this.model
+      review: this.model,
+      user: this.model.user()
     });
     this.$el.html(content);
 
