@@ -16,4 +16,13 @@
 
     <input type="submit" class="btn btn-primary" value="Submit">
   </form>
+  <br>
+
+  <form action="<%= session_url %>" method="POST">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    <input type="hidden" name="user[username]" value="guest">
+    <input type="hidden" name="user[password]" value="JA0sl294j2s">
+    <input type="submit" class="btn btn-primary" value="Guest Login">
+  </form>
+
 </div>
