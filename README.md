@@ -20,7 +20,7 @@ travel related content and can:
 - [ ] View list of activities done/reviewed
 - [ ] Bookmark activity
 - [ ] View list of bookmarked activities
-- [ ] Search for activity by name
+- [x] Search for activity by name
 
 ## Design Docs
 * [View Wireframes][views]

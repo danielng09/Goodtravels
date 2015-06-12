@@ -16,6 +16,7 @@ Goodtravels.Views.NewReview = Backbone.View.extend({
     setTimeout(function () {
       that.$('.new-review-stars').raty({
         path: 'assets',
+        half: true,
         click: function (score, event) {
           that.$('#rating-value').attr('value', score);
         }

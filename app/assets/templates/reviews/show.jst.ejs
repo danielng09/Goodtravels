@@ -1,5 +1,7 @@
 <p>Written by <a href="users/" + <%= user.get('id') %>><%= user.get('username') %></a></p>
 
+<p>Posted on <%= review.get('created_at') %></p>
+
 <p>Rating: <%= review.escape('rating') %></p>
 
 <p>Description: <%= review.escape('body') %></p>

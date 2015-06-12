@@ -9,8 +9,14 @@ Goodtravels.Views.ShowDetails = Backbone.View.extend({
     var content = this.template({
       activity: this.model
     });
-
     this.$el.html(content);
+
+    setTimeout(function () {
+      this.$('activity-detail-stars').raty({
+        path: 'assets',
+      });
+    }.bind(this), 150);
+
     return this;
   }
 
