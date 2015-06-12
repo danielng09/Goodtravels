@@ -2,7 +2,7 @@ Goodtravels.Views.ActivitiesIndex = Backbone.CompositeView.extend({
   template: JST['activities/index'],
 
   events: {
-    'click submit.search-bar':"search"
+    'click .search-button':"search"
   },
 
   initialize: function () {
@@ -38,6 +38,21 @@ Goodtravels.Views.ActivitiesIndex = Backbone.CompositeView.extend({
 
   search: function (event) {
     event.preventDefault();
+    var formData = this.$el.find('.search-form').serializeJSON().searchParams;
+    var searchRegex = new RegExp('' + formData.toLowerCase());
+    var filteredActivities = this.collection.filter(function(activity) {
+      return !!searchRegex.exec(activity.escape('title').toLowerCase());
+    });
+
+    this.collection.each(function (activity) {
+      this.removeActivitiesIndexItemSubview(activity);
+    }.bind(this));
+
+    filteredActivities.forEach(function (activity) {
+      this.addActivitiesIndexItemSubview(activity);
+    }.bind(this));
+
+    this.render();
   }
 
 });

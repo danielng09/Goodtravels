@@ -1,5 +1,7 @@
 Goodtravels.Views.Search = Backbone.View.extend({
-  className: 'activities-search-bar',
+  tagName: 'form',
+
+  className: 'search-form',
   template: JST['activities/search'],
 
   render: function () {
