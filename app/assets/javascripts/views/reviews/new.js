@@ -12,6 +12,11 @@ Goodtravels.Views.NewReview = Backbone.View.extend({
   render: function () {
     this.$el.html(this.template());
 
+    this.$el.find('.new-review-stars').raty({
+      path: 'assets',
+
+    });
+
     return this;
   },
 

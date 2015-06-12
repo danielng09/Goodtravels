@@ -1,11 +1,10 @@
-<form class="new-review" oninput="amount.value=rangeInput.value">
+<form class="new-review">
   Description:<br>
   <textarea name="review[body]"></textarea>
   <br>
 
   Rating:<br>
-  <input style='width:150px' type="range" id='rangeInput' min='0' max='5' value='3' step='1' name="review[rating]">
-  <output style='width:150px'name="amount" for="rangeInput">3</output>
+  <div class='new-review-stars'></div>
 
   <input type='submit' class='btn btn-primary' value='submit'>
 </form>
