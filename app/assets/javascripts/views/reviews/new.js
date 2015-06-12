@@ -2,7 +2,8 @@ Goodtravels.Views.NewReview = Backbone.View.extend({
   template: JST['reviews/new'],
 
   events: {
-    'submit .new-review': 'submitReview'
+    'submit .new-review': 'submitReview',
+    // 'click .new-review-stars': 'clickStars'
   },
 
   initialize: function (options) {
@@ -12,11 +13,18 @@ Goodtravels.Views.NewReview = Backbone.View.extend({
   render: function () {
     this.$el.html(this.template());
 
-    this.$el.find('.new-review-stars').raty({
-      path: 'assets'
-    });
+    setTimeout(function () {
+      this.$('.new-review-stars').raty({
+        path: 'assets',
+        click: this.clickStars
+      });
+    }.bind(this), 100);
 
     return this;
+  },
+
+  clickStars: function () {
+    console.log("clicked");
   },
 
   submitReview: function (event) {

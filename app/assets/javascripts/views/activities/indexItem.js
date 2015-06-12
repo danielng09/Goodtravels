@@ -16,11 +16,14 @@ Goodtravels.Views.ActivitiesIndexItem = Backbone.View.extend({
     var content = this.template({ activity: this.model });
     this.$el.html(content);
 
-    this.$el.find('div.index-item-stars').raty({
-      path: 'assets',
-      half: true,
-      readOnly: true
-    });
+    setTimeout( function () {
+
+      this.$('div.index-item-stars').raty({
+        path: 'assets',
+        half: true,
+        // readOnly: true,
+      });
+    }.bind(this), 0);
     return this;
   },
 

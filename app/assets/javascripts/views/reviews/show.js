@@ -7,6 +7,7 @@ Goodtravels.Views.ReviewItem = Backbone.View.extend({
       review: this.model
     });
     this.$el.html(content);
+
     return this;
   }
 });
