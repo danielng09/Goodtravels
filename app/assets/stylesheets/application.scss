@@ -12,13 +12,12 @@
  *
  *= require_self
  *= require_tree .
- *= require jquery.raty.css
  */
 
 
  @import "bootstrap-sprockets";
  @import "bootstrap";
- @import "font-awesome";
+ @import "jquery.raty.css";
 
  @font-face {
         font-family: "Freight Pro Light";
