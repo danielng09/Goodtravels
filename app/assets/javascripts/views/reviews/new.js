@@ -18,7 +18,8 @@ Goodtravels.Views.NewReview = Backbone.View.extend({
         path: 'assets',
         half: true,
         click: function (score, event) {
-          that.$('#rating-value').attr('value', score);
+          var roundedScore = (Math.round(score * 2) / 2).toFixed(1);
+          that.$('#rating-value').attr('value', roundedScore);
         }
       });
     }.bind(this), 100);
