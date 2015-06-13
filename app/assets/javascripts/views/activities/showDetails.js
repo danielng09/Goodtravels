@@ -7,7 +7,8 @@ Goodtravels.Views.ShowDetails = Backbone.View.extend({
 
   render: function () {
     var content = this.template({
-      activity: this.model
+      activity: this.model,
+      numReviews: this.model.reviews().length
     });
     this.$el.html(content);
 
