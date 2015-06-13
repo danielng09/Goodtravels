@@ -6,18 +6,20 @@ Goodtravels.Views.ShowDetails = Backbone.View.extend({
   },
 
   render: function () {
+    var numReviews = this.model.reviews().length;
+
     var content = this.template({
       activity: this.model,
-      numReviews: this.model.reviews().length
+      numReviews: numReviews
     });
     this.$el.html(content);
 
-    var numRatings = this.model.reviews().length;
+
     var sumRatings = 0;
     this.model.reviews().toArray().forEach(function(review) {
       sumRatings += review.get('rating');
     });
-    var averageRating = sumRatings / numRatings;
+    var averageRating = sumRatings / numReviews;
     setTimeout(function () {
       this.$('.activity-detail-stars').raty({
         path: 'assets',
