@@ -2,16 +2,19 @@ Goodtravels.Routers.Router = Backbone.Router.extend({
   initialize: function (options) {
     this.$rootEl = options.$rootEl;
     this.activities = options.activities;
+    this.users = options.users;
   },
 
   routes: {
-    '': 'index',
+    '': 'indexActivities',
     'activities/new':'newActivity',
     'activities/:id/edit':'editActivity',
-    'activities/:id':'showActivity'
+    'activities/:id':'showActivity',
+    'users': 'indexUsers',
+    'users/:id': 'showUser'
   },
 
-  index: function () {
+  indexActivities: function () {
     this.activities.fetch();
     var indexView = new Goodtravels.Views.ActivitiesIndex({
       collection: this.activities
@@ -35,6 +38,19 @@ Goodtravels.Routers.Router = Backbone.Router.extend({
     });
 
     this._swapView(showView);
+  },
+
+  indexUsers: function () {
+    this.users.fetch();
+    var usersIndex = new Goodtravels.Views.UsersIndexView({
+      collection: this.users
+    });
+
+    this._swapView(usersIndex);
+  },
+
+  showUser: function (id) {
+
   },
 
   _swapView: function (view) {

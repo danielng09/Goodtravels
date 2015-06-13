@@ -15,7 +15,6 @@ Goodtravels.Views.ActivitiesIndexItem = Backbone.View.extend({
   render: function () {
     var content = this.template({ activity: this.model });
     this.$el.html(content);
-    // var num = this.model.reviews().length;
     setTimeout( function () {
       this.$('div.index-item-stars').raty({
         path: 'assets',

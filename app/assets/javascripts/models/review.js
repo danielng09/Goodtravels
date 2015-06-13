@@ -10,6 +10,8 @@ Goodtravels.Models.Review = Backbone.Model.extend({
   },
 
   user: function () {
+    // change this function later to get from Users collection
+    // can probably get rid of nested user in api activities
     if (!this._user) {
       this._user = new Goodtravels.Models.User({ review: this });
     }

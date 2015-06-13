@@ -5,10 +5,12 @@ window.Goodtravels = {
   Routers: {},
   initialize: function() {
     var activities = new Goodtravels.Collections.Activities();
+    var users = new Goodtravels.Collections.Users();
 
     var router = new Goodtravels.Routers.Router({
         $rootEl: $('.backdrop'),
-        activities: activities
+        activities: activities,
+        users: users
     });
 
     Backbone.history.start();
