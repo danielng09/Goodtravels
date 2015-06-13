@@ -1,25 +1,38 @@
+.activity-picture-container {
+  height: 300px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  border-bottom-left-radius: 7px;
+  margin-right: 15px;
+  box-shadow-bottom: 0 1px 2px #626262;
+}
+
 .activity-picture-details {
+  // position: absolute;
+  margin: auto;
   float:left;
   width: 300px;
   height: auto;
-  margin-right: 15px;
+  margin: auto;
 }
 
 .activitity-detail-name {
   text-align: center;
   float:left;
   width: 100%;
-  margin: 0px 0px 10px 0px;;
+  margin: 0px 0px 0px 0px;;
   padding: 10px 15px;
   background: rgba(34, 34, 34, .8);
   color: white;
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
+  height: 40px;
 }
 
 .activity-details {
   padding: 0px 0px;
-  height: 320px;
+  height: 340px;
   float: left;
   border-radius: 7px;
   background-color: #fff;

@@ -1,6 +1,10 @@
 Goodtravels.Views.ShowDetails = Backbone.View.extend({
   template: JST['activities/showDetails'],
 
+  events: {
+    'click want-to-do':'wantTodo'
+  },
+
   initialize: function () {
     this.listenTo(this.model, 'sync', this.render);
   },
@@ -29,6 +33,11 @@ Goodtravels.Views.ShowDetails = Backbone.View.extend({
     }.bind(this), 150);
 
     return this;
+  },
+
+  wantTodo: function (event) {
+    event.preventDefault();
+
   }
 
 });

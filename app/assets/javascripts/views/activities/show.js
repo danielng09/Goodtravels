@@ -26,8 +26,6 @@ Goodtravels.Views.ShowActivity = Backbone.CompositeView.extend({
   render: function () {
     var content = this.template({ activity: this.model });
     this.$el.html(content);
-    this.$el.find('div.activity-reviews').prepend('<h4>Reviews</h4>');
-
 
     this.attachSubviews();
     return this;

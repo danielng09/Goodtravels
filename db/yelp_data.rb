@@ -1837,7 +1837,7 @@ def parse_yelp
     params = Hash.new
     params['title'] = result['name']
     params['location'] = result['location']['display_address'].join(" ")
-    params['image_url'] = result['image_url'].gsub(/\/ms.jpg/,'/l.jpg')
+    params['image_url'] = result['image_url'].gsub(/\/ms.jpg/,'/o.jpg')
     params['description'] = result['snippet_text']
     # params['review_count'] = result['review_count']
     # params['categories'] = result['categories']

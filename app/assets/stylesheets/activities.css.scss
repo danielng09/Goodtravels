@@ -7,13 +7,19 @@ h4.index-item {
 }
 
 #activity-title {
-  margin-left: 6%;
+  align: center;
+  // margin-left: 8%;
+}
+
+.activities {
+  padding-left: 25px;
+  padding-right: 0px;
 }
 
 div.activities-index-item {
   padding: 0px 0px;
   float: left;
-  width: 300px;
+  width: 315px;
   height: 250px;
   // top right bottom left
   margin: 0px 10px 20px 10px;
