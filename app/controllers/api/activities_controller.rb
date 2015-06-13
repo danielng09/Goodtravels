@@ -17,8 +17,8 @@ module Api
     end
 
     def index
-      @activities = Activity.all
-      render json: @activities
+      @activities = Activity.all.includes(:reviews)
+      render :index
     end
 
     def show
