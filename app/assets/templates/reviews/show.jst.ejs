@@ -1,4 +1,4 @@
-<p>Written by <a href="users/" + <%= user.get('id') %>><%= user.get('username') %></a></p>
+<p>Written by <a href="<%= '#/users/' + user.get('id') %>"><%= user.get('username') %></a></p>
 
 <p>Posted on <%= review.get('created_at') %></p>
 

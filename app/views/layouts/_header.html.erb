@@ -15,7 +15,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Activities<span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Reviews</a></li>
+        <li><a href='<%= "#/users/#{current_user.id}" %>'>About Me</a></li>
       </ul>
 
       <% if signed_in? %>
@@ -23,9 +23,8 @@
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><%= current_user.username %><span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
-              <li><a href="#">My Profile</a></li>
-              <li><a href="#">Friends</a></li>
-              <li><a href="/">Want To Do</a></li>
+              <li><a href='<%= "#/users/#{current_user.id}" %>'>About Me</a></li>
+              <li><a href="#">Want To Do</a></li>
               <li class="divider"></li>
               <li><%= link_to "Log Out", session_url, method: :delete %></li>
             </ul>

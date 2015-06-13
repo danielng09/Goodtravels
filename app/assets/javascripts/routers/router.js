@@ -42,15 +42,20 @@ Goodtravels.Routers.Router = Backbone.Router.extend({
 
   indexUsers: function () {
     this.users.fetch();
-    var usersIndex = new Goodtravels.Views.UsersIndexView({
+    var usersIndexView = new Goodtravels.Views.UsersIndexView({
       collection: this.users
     });
 
-    this._swapView(usersIndex);
+    this._swapView(usersIndexView);
   },
 
   showUser: function (id) {
+    var user = this.users.getOrFetch(id);
+    var userShowView = new Goodtravels.Views.UserShowView({
+      model: user
+    });
 
+    this._swapView(userShowView);
   },
 
   _swapView: function (view) {
