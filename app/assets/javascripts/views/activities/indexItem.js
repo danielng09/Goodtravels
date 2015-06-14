@@ -1,5 +1,4 @@
 Goodtravels.Views.ActivitiesIndexItem = Backbone.View.extend({
-
   className: 'activities-index-item col-md-3',
   template: JST['activities/indexItem'],
   events: {

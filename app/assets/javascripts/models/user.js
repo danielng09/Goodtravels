@@ -13,7 +13,7 @@ Goodtravels.Models.User = Backbone.Model.extend({
     }
 
     if (response.wants) {
-      this.wants = response.wants;
+      this.wants().set(response.wants);
       delete response.wants;
     }
 
@@ -26,6 +26,14 @@ Goodtravels.Models.User = Backbone.Model.extend({
     }
 
     return this._reviews;
+  },
+
+  wants: function () {
+    if (!this._wants) {
+      this._wants = new Goodtravels.Collections.Activities([], {});
+    }
+
+    return this._wants;
   },
 
 

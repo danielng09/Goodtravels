@@ -61,12 +61,9 @@ Goodtravels.Routers.Router = Backbone.Router.extend({
 
   showWants: function (id) {
     var user = this.users.getOrFetch(id);
-    user.fetch({ reload: true });
-    this.activities.fetch();
 
     var wantsView = new Goodtravels.Views.WantsView({
-      model: user,
-      collection: this.activities
+      model: user
     });
 
     this._swapView(wantsView);
