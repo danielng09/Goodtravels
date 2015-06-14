@@ -10,8 +10,7 @@ module Api
     end
 
     def destroy
-      fail
-      @want = current_user.wants.find_by_activity_id(params[:id]
+      @want = current_user.wants.find_by_activity_id(params[:id])
       @want.destroy
       render json: {}
     end

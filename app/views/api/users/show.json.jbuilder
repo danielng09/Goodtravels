@@ -4,7 +4,7 @@ json.created_at @user.created_at.strftime("%m/%d/%Y")
 # json.wants @user.activity_wants.pluck(:id)
 json.wants do
   json.array! @activities do |activity|
-    json.activity_id activity.id
+    json.id activity.id
     json.title activity.title
     json.location activity.location
     json.description activity.description

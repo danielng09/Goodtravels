@@ -9,7 +9,6 @@ Goodtravels.Views.ShowDetails = Backbone.View.extend({
     this.currentUser = options.currentUser;
     this.listenTo(this.currentUser.wants(), 'add remove', this.render);
     this.listenTo(this.model, 'sync', this.render);
-    debugger;
   },
 
   render: function () {
@@ -35,7 +34,7 @@ Goodtravels.Views.ShowDetails = Backbone.View.extend({
 
   findWant: function () {
     return this.currentUser.wants()
-               .findWhere({ activity_id: this.model.id });
+               .findWhere({ id: this.model.id });
   },
 
   checkIfWantsMatch: function () {
@@ -55,7 +54,8 @@ Goodtravels.Views.ShowDetails = Backbone.View.extend({
       var want = new Goodtravels.Models.Want({ activity_id: this.model.id });
       want.save({}, {
         success: function () {
-          $(event.target).toggleClass('activity-wanted')
+          $(event.target).toggleClass('activity-wanted');
+          want.set({ id: want.get('activity_id') });
           this.currentUser.wants().add(want);
         }.bind(this)
       });
