@@ -4,11 +4,16 @@ Goodtravels.Views.ShowActivity = Backbone.CompositeView.extend({
   template: JST['activities/show'],
 
   initialize: function (options) {
+    this.currentUser = options.currentUser;
+
     this.listenTo(this.model, 'sync', this.render);
     this.listenTo(this.model.reviews(), 'add', this.addReviewSubView);
     this.listenTo(this.model.reviews(), 'remove', this.removeReviewSubview);
 
-    var reviewDetailView = new Goodtravels.Views.ShowDetails({ model: this.model });
+    var reviewDetailView = new Goodtravels.Views.ShowDetails({
+      model: this.model,
+      currentUser: this.currentUser
+    });
 
     this.addSubview('div.activity-details', reviewDetailView);
 

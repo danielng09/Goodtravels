@@ -5,7 +5,6 @@ Goodtravels.Models.User = Backbone.Model.extend({
     this.review = options.review;
   },
 
-//parse (1) reviews (2) wants (3) things done
   parse: function (response) {
     if (response.reviews) {
       this.reviews().set(response.reviews);
@@ -16,7 +15,6 @@ Goodtravels.Models.User = Backbone.Model.extend({
       this.wants().set(response.wants);
       delete response.wants;
     }
-
     return response;
   },
 
@@ -30,7 +28,7 @@ Goodtravels.Models.User = Backbone.Model.extend({
 
   wants: function () {
     if (!this._wants) {
-      this._wants = new Goodtravels.Collections.Activities([], {});
+      this._wants = new Goodtravels.Collections.Wants([], {});
     }
 
     return this._wants;

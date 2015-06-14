@@ -2,22 +2,26 @@ Goodtravels.Views.ShowDetails = Backbone.View.extend({
   template: JST['activities/showDetails'],
 
   events: {
-    'click want-to-do':'wantTodo'
+    'click .want-button':'toggleWant'
   },
 
-  initialize: function () {
+  initialize: function (options) {
+    this.currentUser = options.currentUser;
+    this.listenTo(this.currentUser.wants(), 'add remove', this.render);
     this.listenTo(this.model, 'sync', this.render);
   },
 
   render: function () {
     var numReviews = this.model.reviews().length;
-
     var content = this.template({
       activity: this.model,
-      numReviews: numReviews
+      numReviews: numReviews,
     });
     this.$el.html(content);
 
+    if (this.checkIfWantsMatch()) {
+      this.$el.find('.want-button').addClass('activity-wanted');
+    }
 
     var sumRatings = 0;
     this.model.reviews().toArray().forEach(function(review) {
@@ -35,9 +39,36 @@ Goodtravels.Views.ShowDetails = Backbone.View.extend({
     return this;
   },
 
-  wantTodo: function (event) {
-    event.preventDefault();
+  findWant: function () {
+    return this.currentUser.wants()
+               .findWhere({ activity_id: this.model.id });
+  },
 
+  checkIfWantsMatch: function () {
+    return this.findWant() && this.findWant().length !== 0;
+  },
+
+  toggleWant: function (event) {
+    event.preventDefault();
+    if (this.checkIfWantsMatch()) {
+      var want = this.findWant();
+      debugger;
+      want.destroy({
+        success: function () {
+          $(event.target).toggleClass('activity-wanted');
+          // this.currentUser.wants().remove(want);
+        }
+      });
+    } else {
+      var want = new Goodtravels.Models.Want({ activity_id: this.model.id });
+      want.save({}, {
+        success: function () {
+          debugger;
+          $(event.target).toggleClass('activity-wanted')
+          this.currentUser.wants().add(want);
+        }.bind(this)
+      });
+    }
   }
 
 });

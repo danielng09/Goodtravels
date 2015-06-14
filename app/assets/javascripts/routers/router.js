@@ -34,8 +34,10 @@ Goodtravels.Routers.Router = Backbone.Router.extend({
 
   showActivity: function (id) {
     var activity = this.activities.getOrFetch(id);
+    var currentUser = this.users.getOrFetch(CURRENT_USER_ID);
     var showView = new Goodtravels.Views.ShowActivity({
-      model: activity
+      model: activity,
+      currentUser: currentUser
     });
 
     this._swapView(showView);
