@@ -12,10 +12,8 @@ Goodtravels.Views.ShowDetails = Backbone.View.extend({
   },
 
   render: function () {
-    var numReviews = this.model.reviews().length;
     var content = this.template({
       activity: this.model,
-      numReviews: numReviews,
     });
     this.$el.html(content);
 
@@ -23,16 +21,11 @@ Goodtravels.Views.ShowDetails = Backbone.View.extend({
       this.$el.find('.want-button').addClass('activity-wanted');
     }
 
-    var sumRatings = 0;
-    this.model.reviews().toArray().forEach(function(review) {
-      sumRatings += review.get('rating');
-    });
-    var averageRating = sumRatings / numReviews;
     setTimeout(function () {
       this.$('.activity-detail-stars').raty({
         path: 'assets',
         readOnly: true,
-        score: averageRating
+        score: this.model.get('average_rating')
       });
     }.bind(this), 150);
 

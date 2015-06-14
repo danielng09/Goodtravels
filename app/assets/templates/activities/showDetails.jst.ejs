@@ -6,7 +6,7 @@
   <p><%= activity.escape('location') %></p>
 
   <p><%= activity.escape('description') %></p>
-  <p> <%= numReviews %> reviews</p>
+  <p> <%= this.model.get('review_count') %> reviews</p>
 
   <div class='activity-detail-stars'></div>
 
