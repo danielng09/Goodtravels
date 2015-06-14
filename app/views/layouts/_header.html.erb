@@ -24,7 +24,7 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><%= current_user.username %><span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
               <li><a href='<%= "#/users/#{current_user.id}" %>'>About Me</a></li>
-              <li><a href="#">Want To Do</a></li>
+              <li><a href='<%= "#/users/#{current_user.id}/wantlist" %>'>Want To Do</a></li>
               <li class="divider"></li>
               <li><%= link_to "Log Out", session_url, method: :delete %></li>
             </ul>

@@ -11,7 +11,8 @@ Goodtravels.Routers.Router = Backbone.Router.extend({
     'activities/:id/edit':'editActivity',
     'activities/:id':'showActivity',
     'users': 'indexUsers',
-    'users/:id': 'showUser'
+    'users/:id/wantlist': 'showWants',
+    'users/:id': 'showUser',
   },
 
   indexActivities: function () {
@@ -56,6 +57,19 @@ Goodtravels.Routers.Router = Backbone.Router.extend({
     });
 
     this._swapView(userShowView);
+  },
+
+  showWants: function (id) {
+    var user = this.users.getOrFetch(id);
+    user.fetch({ reload: true });
+    this.activities.fetch();
+
+    var wantsView = new Goodtravels.Views.WantsView({
+      model: user,
+      collection: this.activities
+    });
+
+    this._swapView(wantsView);
   },
 
   _swapView: function (view) {

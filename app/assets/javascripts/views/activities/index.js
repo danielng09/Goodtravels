@@ -25,11 +25,11 @@ Goodtravels.Views.ActivitiesIndex = Backbone.CompositeView.extend({
   },
 
   addActivitiesIndexItemSubview: function (activity) {
-    var ActivitiesIndexItemView = new Goodtravels.Views.ActivitiesIndexItem({
+    var activitiesIndexItemView = new Goodtravels.Views.ActivitiesIndexItem({
       model: activity
     });
 
-    this.addSubview('div.activities', ActivitiesIndexItemView);
+    this.addSubview('div.activities', activitiesIndexItemView);
   },
 
   removeActivitiesIndexItemSubview: function (activity) {
