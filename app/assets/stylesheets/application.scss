@@ -27,3 +27,25 @@
    font-family: "FreigMacProLig";
   //  src: url(/assets/fonts/FreigMacProLig.otf) format("truetype");
   }
+
+  .m-content {
+    z-index: 101;
+    background-color: white;
+    border-radius: 3px;
+    padding: 20px;
+    height: 325px;
+    width: 600px;
+    position: fixed;
+    /* margin: 0 auto; */
+    margin-top: 20%;
+    left: 25%;
+  }
+  .m-backdrop {
+    position: absolute;
+    background-color: rgba(170, 169, 176, .7);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 68;
+  }

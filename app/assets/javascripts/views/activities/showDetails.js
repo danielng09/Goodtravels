@@ -2,7 +2,8 @@ Goodtravels.Views.ShowDetails = Backbone.View.extend({
   template: JST['activities/showDetails'],
 
   events: {
-    'click .want-button':'toggleWant'
+    'click .want-button':'toggleWant',
+    'click .new-review-button': 'openReviewForm'
   },
 
   initialize: function (options) {
@@ -67,6 +68,13 @@ Goodtravels.Views.ShowDetails = Backbone.View.extend({
   toggleCheckGlyphicon: function () {
     var htmlContent = '<span class="glyphicon glyphicon-ok" id="want-button-check" aria-hidden="true"></span>';
     this.$('.want-button').prepend(htmlContent);
-  }
+  },
 
+  openReviewForm: function () {
+    var modal = new Goodtravels.Views.ReviewForm({
+      collection: this.model.reviews(),
+      activity_id: this.model.id
+    });
+    $('body').prepend(modal.render().$el);
+  },
 });
