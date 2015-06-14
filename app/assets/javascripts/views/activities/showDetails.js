@@ -18,7 +18,8 @@ Goodtravels.Views.ShowDetails = Backbone.View.extend({
     this.$el.html(content);
 
     if (this.checkIfWantsMatch()) {
-      this.$el.find('.want-button').addClass('activity-wanted');
+      this.$('.want-button').addClass('activity-wanted');
+      this.toggleCheckGlyphicon();
     }
 
     setTimeout(function () {
@@ -48,18 +49,24 @@ Goodtravels.Views.ShowDetails = Backbone.View.extend({
       want.destroy({
         success: function () {
           $(event.target).toggleClass('activity-wanted');
-        }
+        }.bind(this)
       });
     } else {
       var want = new Goodtravels.Models.Want({ activity_id: this.model.id });
       want.save({}, {
         success: function () {
           $(event.target).toggleClass('activity-wanted');
+          this.toggleCheckGlyphicon();
           want.set({ id: want.get('activity_id') });
           this.currentUser.wants().add(want);
         }.bind(this)
       });
     }
+  },
+
+  toggleCheckGlyphicon: function () {
+    var htmlContent = '<span class="glyphicon glyphicon-ok" id="want-button-check" aria-hidden="true"></span>';
+    this.$('.want-button').prepend(htmlContent);
   }
 
 });
