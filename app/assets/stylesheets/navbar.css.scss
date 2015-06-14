@@ -1,0 +1,31 @@
+/* navbar */
+.navbar-default {
+    background-color: #000000;
+}
+
+/* title */
+.navbar-default .navbar-brand {
+    color: white;
+    text-transform: uppercase;
+    font-family: "Chunkfive";
+    letter-spacing: 1.5px;
+}
+
+/* link */
+.navbar-default .navbar-nav > li > a {
+  font-size: 14px;
+  color: white;
+  // text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-family: "Chunkfive";
+
+}
+
+navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: white;
+    background-color: #3b3b3b;
+    letter-spacing: 1.5px;
+    font-family: "Chunkfive";
+}

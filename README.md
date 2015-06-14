@@ -69,7 +69,7 @@ time permits.
 
 ### Bonus Features (TBD)
 - [ ] Create new activities
-- [ ] Users can upload photos onto activity page
+- [ ] Upload photos onto activity page
 - [ ] Carousel feature for images in activity detail
 - [ ] Pagination/infinite scroll
 - [ ] User avatars
@@ -83,6 +83,7 @@ time permits.
 - [ ] Add more details to activity such as cost and hours
 - [ ] User can comment on another user's review
 - [ ] User receives suggested activity based on preferences filter
+- [ ] Modal view when creating new review
 
 [phase-one]: ./docs/phases/phase1.md
 [phase-two]: ./docs/phases/phase2.md
