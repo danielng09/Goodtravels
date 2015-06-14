@@ -9,6 +9,7 @@ Goodtravels.Views.ShowDetails = Backbone.View.extend({
     this.currentUser = options.currentUser;
     this.listenTo(this.currentUser.wants(), 'add remove', this.render);
     this.listenTo(this.model, 'sync', this.render);
+    debugger;
   },
 
   render: function () {
@@ -45,18 +46,15 @@ Goodtravels.Views.ShowDetails = Backbone.View.extend({
     event.preventDefault();
     if (this.checkIfWantsMatch()) {
       var want = this.findWant();
-      debugger;
       want.destroy({
         success: function () {
           $(event.target).toggleClass('activity-wanted');
-          // this.currentUser.wants().remove(want);
         }
       });
     } else {
       var want = new Goodtravels.Models.Want({ activity_id: this.model.id });
       want.save({}, {
         success: function () {
-          debugger;
           $(event.target).toggleClass('activity-wanted')
           this.currentUser.wants().add(want);
         }.bind(this)

@@ -14,12 +14,12 @@ travel related content and can:
 - [x] Log in
 - [x] View list of activities
 - [x] View reviews on an activity
-- [ ] View average rating and number of reviews
+- [X] View average rating and number of reviews
 - [x] Write review for activity
 - [x] Give rating to activity
-- [ ] View list of activities done/reviewed
+- [X] View list of activities reviewed
 - [ ] Bookmark activity
-- [ ] View list of bookmarked activities
+- [X] View list of bookmarked activities
 - [x] Search for activity by name
 
 ## Design Docs
