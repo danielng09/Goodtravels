@@ -1,28 +1,40 @@
-<div class='col-md-2 col-md-offset-5'>
-  <h1>Sign In</h1>
+<div class='col-md-3 col-md-offset-5'>
+  <h1>Log In</h1>
 
   <form action="<%= session_url %>" method="POST">
     <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
 
-    <label>Username
+    <label>Username</label><br>
     <input type="text"
-           name="user[username]"
-    </label><br>
+           class="form-control"
+           name="user[username]"><br>
 
-    <label>Password
+    <label>Password</label><br>
     <input type="password"
-           name="user[password]">
-    </label><br>
+           class="form-control"
+           name="user[password]"><br>
 
-    <input type="submit" class="btn btn-primary" value="Submit">
+    <input type="submit" class="btn btn-primary pull-left" id="enter" value="Submit">
   </form>
-  <br>
-
-  <form action="<%= session_url %>" method="POST">
-    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
-    <input type="hidden" name="user[username]" value="guest">
-    <input type="hidden" name="user[password]" value="JA0sl294j2s">
-    <input type="submit" class="btn btn-primary" value="Guest Login">
-  </form>
-
+  <button class="btn btn-primary" id="guest-login">Guest Login</button>
 </div>
+
+<script>
+   $('button#guest-login').click(function(){
+     autoTyper('guest', $("input[name='user[username]']"), function(){
+       autoTyper('JA0sl294j2s', $("input[name='user[password]']"), function(){
+         $('#enter').click();
+       });
+     });
+   });
+   var autoTyper = function(word, $el, callback){
+     var typer = setInterval(function(){
+       $el.val($el.val() + word.slice(0,1));
+       word = word.substr(1);
+       if(word.length === 0){
+         clearInterval(typer);
+         callback();
+       }
+     }, 100);
+   }
+</script>

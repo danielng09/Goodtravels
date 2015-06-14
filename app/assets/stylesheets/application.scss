@@ -41,11 +41,12 @@
     left: 25%;
   }
   .m-backdrop {
-    position: absolute;
+    position: fixed;
     background-color: rgba(170, 169, 176, .7);
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-    z-index: 68;
+    z-index: 75;
+
   }
