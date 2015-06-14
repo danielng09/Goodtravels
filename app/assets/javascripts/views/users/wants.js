@@ -3,9 +3,9 @@ Goodtravels.Views.WantsView = Backbone.CompositeView.extend({
   template: JST['users/wants'],
 
   initialize: function (options) {
+    // not rerendering on sync (click on want to do after marking acitivity does not show)
     this.listenTo(this.model, 'sync', this.render);
     this.listenTo(this.model.wants(), 'add', this.addWantSubview);
-
     this.model.wants().each(function(activity) {
       this.addWantSubview(activity);
     }.bind(this));
