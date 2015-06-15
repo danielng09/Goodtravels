@@ -9,6 +9,7 @@ Goodtravels.Views.ReviewForm = Backbone.View.extend({
 
   initialize: function (options) {
     this.activity_id = options.activity_id;
+    this.currentUser = options.currentUser;
   },
 
   render: function () {
@@ -38,6 +39,7 @@ Goodtravels.Views.ReviewForm = Backbone.View.extend({
     review.save({}, {
       success: function () {
         that.collection.add(review);
+        that.currentUser.reviews().add(review);
         that.remove();
       }
     });

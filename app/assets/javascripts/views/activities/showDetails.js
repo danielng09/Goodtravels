@@ -9,6 +9,7 @@ Goodtravels.Views.ShowDetails = Backbone.View.extend({
   initialize: function (options) {
     this.currentUser = options.currentUser;
     this.listenTo(this.currentUser.wants(), 'add remove', this.render);
+    this.listenTo(this.currentUser.reviews(), 'add remove', this.render);
     this.listenTo(this.model, 'sync', this.render);
   },
 
@@ -84,7 +85,8 @@ Goodtravels.Views.ShowDetails = Backbone.View.extend({
   openReviewForm: function () {
     var modal = new Goodtravels.Views.ReviewForm({
       collection: this.model.reviews(),
-      activity_id: this.model.id
+      activity_id: this.model.id,
+      currentUser: this.currentUser
     });
     $('body').prepend(modal.render().$el);
   },
