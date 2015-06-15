@@ -1,7 +1,6 @@
 json.username @user.username
 json.created_at @user.created_at.strftime("%m/%d/%Y")
 
-# json.wants @user.activity_wants.pluck(:id)
 json.wants do
   json.array! @activities do |activity|
     json.extract! activity, :id, :title, :location, :description, :image_url
