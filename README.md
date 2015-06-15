@@ -83,7 +83,7 @@ time permits.
 - [ ] Add more details to activity such as cost and hours
 - [ ] User can comment on another user's review
 - [ ] User receives suggested activity based on preferences filter
-- [ ] Modal view when creating new review
+- [x] Modal view when creating new review
 
 [phase-one]: ./docs/phases/phase1.md
 [phase-two]: ./docs/phases/phase2.md

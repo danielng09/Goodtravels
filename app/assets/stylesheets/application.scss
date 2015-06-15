@@ -36,11 +36,11 @@
     height: 325px;
     width: 600px;
     position: fixed;
-    /* margin: 0 auto; */
-    margin-top: 20%;
+    top: 25%;
+    // margin-top: 20%;
     left: 25%;
   }
-  
+
   .m-backdrop {
     position: fixed;
     background-color: rgba(170, 169, 176, .7);

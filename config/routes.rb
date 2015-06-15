@@ -3,10 +3,8 @@ Rails.application.routes.draw do
   resource :session, only: [:new, :create, :destroy]
 
   namespace :api, defaults: { format: :json } do
-    resources :activities do #, only: [:create, :new, :show, :index]
-      get "search", on: :collection
-    end
-    resources :users, only: [:show, :index]
+    resources :activities #, only: [:create, :new, :show, :index]
+    resources :users, only: [:show, :index, :update]
     resources :reviews, only: [:create, :update, :destroy]
     resources :wants, only: [:create, :destroy]
   end

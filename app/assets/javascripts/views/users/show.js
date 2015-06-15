@@ -1,4 +1,7 @@
 Goodtravels.Views.UserShowView = Backbone.CompositeView.extend({
+  events: {
+     "click button": "upload"
+   },
 
   template: JST['users/show'],
 
@@ -24,6 +27,20 @@ Goodtravels.Views.UserShowView = Backbone.CompositeView.extend({
     });
 
     this.addSubview('.user-reviews', reviewView);
+  },
+
+  upload: function (event) {
+    event.preventDefault();
+    var that = this;
+    cloudinary.openUploadWidget(CLOUDINARY_OPTIONS, function (error, result){
+      var data = result[0];
+      that.model.set({image_url: data.url});
+      that.model.save({}, {
+        success: function () {
+          console.log("success");
+        }
+      });
+    });
   },
 
 });
