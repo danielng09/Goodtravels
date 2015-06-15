@@ -1,22 +1,25 @@
-<h4 class='activitity-detail-name'><%= activity.escape('title') %></h4>
 <div>
-  <div class="activity-picture-container">
-    <img class='activity-picture-details'src="<%= activity.escape('image_url') %>">
+  <div class="activity-picture-container" style=
+    "<%= 'background: url(' + this.model.escape('image_url') + ');' %>">
   </div>
-  <p><%= activity.escape('location') %></p>
 
-  <p><%= activity.escape('description') %></p>
-  <p> <%= this.model.get('review_count') %> reviews</p>
+  <div class="activity-information">
+    <p class='activitity-detail-name'><%= activity.escape('title') %></p>
 
-  <div class='activity-detail-stars'></div>
-  <br>
+    <p><%= activity.escape('location') %></p>
 
-  <button type="button" class="want-button btn btn-success">
-    Want to do
-  </button>
+    <p><%= activity.escape('description') %></p>
+    <p> <%= this.model.get('review_count') %> reviews</p>
 
-  <button type="button" class='new-review-button btn btn-success'>
-    Write a Review
-  </button>
+    <div class='activity-detail-stars'></div>
+    <br>
 
+    <button type="button" class="want-button btn btn-success">
+      Want to do
+    </button>
+
+    <button type="button" class='new-review-button btn btn-success'>
+      Write a Review
+    </button>
+  </div>
 </div>

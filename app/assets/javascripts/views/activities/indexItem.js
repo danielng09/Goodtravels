@@ -1,5 +1,5 @@
 Goodtravels.Views.ActivitiesIndexItem = Backbone.View.extend({
-  className: 'activities-index-item col-md-3',
+  className: 'activities-index-item',
   template: JST['activities/indexItem'],
   events: {
     'click':'linkToActivity'
@@ -13,7 +13,6 @@ Goodtravels.Views.ActivitiesIndexItem = Backbone.View.extend({
     var content = this.template({ activity: this.model });
     this.$el.html(content);
     this.$('.acitivties-index-pictures').css("background-size", "cover");
-
 
     setTimeout( function () {
       this.$('div.index-item-stars').raty({
