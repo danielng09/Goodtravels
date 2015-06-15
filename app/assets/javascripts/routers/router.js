@@ -62,9 +62,9 @@ Goodtravels.Routers.Router = Backbone.Router.extend({
   },
 
   showWants: function (id) {
-    var user = this.users.getOrFetch(id);
-    user.fetch({ reload: true });
-
+    var user = new Goodtravels.Models.User({ id: id });
+    user.fetch();
+    
     var wantsView = new Goodtravels.Views.WantsView({
       model: user
     });
