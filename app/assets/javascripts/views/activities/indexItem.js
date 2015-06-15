@@ -18,6 +18,7 @@ Goodtravels.Views.ActivitiesIndexItem = Backbone.View.extend({
       this.$('div.index-item-stars').raty({
         path: 'assets',
         half: true,
+        size: 1,
         readOnly: true,
         score: this.model.get('average_rating'),
       });
