@@ -1,4 +1,4 @@
-json.username @user.username
+json.extract! @user, :username, :image_url
 json.created_at @user.created_at.strftime("%m/%d/%Y")
 
 json.wants do

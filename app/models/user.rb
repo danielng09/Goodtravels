@@ -8,13 +8,14 @@
 #  session_token   :string           not null
 #  created_at      :datetime         not null
 #  updated_at      :datetime         not null
+#  image_url       :text
 #
 
 class User < ActiveRecord::Base
   validates :username, :password_digest, :session_token, presence: true
   validates :username, uniqueness: true
   validate :ensure_session_token
-  after_initialize :ensure_session_token
+  after_initialize :ensure_session_token, :set_default_profile
   has_many :reviews
   has_many :activity_wants, through: :wants, source: :activity
   has_many :wants
@@ -47,7 +48,13 @@ class User < ActiveRecord::Base
       self.session_token = User.generate_session_token
       self.save!
       self.session_token
+  end
+
+  def set_default_profile
+    unless self.image_url
+      self.image_url = 'https://cdn3.iconfinder.com/data/icons/school-education-2/512/20-512.png'
     end
+  end
 
   private
   def ensure_session_token

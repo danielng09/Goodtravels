@@ -6,23 +6,25 @@ Review.destroy_all
 Want.destroy_all
 
 User.create(username: 'admin', password: 'password')
-User.create(username: 'vince', password: 'password')
-User.create(username: 'e', password: 'password')
-User.create(username: 'turtle', password: 'password')
+User.create(username: 'Lana', password: 'password')
+User.create(username: 'Archer', password: 'password')
+User.create(username: 'Pam', password: 'password')
+User.create(username: 'Mallory', password: 'password')
+User.create(username: 'Zero', password: 'password')
 User.create(username: 'guest', password: "JA0sl294j2s")
 
 Activity.create(title: "App Academy",
-                location: "1061 Market St #4, San Francisco, CA 94103",
+                location: ["1061 Market St #4", "San Francisco, CA 94103"].join('\n'),
                 description: "Located in the heart of SF!",
                 image_url: "http://www.appacademy.io/assets/site/app-academy-logo-sharing.png")
 
 Activity.create(title: "Golden Gate Bridge",
-                location: "Golden Gate Bridge, California",
+                location: ["Golden Gate Bridge", "California"].join('\n'),
                 description: "The iconic landmark of San Francisco!",
                 image_url: "http://upload.wikimedia.org/wikipedia/commons/0/0c/GoldenGateBridge-001.jpg")
 
 Activity.create(title: "Twin Peaks",
-                location: "501 Twin Peaks Boulevard, San Francisco, CA 94114",
+                location: ["501 Twin Peaks Boulevard", "San Francisco, CA 94114"].join('\n'),
                 description: "Renowned, 180-degree views of the Bay Area are offered at this 64-acre park with hiking trails.",
                 image_url: 'http://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Twinpeaks_longexposure.jpg/1599px-Twinpeaks_longexposure.jpg'
                 )

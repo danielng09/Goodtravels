@@ -1836,7 +1836,7 @@ def parse_yelp
     next if result['categories'].flatten.any? { |category| category == "festivals" }
     params = Hash.new
     params['title'] = result['name']
-    params['location'] = result['location']['display_address'].join(" ")
+    params['location'] = result['location']['display_address'].join('\n')
     params['image_url'] = result['image_url'].gsub(/\/ms.jpg/,'/o.jpg')
     params['description'] = result['snippet_text']
     # params['review_count'] = result['review_count']

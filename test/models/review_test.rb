@@ -6,7 +6,7 @@
 #  activity_id :integer          not null
 #  user_id     :integer          not null
 #  body        :text
-#  rating      :integer
+#  rating      :float            not null
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
 #

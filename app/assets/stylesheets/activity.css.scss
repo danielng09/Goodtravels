@@ -8,7 +8,7 @@
 }
 
 .activitity-detail-name {
-  size: 16px;
+  font-size: 18px;
   text-align: center;
   width: 100%;
   margin: 0px 0px 0px 0px;;
@@ -58,6 +58,13 @@
 
 .activity-detail-stars {
   z-index: 100;
+}
+
+.activity-detail-reviews {
+  width: 100px;
+  position: absolute;
+  left: 125px;
+  top: 2px;
 }
 
 .activity-wanted {

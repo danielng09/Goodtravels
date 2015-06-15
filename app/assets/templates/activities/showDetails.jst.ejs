@@ -6,10 +6,12 @@
   <div class="activity-information">
     <p class='activitity-detail-name'><%= activity.escape('title') %></p>
 
-    <p><%= activity.escape('location') %></p>
+    <p class='address'><% activity.escape('location').split(/\\n/).forEach(function(adLine) { %>
+      <%= adLine %><br>
+    <% }) %></p>
 
     <p><%= activity.escape('description') %></p>
-    <p> <%= this.model.get('review_count') %> reviews</p>
+    <p class='activity-detail-reviews'> <%= this.model.get('review_count') %> reviews</p>
 
     <div class='activity-detail-stars'></div>
     <br>

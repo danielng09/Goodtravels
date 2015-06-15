@@ -1,4 +1,6 @@
 Goodtravels.Views.UserShowItem = Backbone.View.extend({
+  className: 'user-review-item',
+
   template: JST['users/showItem'],
 
   render: function () {
