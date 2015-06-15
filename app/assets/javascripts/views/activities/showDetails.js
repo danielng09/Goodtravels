@@ -68,8 +68,6 @@ Goodtravels.Views.ShowDetails = Backbone.View.extend({
     var modal = new Goodtravels.Views.ReviewForm({
       model: this.model,
       collection: this.model.reviews(),
-      activity_id: this.model.id,
-      currentUser: this.currentUser
     });
     $('body').prepend(modal.render().$el);
   },
