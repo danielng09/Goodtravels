@@ -20,7 +20,14 @@ Goodtravels.Views.ShowDetails = Backbone.View.extend({
 
     if (this.checkIfWantsMatch()) {
       this.$('.want-button').addClass('activity-wanted');
-      this.toggleCheckGlyphicon();
+      this.addCheckGlyphicon('.want-button');
+    }
+
+    if (this.reviewed()) {
+      this.$('.new-review-button').addClass('activity-reviewed disabled');
+      this.$el.off('click', '.new-review-button');
+      this.$('.new-review-button').text('Revivewed');
+      this.addCheckGlyphicon('.new-review-button');
     }
 
     setTimeout(function () {
@@ -35,8 +42,7 @@ Goodtravels.Views.ShowDetails = Backbone.View.extend({
   },
 
   findWant: function () {
-    return this.currentUser.wants()
-               .findWhere({ id: this.model.id });
+    return this.currentUser.wants().findWhere({ id: this.model.id });
   },
 
   checkIfWantsMatch: function () {
@@ -57,7 +63,7 @@ Goodtravels.Views.ShowDetails = Backbone.View.extend({
       want.save({}, {
         success: function () {
           $(event.target).toggleClass('activity-wanted');
-          this.toggleCheckGlyphicon();
+          this.addCheckGlyphicon('.want-button');
           want.set({ id: want.get('activity_id') });
           this.currentUser.wants().add(want);
         }.bind(this)
@@ -65,9 +71,14 @@ Goodtravels.Views.ShowDetails = Backbone.View.extend({
     }
   },
 
-  toggleCheckGlyphicon: function () {
-    var htmlContent = '<span class="glyphicon glyphicon-ok" id="want-button-check" aria-hidden="true"></span>';
-    this.$('.want-button').prepend(htmlContent);
+  reviewed: function () {
+    var reviewMatch = this.currentUser.reviews().findWhere({ activity_id: this.model.id });
+    return reviewMatch && reviewMatch.length !== 0;
+  },
+
+  addCheckGlyphicon: function (selector) {
+    var htmlContent = '<span class="glyphicon glyphicon-ok" id="glyphicon-check" aria-hidden="true"></span>';
+    this.$(selector).prepend(htmlContent);
   },
 
   openReviewForm: function () {

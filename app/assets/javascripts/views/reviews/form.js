@@ -32,9 +32,7 @@ Goodtravels.Views.ReviewForm = Backbone.View.extend({
   submitReview: function (event) {
     event.preventDefault();
     var formData = this.$('.m-content > form').serializeJSON();
-    debugger;
     var review = new Goodtravels.Models.Review(formData);
-    // review.set(formData);
     review.set({ "activity_id": this.activity_id });
     var that = this;
     review.save({}, {

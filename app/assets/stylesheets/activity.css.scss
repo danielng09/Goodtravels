@@ -78,6 +78,15 @@
   border-color: #dddddd;
 }
 
-#want-button-check {
+#glyphicon-check {
   color: #5cb85c;
+}
+.activity-reviewed > #glyphicon-check {
+  margin-right: 3px;
+}
+.activity-reviewed.disabled {
+  background-color: #f2f2f2;
+  color: #181818;
+  border-color: #dddddd;
+  opacity: 1;
 }
