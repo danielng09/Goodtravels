@@ -4,11 +4,7 @@ json.created_at @user.created_at.strftime("%m/%d/%Y")
 # json.wants @user.activity_wants.pluck(:id)
 json.wants do
   json.array! @activities do |activity|
-    json.id activity.id
-    json.title activity.title
-    json.location activity.location
-    json.description activity.description
-    json.image_url activity.image_url
+    json.extract! activity, :id, :title, :location, :description, :image_url
     reviews = activity.reviews.pluck(:rating)
     json.review_count reviews.count
     unless reviews.empty?
@@ -21,9 +17,6 @@ json.wants do
 end
 
 json.reviews @user.reviews do |review|
-  json.id review.id
-  json.activity_id review.activity_id
-  json.body review.body
-  json.rating review.rating
+  json.extract! review, :id, :activity_id, :body, :rating
   json.created_at review.created_at.strftime("%m/%d/%Y")
 end
