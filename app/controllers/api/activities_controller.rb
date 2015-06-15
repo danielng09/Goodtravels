@@ -18,13 +18,11 @@ module Api
 
     def index
       @activities = Activity.all.includes(:reviews)
-      render :index
     end
 
     def show
       @activity = Activity.find(params[:id])
       @reviews = @activity.reviews.includes(:user)
-      render :show
     end
 
     def search

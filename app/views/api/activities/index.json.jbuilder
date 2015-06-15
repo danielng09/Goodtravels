@@ -1,9 +1,5 @@
 json.array! @activities do |activity|
-  json.id activity.id
-  json.title activity.title
-  json.location activity.location
-  json.description activity.description
-  json.image_url activity.image_url
+  json.extract! activity, :id, :title, :location, :description, :image_url
   reviews = activity.reviews.pluck(:rating)
   json.review_count reviews.count
   unless reviews.empty?

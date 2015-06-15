@@ -12,7 +12,7 @@ Goodtravels.Views.ActivitiesIndexItem = Backbone.View.extend({
   render: function () {
     var content = this.template({ activity: this.model });
     this.$el.html(content);
-    this.$('.acitivties-index-pictures').css("background-size", "cover");
+    this.$('.activities-index-pictures').css("background-size", "cover");
 
     setTimeout( function () {
       this.$('div.index-item-stars').raty({
