@@ -17,5 +17,9 @@ Goodtravels.Collections.Activities = Backbone.Collection.extend({
     }
 
     return activity;
+  },
+
+  comparator: function (activity) {
+    return activity.get('created_at');
   }
 });

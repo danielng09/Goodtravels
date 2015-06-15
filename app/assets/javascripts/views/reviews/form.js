@@ -41,6 +41,7 @@ Goodtravels.Views.ReviewForm = Backbone.View.extend({
         that.collection.add(review);
         that.currentUser.reviews().add(review);
         that.remove();
+        that.model.fetch();
       }
     });
   }

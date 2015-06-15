@@ -7,6 +7,7 @@ Goodtravels.Views.ShowActivity = Backbone.CompositeView.extend({
     this.currentUser = options.currentUser;
 
     this.listenTo(this.model, 'sync', this.render);
+    this.listenTo(this.model.reviews(), 'sync', this.render);
     this.listenTo(this.model.reviews(), 'add', this.addReviewSubView);
     this.listenTo(this.model.reviews(), 'remove', this.removeReviewSubview);
 
