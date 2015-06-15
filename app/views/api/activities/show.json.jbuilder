@@ -1,5 +1,9 @@
 json.extract! @activity, :id, :title, :location, :description, :image_url
-json.user_want current_user.wants.pluck(:activity_id).include?(@activity.id)
+wanted = current_user.wants.pluck(:activity_id).include?(@activity.id)
+json.user_wanted wanted
+if wanted
+  json.user_want_id current_user.wants.find_by_activity_id(@activity.id).id
+end
 json.user_reviewed current_user.reviews.pluck(:activity_id).include?(@activity.id)
 
 reviews = @reviews.pluck(:rating)

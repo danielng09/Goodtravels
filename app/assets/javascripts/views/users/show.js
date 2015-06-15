@@ -8,7 +8,6 @@ Goodtravels.Views.UserShowView = Backbone.CompositeView.extend({
     this.model.reviews().each(function(review) {
       this.addUserSubview(review);
     }.bind(this));
-
   },
 
   render: function () {
