@@ -7,8 +7,8 @@
 .navbar-default .navbar-brand {
     color: #f2f2f2;
     text-transform: uppercase;
-    font-family: "Chunkfive";
     letter-spacing: 1.5px;
+    font-weight: bold;
 }
 
 /* link */
@@ -17,7 +17,7 @@
   color: #f2f2f2;
   // text-transform: uppercase;
   letter-spacing: 1.5px;
-  font-family: "Chunkfive";
+  font-weight: bold;
 }
 
 navbar-default .navbar-nav > .active > a,
@@ -26,5 +26,5 @@ navbar-default .navbar-nav > .active > a,
     color: #f2f2f2;
     background-color: #3b3b3b;
     letter-spacing: 1.5px;
-    font-family: "Chunkfive";
+    font-weight: bold;
 }

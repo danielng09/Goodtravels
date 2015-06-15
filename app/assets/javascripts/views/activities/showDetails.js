@@ -27,7 +27,7 @@ Goodtravels.Views.ShowDetails = Backbone.View.extend({
     if (this.reviewed()) {
       this.$('.new-review-button').addClass('activity-reviewed disabled');
       this.$el.off('click', '.new-review-button');
-      this.$('.new-review-button').text('Revivewed');
+      this.$('.new-review-button').text('Reviewed');
       this.addCheckGlyphicon('.new-review-button');
     }
 
