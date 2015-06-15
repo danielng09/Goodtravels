@@ -2,6 +2,11 @@ Goodtravels.Views.ReviewItem = Backbone.View.extend({
   className: 'activity-review-item',
   template: JST['reviews/show'],
 
+  initialize: function (options) {
+    this.activity = options.activity;
+    this.listenTo(this.activity, 'sync', this.render);
+  },
+
   render: function () {
     var content = this.template({
       review: this.model,
