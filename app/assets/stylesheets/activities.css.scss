@@ -1,9 +1,5 @@
 h4.index-item {
-  margin-top: 0px;
-  padding: 15px 15px;
-  background: rgba(0, 0, 0, .3s);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  margin-top: 10px;
 }
 
 #activity-title {
@@ -15,22 +11,24 @@ h4.index-item {
   padding-right: 0px;
 }
 
-div.activities-index-item {
+.acitivties-index-pictures {
   padding: 0px 0px;
-  float: left;
   width: 350px;
   height: 250px;
-  // top right bottom left
+  box-shadow: 0 1px 3px #626262;
+}
+
+.activities-index-item {
+  // border: black 1px solid;
+  width: 350px;
+  float:left;
   margin: 0px 10px 20px 10px;
-  border-radius: 10px;
-  background-color: #fff;
-  color: white;
+  padding: 0px;
   font-size: 12px;
-  box-shadow: 0 1px 2px #626262;
 }
 
 .activities-index-item:hover {
-  opacity: 0.5;
+  opacity: 0.6;
   cursor: pointer;
   cursor: hand;
 }
@@ -42,7 +40,13 @@ div.activities-index-item {
 }
 
 .index-item-stars {
+  right: 30px;
+  bottom: 10px;
+}
+
+.review-count {
+  font-size: 18px;
   position: absolute;
-  top: 15px;
-  right: 15px;
+  left: 120px;
+  bottom: -1px;
 }

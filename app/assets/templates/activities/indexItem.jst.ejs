@@ -1,3 +1,7 @@
+<div class= 'acitivties-index-pictures' style=
+  '<%= 'background: url(' + this.model.escape('image_url') + ');' %>'>
+</div>
+
 <h4 class='index-item'><%= activity.escape('title') %></h5>
 <div class="index-item-stars"></div>
-<p>(<%= activity.get('review_count') %>)<p>
+<p class="review-count"><%= activity.get('review_count') %> reviews<p>

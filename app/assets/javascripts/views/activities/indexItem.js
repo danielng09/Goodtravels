@@ -7,13 +7,14 @@ Goodtravels.Views.ActivitiesIndexItem = Backbone.View.extend({
 
   initialize: function (options) {
     this.$el.attr('data-id', this.model.id);
-    this.$el.css('background', 'url("' + this.model.escape('image_url') + '")');
-    this.$el.css("background-size", "cover");
   },
 
   render: function () {
     var content = this.template({ activity: this.model });
     this.$el.html(content);
+    this.$('.acitivties-index-pictures').css("background-size", "cover");
+
+
     setTimeout( function () {
       this.$('div.index-item-stars').raty({
         path: 'assets',
