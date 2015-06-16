@@ -2,9 +2,14 @@ Goodtravels.Views.ReviewItem = Backbone.View.extend({
   className: 'activity-review-item',
   template: JST['reviews/show'],
 
+  events: {
+    'click .avatar-thumb':'linkToUser'
+  },
+
   initialize: function (options) {
     this.activity = options.activity;
     this.listenTo(this.activity, 'sync', this.render);
+    this.$el.attr('data-id', this.model.get('user_id'));
   },
 
   render: function () {
@@ -24,5 +29,12 @@ Goodtravels.Views.ReviewItem = Backbone.View.extend({
     }.bind(this), 0);
 
     return this;
+  },
+
+  linkToUser: function (event) {
+    event.preventDefault();
+    var userId = this.$el.data('id');
+    Backbone.history.navigate('users/'+ userId, { trigger: true });
   }
+
 });

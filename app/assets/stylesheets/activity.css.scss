@@ -20,7 +20,7 @@
   padding: 0px 0px;
   background-color: #fff;
   box-shadow: 0 1px 3px #626262;
-  margin-bottom: 10px
+  margin-bottom: 20px
 }
 
 .activity-picture-container {
@@ -44,11 +44,11 @@
   position: relative;
   padding: 10px 10px;
   float: left;
-  margin: 0px 0px;
+  margin: 0px 0px 20px 0px;
   background-color: #fff;
-  box-shadow: 0 1px 1px #626262;
+  box-shadow: 0 2px 2px #626262;
   width: 100%;
-  margin-bottom: 10px;
+  border: 1px solid #e8ebe9;
 }
 
 .activity-new-review {
@@ -99,6 +99,12 @@
   width: 170px;
   float: left;
   background-size: cover;
-  background-position: center; 
+  background-position: center;
   margin-right: 50px;
+}
+
+.avatar-thumb:hover {
+  cursor: pointer;
+  cursor: hand;
+  opacity: .7;
 }
