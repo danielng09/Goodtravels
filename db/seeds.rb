@@ -6,12 +6,18 @@ Review.destroy_all
 Want.destroy_all
 
 User.create(username: 'admin', password: 'password')
-User.create(username: 'Lana', password: 'password')
-User.create(username: 'Archer', password: 'password')
-User.create(username: 'Pam', password: 'password')
-User.create(username: 'Mallory', password: 'password')
-User.create(username: 'Zero', password: 'password')
-User.create(username: 'guest', password: "JA0sl294j2s")
+User.create(username: 'Lana', password: 'password',
+            image_url: 'http://s3-ak.buzzfeed.com/static/2014-03/enhanced/webdr03/22/15/enhanced-buzz-13493-1395516498-1.jpg')
+User.create(username: 'Archer', password: 'password',
+            image_url: 'http://s3-ak.buzzfeed.com/static/2014-03/enhanced/webdr02/22/15/enhanced-buzz-26973-1395516656-0.jpg')
+User.create(username: 'Cheryl', password: 'password',
+            image_url: 'http://s3-ak.buzzfeed.com/static/2014-03/enhanced/webdr05/22/15/enhanced-buzz-15537-1395516379-11.jpg')
+User.create(username: 'Cyril', password: 'password',
+            image_url: 'http://s3-ak.buzzfeed.com/static/2014-03/enhanced/webdr06/22/15/enhanced-buzz-24708-1395516082-5.jpg')
+User.create(username: 'Krieger', password: 'password',
+            image_url: 'http://s3-ak.buzzfeed.com/static/2014-03/enhanced/webdr04/22/15/enhanced-buzz-28685-1395516565-25.jpg')
+User.create(username: 'Woodhouse', password: "JA0sl294j2s",
+            image_url: "http://res.cloudinary.com/ds6oys8ca/image/upload/v1434420066/woodhouse_jfgxxr.jpg")
 
 Activity.create(title: "App Academy",
                 location: ["1061 Market St #4", "San Francisco, CA 94103"].join('\n'),
@@ -45,7 +51,6 @@ Review.create(activity_id: 2,
               rating: 3)
 
 Want.create(user_id: 4, activity_id: 1)
-
 Want.create(user_id: 4, activity_id: 2)
 
 parse_yelp.each do |data|
