@@ -72,10 +72,10 @@ time permits.
 - [ ] Upload photos onto activity page
 - [ ] Carousel feature for images in activity detail
 - [ ] Pagination/infinite scroll
-- [ ] User avatars
+- [x] User avatars
 - [ ] Google map with pins for activity location
 - [ ] Allow friend association between users
-- [ ] View another users activities
+- [x] View another users activities
 - [ ] Display closest activities
 - [ ] Feed of friend reviews
 - [ ] Typeahead search bar
