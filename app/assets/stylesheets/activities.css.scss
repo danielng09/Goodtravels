@@ -11,17 +11,17 @@ h4.index-item {
   padding-right: 0px;
 }
 
-#activities-index-pictures {
+.activities-index-pictures {
   padding: 0px 0px;
   margin: 0px 0px;
   width: 323px;
   height: 215px;
   box-shadow: 0 1px 3px #626262;
   background-size: cover;
+  // background-position: center;
 }
 
 .activities-index-item {
-  // border: black 1px solid;
   float:left;
   margin: 0px 10px 20px 10px;
   padding: 0px;
@@ -44,6 +44,6 @@ h4.index-item {
   float: left;
   font-size: 18px;
   position: absolute;
-  bottom: -3px;
+  bottom: -13px;
   left: 124px;
 }

@@ -1,6 +1,6 @@
 <div>
   <div class="activity-picture-container" style=
-    "<%= 'background: url(' + this.model.escape('image_url') + ');' %>">
+    "<%= 'background: url(' + activity.escape('image_url') + ');' %>">
   </div>
 
   <div class="activity-information">
@@ -11,7 +11,8 @@
     <% }) %></p>
 
     <p><%= activity.escape('description') %></p>
-    <p class='activity-detail-reviews'> <%= this.model.get('review_count') %> reviews</p>
+    <p class="activity-detail-reviews"><%= activity.get('review_count') %>
+      <%= activity.get('review_count') === 1 ? 'review' : 'reviews' %></p>
 
     <div class='activity-detail-stars'></div>
     <br>
