@@ -49,9 +49,14 @@ Review.create(activity_id: 2,
               user_id: 2,
               body: "I had a rough time finding parking. Still a must-see but beware of the hordes of tourists.",
               rating: 3)
+want_combos = []
+100.times do
+  want_combos.push([(rand() * 5).round + 1, (rand() * 28).round])
+end
 
-Want.create(user_id: 4, activity_id: 1)
-Want.create(user_id: 4, activity_id: 2)
+want_combos.uniq.each do |user_id, activity_id|
+  Want.create(user_id: user_id, activity_id: activity_id)
+end
 
 parse_yelp.each do |data|
   Activity.create(data)
