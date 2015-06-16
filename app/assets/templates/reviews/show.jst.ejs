@@ -1,8 +1,7 @@
 <div class= 'avatar-thumb' style=
   '<%= 'background-image: url(' + user.get('image_url') + ');' %>'>
 </div>
-
-<p>Written by <a href="<%= '#/users/' + user.get('id') %>"><%= user.get('username') %></a></p>
-<p>Posted on <%= review.get('created_at') %></p>
-<p>Rating: <div class='user-star-rating'></div></p>
-<p>Description: <%= review.escape('body') %></p>
+<p class='review-username'><a href="<%= '#/users/' + user.get('id') %>"><%= user.get('username') %></a></p>
+<p class='review-date'><%= review.get('created_at') %></p>
+<div class='review-star-rating'></div>
+<p class='review-body'><%= review.escape('body') %></p>

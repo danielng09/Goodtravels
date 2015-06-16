@@ -1,9 +1,14 @@
+.show-activity.row {
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+}
+
 .activity-picture-container {
   height: 300px;
   float: left;
   position: relative;
   overflow: hidden;
-  margin-right: 15px;
+  margin-right: 10px;
   box-shadow-bottom: 0 1px 2px #626262;
 }
 
@@ -42,13 +47,17 @@
 .activity-review-item {
   overflow: hidden;
   position: relative;
-  padding: 10px 10px;
+  padding: 5px 5px;
   float: left;
   margin: 0px 0px 20px 0px;
   background-color: #fff;
   box-shadow: 0 2px 2px #626262;
   width: 100%;
   border: 1px solid #e8ebe9;
+}
+
+.activity-review-item p {
+  margin-bottom: 0px;
 }
 
 .activity-new-review {
@@ -95,16 +104,49 @@
 }
 
 .avatar-thumb {
-  height: 170px;
-  width: 170px;
+  height: 120px;
+  width: 120px;
   float: left;
   background-size: cover;
   background-position: center;
-  margin-right: 50px;
+  margin-right: 20px;
 }
 
 .avatar-thumb:hover {
   cursor: pointer;
   cursor: hand;
   opacity: .7;
+}
+
+.review-star-rating {
+  margin-bottom: 3px;
+}
+
+.review-date {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.activity-filler {
+  float: right;
+  border: black 1px solid;
+  height: 405px;
+  margin-right: 104px;
+  width: 397px;
+}
+
+.review-username {
+  font-size: 16px;
+  margin-top: 4px;
+  margin-bottom: 3px;
+}
+
+.review-username a {
+  color: #3b65a7;
+  text-decoration: none;
+}
+
+.review-body {
+  padding-right: 3px;
 }
