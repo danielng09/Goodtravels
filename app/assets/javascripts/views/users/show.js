@@ -9,10 +9,18 @@ Goodtravels.Views.UserShowView = Backbone.CompositeView.extend({
   template: JST['users/show'],
 
   initialize: function (options) {
-    this.listenTo(this.model.reviews(), 'add', this.addUserSubview);
+    this.listenTo(this.model.reviews(), 'add', this.addUserReview);
+    this.listenTo(this.model.wants(), 'add', this.addUserWant);
+    this.listenTo(this.model.wants(), 'remove', this.removeUserWant);
+
     this.listenTo(this.model, 'sync', this.render);
+
     this.model.reviews().each(function(review) {
-      this.addUserSubview(review);
+      this.addUserReview(review);
+    }.bind(this));
+
+    this.model.wants().each(function(want) {
+      this.addUserWant(want);
     }.bind(this));
   },
 
@@ -24,12 +32,20 @@ Goodtravels.Views.UserShowView = Backbone.CompositeView.extend({
     return this;
   },
 
-  addUserSubview: function (review) {
+  addUserReview: function (review) {
     var reviewView = new Goodtravels.Views.UserShowItem({
       model: review
     });
 
     this.addSubview('.user-reviews', reviewView);
+  },
+
+  addUserWant: function (want) {
+    var activityView = new Goodtravels.Views.ActivitiesIndexItem({
+      model: want
+    });
+
+    this.addSubview('.user-want-list', activityView);
   },
 
   upload: function (event) {

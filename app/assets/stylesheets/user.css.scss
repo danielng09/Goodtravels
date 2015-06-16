@@ -39,7 +39,7 @@
   position: relative;
   padding: 5px 5px;
   float: left;
-  margin: 0px 0px 20px 0px;
+  margin: 0px 0px 10px 0px;
   background-color: #fff;
   box-shadow: 0 2px 2px #626262;
   width: 100%;
@@ -94,8 +94,33 @@
   margin-bottom: 3px;
 }
 
-.user-want-list {
+.user-want-list-background {
+  background-color: white;
   float: right;
-  border: solid black 1px;
-  height: 500px;
+  width: 329px;
+  box-shadow: 0 1px 3px #626262;
+  margin-bottom: 50px
+}
+
+#todo-list-title {
+  text-align: center;
+  color: #3b65a7;
+  margin: 15px 0px 15px 0px;
+}
+.user-want-list-background {
+  // padding: 0px 0px 0px 0px;
+}
+
+.user-want-list {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.user-want-list > .activities-index-item > .activities-index-pictures {
+  height: 185px;
+  width: 279px;
+}
+
+.user-want-list > .activities-index-item {
+  margin: 0px 0px 15px 0px;
 }
