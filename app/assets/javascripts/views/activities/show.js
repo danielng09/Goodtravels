@@ -1,5 +1,4 @@
 Goodtravels.Views.ShowActivity = Backbone.CompositeView.extend({
-  tagName: 'div',
   className: 'show-activity row',
   template: JST['activities/show'],
 

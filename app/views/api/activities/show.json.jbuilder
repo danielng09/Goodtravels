@@ -20,6 +20,6 @@ json.reviews @activity.reviews do |review|
   json.id review.id
   json.created_at review.created_at.strftime("%m/%d/%Y")
   json.user do
-    json.extract! review.user, :id, :username
+    json.extract! review.user, :id, :username, :image_url
   end
 end

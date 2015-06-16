@@ -1,7 +1,5 @@
+<img class="avatar-thumb" src="<%= user.get('image_url') %>"></img>
 <p>Written by <a href="<%= '#/users/' + user.get('id') %>"><%= user.get('username') %></a></p>
-
 <p>Posted on <%= review.get('created_at') %></p>
-
 <p>Rating: <div class='user-star-rating'></div></p>
-
 <p>Description: <%= review.escape('body') %></p>
