@@ -10,12 +10,10 @@
     <%= adLine %><br>
   <% }) %></p>
 
-  <p><%= activity.escape('description') %></p>
   <p class="activity-detail-reviews"><%= activity.get('review_count') %>
     <%= activity.get('review_count') === 1 ? 'review' : 'reviews' %></p>
 
   <div class='activity-detail-stars'></div>
-  <br>
 
   <button type="button" class="want-button btn btn-success">
     Want to do
@@ -24,4 +22,6 @@
   <button type="button" class='new-review-button btn btn-success'>
     Write a Review
   </button>
+  <br><br>
+  <p><%= activity.escape('description') %></p>
 </div>

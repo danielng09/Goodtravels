@@ -81,13 +81,16 @@
 
 .activity-detail-stars {
   z-index: 100;
+  position: absolute;
+  top: 70px;
+  right: 25px;
 }
 
 .activity-detail-reviews {
-  width: 100px;
+  width: 65px;
   position: absolute;
-  left: 144px;
-  top: 153px;
+  right: 18px;
+  top: 91px;
 }
 
 .activity-wanted {
@@ -161,4 +164,8 @@
 
 .review-body {
   padding-right: 3px;
+}
+
+.want-button {
+  margin-right: 5px;
 }
