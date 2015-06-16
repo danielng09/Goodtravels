@@ -18,5 +18,8 @@ end
 
 json.reviews @user.reviews do |review|
   json.extract! review, :id, :activity_id, :body, :rating
+  json.activity_title review.activity.title
+  json.image_url review.activity.image_url
+
   json.created_at review.created_at.strftime("%m/%d/%Y")
 end

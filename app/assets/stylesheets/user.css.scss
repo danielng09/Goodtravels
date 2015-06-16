@@ -1,3 +1,4 @@
+//user details
 .avatar {
   width: auto;
   float: left;
@@ -16,16 +17,68 @@
   text-align: center;
 }
 
+//user reviews
+
+.activity-reviews {
+  padding: 0px 0px;
+}
+
 .user-review-item {
-  padding: 10px 10px;
+  overflow: hidden;
+  position: relative;
+  padding: 5px 5px;
   float: left;
-  margin: 0px 0px;
+  margin: 0px 0px 20px 0px;
   background-color: #fff;
-  box-shadow: 0 1px 1px #626262;
+  box-shadow: 0 2px 2px #626262;
   width: 100%;
-  margin-bottom: 10px;
+  border: 1px solid #e8ebe9;
+}
+
+.user-review-item p {
+  margin-bottom: 0px;
 }
 
 .user-reviews {
   padding: 0px 0px;
+}
+
+.activity-thumb {
+  height: 140px;
+  width: 208px;
+  float: left;
+  background-size: cover;
+  background-position: center;
+  margin-right: 20px;
+}
+
+.activity-thumb:hover {
+  cursor: pointer;
+  cursor: hand;
+  opacity: .7;
+}
+
+.profile-review-date {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.activity-name {
+  font-size: 16px;
+  margin-top: 4px;
+  margin-bottom: 3px;
+}
+
+.activity-name a {
+  color: #3b65a7;
+  text-decoration: none;
+}
+
+.profile-review-body {
+  padding-right: 3px;
+}
+
+.profile-review-star-rating {
+  margin-bottom: 3px;
 }

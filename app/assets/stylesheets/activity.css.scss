@@ -3,6 +3,8 @@
   margin: 0px 0px 0px 0px;
 }
 
+//activity details information
+
 .activity-picture-container {
   height: 300px;
   float: left;
@@ -72,6 +74,7 @@
   margin-bottom: 0px;
 }
 
+// new review
 .activity-new-review {
   padding: 10px 10px;
   float: left;
@@ -91,6 +94,10 @@
   position: absolute;
   right: 18px;
   top: 91px;
+}
+
+.want-button {
+  margin-right: 5px;
 }
 
 .activity-wanted {
@@ -118,6 +125,8 @@
   opacity: 1;
 }
 
+// reviews items
+
 .avatar-thumb {
   height: 120px;
   width: 120px;
@@ -143,6 +152,7 @@
   top: 10px;
 }
 
+// div placeholder
 .activity-filler {
   float: right;
   border: black 1px solid;
@@ -164,8 +174,4 @@
 
 .review-body {
   padding-right: 3px;
-}
-
-.want-button {
-  margin-right: 5px;
 }
