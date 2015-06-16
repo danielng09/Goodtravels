@@ -75,6 +75,12 @@
   margin-bottom: 0px;
 }
 
+.activity-review-item:hover {
+  cursor: pointer;
+  cursor: hand;
+  opacity: .7;
+}
+
 // new review
 .activity-new-review {
   padding: 10px 10px;
@@ -142,12 +148,6 @@
   margin-right: 20px;
 }
 
-.avatar-thumb:hover {
-  cursor: pointer;
-  cursor: hand;
-  opacity: .7;
-}
-
 .review-star-rating {
   margin-bottom: 3px;
 }
@@ -167,14 +167,10 @@
 }
 
 .review-username {
+  color: #3b65a7;
   font-size: 16px;
   margin-top: 4px;
   margin-bottom: 3px;
-}
-
-.review-username a {
-  color: #3b65a7;
-  text-decoration: none;
 }
 
 .review-body {

@@ -3,7 +3,7 @@ Goodtravels.Views.ReviewItem = Backbone.View.extend({
   template: JST['reviews/show'],
 
   events: {
-    'click .avatar-thumb':'linkToUser'
+    'click':'linkToUser'
   },
 
   initialize: function (options) {
