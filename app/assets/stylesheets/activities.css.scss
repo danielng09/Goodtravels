@@ -1,7 +1,3 @@
-h4.index-item {
-  margin-top: 10px;
-}
-
 #activity-title {
   align: center;
 }
@@ -11,18 +7,23 @@ h4.index-item {
   padding-right: 0px;
 }
 
+.activities-titles {
+  margin: 5px 0px 3px 2px;
+  font-size: 16px;
+}
+
 .activities-index-pictures {
   padding: 0px 0px;
   margin: 0px 0px;
-  width: 323px;
-  height: 215px;
+  width: 246px;
+  height: 156px;
   box-shadow: 0 1px 3px #626262;
   background-size: cover;
 }
 
 .activities-index-item {
   float:left;
-  margin: 0px 10px 20px 10px;
+  margin: 0px 7px 20px 7px;
   padding: 0px;
   font-size: 12px;
   position: relative;
@@ -41,8 +42,8 @@ h4.index-item {
 
 .review-count {
   float: left;
-  font-size: 18px;
+  font-size: 14px;
   position: absolute;
-  bottom: -13px;
+  bottom: -11px;
   left: 124px;
 }

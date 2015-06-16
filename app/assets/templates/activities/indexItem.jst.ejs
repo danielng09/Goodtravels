@@ -2,7 +2,7 @@
   '<%= 'background-image: url(' + this.model.escape('image_url') + ');' %>'>
 </div>
 
-<h4 class='index-item'><%= activity.escape('title') %></h5>
+<p class='activities-titles'><%= activity.escape('title') %></p>
 <div class="index-item-stars"></div>
 <p class="review-count"><%= activity.get('review_count') %>
   <%= activity.get('review_count') === 1 ? 'review' : 'reviews' %></p>
