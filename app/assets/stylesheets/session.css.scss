@@ -13,13 +13,19 @@ button#guest-login {
 }
 
 .log-form {
-  background-color: rgba(0, 0, 0, .7);
+  background-color: rgba(255, 255, 255, .4);
   width: 316px;
   margin-top: 10%;
   margin-left: 38%;
   padding: 5px 10px 5px 10px;
   height: 300px;
-  color: #D8D8D8;
+  color: black;
+}
+
+.log-form input {
+  background-color: rgba(255, 255, 255, .5);
+  border: 1px solid black;
+  color: black;
 }
 
 .log-form > h1 {

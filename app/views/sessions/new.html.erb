@@ -15,28 +15,30 @@
              class="form-control"
              name="user[password]"><br>
 
-      <input type="submit" class="btn btn-primary pull-left" id="enter" value="Submit">
+      <button type="submit" class="btn btn-success pull-left" id="enter">Submit</button>
     </form>
-    <button class="btn btn-primary" id="guest-login">Guest Login</button>
+    <button class="btn btn-success" id="guest-login">Guest Login</button>
   </div>
 </div>
 
 <script>
-   $('button#guest-login').click(function(){
-     autoTyper('Woodhouse', $("input[name='user[username]']"), function(){
-       autoTyper('JA0sl294j2s', $("input[name='user[password]']"), function(){
-         $('#enter').click();
-       });
-     });
-   });
-   var autoTyper = function(word, $el, callback){
-     var typer = setInterval(function(){
-       $el.val($el.val() + word.slice(0,1));
-       word = word.substr(1);
-       if(word.length === 0){
-         clearInterval(typer);
-         callback();
-       }
-     }, 100);
-   }
+  $('button#guest-login').click(function(){
+    $("input[name='user[username]']").val("");
+    $("input[name='user[password]']").val("");
+      autoTyper('Woodhouse', $("input[name='user[username]']"), function(){
+        autoTyper('JA0sl294j2s', $("input[name='user[password]']"), function(){
+          $('#enter').click();
+        });
+      });
+    });
+    var autoTyper = function(word, $el, callback){
+      var typer = setInterval(function(){
+        $el.val($el.val() + word.slice(0,1));
+        word = word.substr(1);
+        if(word.length === 0){
+          clearInterval(typer);
+          callback();
+        }
+      }, 100);
+    }
 </script>
