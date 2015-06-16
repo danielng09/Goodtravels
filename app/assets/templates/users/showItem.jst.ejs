@@ -1,7 +1,7 @@
 <div class= 'activity-thumb' style=
   '<%= 'background-image: url(' + review.get('image_url') + ');' %>'>
 </div>
-<p class='activity-name'><a href="<%= '#/activities/' + review.get('activity_id') %>"><%= review.escape('activity_title') %></a></p>
+<p class='activity-name'><%= review.escape('activity_title') %></p>
 <p class='profile-review-date'><%= review.get('created_at') %></p>
 <div class='profile-review-star-rating'></div>
 <p class='profile-review-body'><%= review.escape('body') %></p>

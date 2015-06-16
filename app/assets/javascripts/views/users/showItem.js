@@ -3,7 +3,7 @@ Goodtravels.Views.UserShowItem = Backbone.View.extend({
   template: JST['users/showItem'],
 
   events: {
-    'click .activity-thumb':'linkToActivity'
+    'click':'linkToActivity'
   },
 
   initialize: function () {
