@@ -1,12 +1,15 @@
-<div class='user-details col-md-10 col-md-offset-1'>
+<div class='user-details col-md-8'>
   <img class="avatar" src="<%= user.get('image_url') %>"</img>
   <p class='username'><%= user.get('username') %></p>
-  <p>Member since <%= user.get('created_at') %></p>
+  <p>Traveling since <%= user.get('created_at') %></p>
   <% if (user.get('current_user')) { %>
-    <button type='button' class='btn btn-primary'>Upload Avatar</button>
+    <br><br><br><br><br><button type='button' class='btn btn-primary'>Upload Avatar</button>
   <% } %>
 </div>
 
-<div class="user-reviews col-md-7 col-md-offset-1">
+<div class='user-want-list col-md-4'>
+</div>
+
+<div class="user-reviews col-md-8">
   <h4>Reviews</h4>
 </div>

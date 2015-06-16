@@ -1,8 +1,12 @@
+#user-show-page {
+  padding: 0px 0px 0px 0px;
+}
+
 //user details
 .avatar {
-  width: auto;
   float: left;
-  width: 200px;
+  width: 208px;
+  margin: 5px 20px 5px 5px;
 }
 
 .user-details {
@@ -14,7 +18,14 @@
 
 .username {
   font-size: 18px;
-  text-align: center;
+  margin-top: 12px;
+  margin-bottom: 3px;
+  color: #3b65a7;
+}
+
+//bottom div
+.user-bottom-div {
+  padding: 0px 0px 0px 0px;
 }
 
 //user reviews
@@ -81,4 +92,10 @@
 
 .profile-review-star-rating {
   margin-bottom: 3px;
+}
+
+.user-want-list {
+  float: right;
+  border: solid black 1px;
+  height: 500px;
 }

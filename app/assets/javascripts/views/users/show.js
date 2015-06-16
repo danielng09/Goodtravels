@@ -1,4 +1,7 @@
 Goodtravels.Views.UserShowView = Backbone.CompositeView.extend({
+  className: 'col-md-10 col-md-offset-1',
+  id: 'user-show-page',
+
   events: {
      "click button": "upload"
    },
