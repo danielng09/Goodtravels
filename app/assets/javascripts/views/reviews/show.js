@@ -21,7 +21,7 @@ Goodtravels.Views.ReviewItem = Backbone.View.extend({
 
     setTimeout( function () {
       this.$('.review-star-rating').raty({
-        path: "assets",
+        path: "",
         half: true,
         readOnly: true,
         score: this.model.get('rating'),

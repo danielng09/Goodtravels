@@ -15,7 +15,7 @@ Goodtravels.Views.ActivitiesIndexItem = Backbone.View.extend({
 
     setTimeout( function () {
       this.$('div.index-item-stars').raty({
-        path: 'assets',
+        path: '',
         half: true,
         size: 1,
         readOnly: true,

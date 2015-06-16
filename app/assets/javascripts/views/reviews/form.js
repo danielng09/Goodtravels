@@ -13,7 +13,7 @@ Goodtravels.Views.ReviewForm = Backbone.View.extend({
     var that = this;
     setTimeout(function () {
       that.$('.new-review-stars').raty({
-        path: 'assets',
+        path: '',
         half: true,
         click: function (score, event) {
           var roundedScore = (Math.round(score * 2) / 2).toFixed(1);

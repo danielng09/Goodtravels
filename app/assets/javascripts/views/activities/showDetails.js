@@ -31,7 +31,7 @@ Goodtravels.Views.ShowDetails = Backbone.View.extend({
 
     setTimeout(function () {
       this.$('.activity-detail-stars').raty({
-        path: 'assets',
+        path: '',
         readOnly: true,
         score: this.model.get('average_rating')
       });
