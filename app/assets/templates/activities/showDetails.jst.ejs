@@ -4,6 +4,7 @@
 
 <div class="activity-information">
   <p class='activitity-detail-name'><%= activity.escape('title') %></p>
+  <hr>
 
   <p class='address'><% activity.escape('location').split(/\\n/).forEach(function(adLine) { %>
     <%= adLine %><br>
