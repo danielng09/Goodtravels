@@ -1,4 +1,5 @@
 Goodtravels.Views.ActivitiesIndex = Backbone.CompositeView.extend({
+  className: "activities col-md-10 col-md-offset-1",
   template: JST['activities/index'],
 
   initialize: function () {
