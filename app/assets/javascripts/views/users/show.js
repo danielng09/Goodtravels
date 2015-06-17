@@ -52,8 +52,12 @@ Goodtravels.Views.UserShowView = Backbone.CompositeView.extend({
     event.preventDefault();
     var that = this;
     cloudinary.openUploadWidget(CLOUDINARY_OPTIONS, function (error, result){
-      var data = result[0];
-      that.model.set({image_url: data.url});
+      //http://res.cloudinary.com/ds6oys8ca/image/upload/v1434519521/brett_b3orzt.png
+      //http://res.cloudinary.com/ds6oys8ca/image/upload/c_fill,h_150,w_100/brett_b3orzt.jpg"
+      var regex = new RegExp(/upload\/(\w+)\//);
+      var upload_url = result[0].url.replace(regex, 'upload/h_208,w_208/');
+
+      that.model.set({image_url: upload_url});
       that.model.save({}, {
         success: function () {
           console.log("success");
