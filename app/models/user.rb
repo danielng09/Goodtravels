@@ -52,7 +52,7 @@ class User < ActiveRecord::Base
 
   def set_default_profile
     unless self.image_url
-      self.image_url = 'https://cdn3.iconfinder.com/data/icons/school-education-2/512/20-512.png'
+      self.image_url = 'http://res.cloudinary.com/ds6oys8ca/image/upload/v1434519521/brett_b3orzt.png'
     end
   end
 
