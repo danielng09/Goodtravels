@@ -21,7 +21,6 @@ Goodtravels.Views.ShowActivity = Backbone.CompositeView.extend({
     this.model.reviews().each(function(review) {
       this.addReviewSubView(review);
     }.bind(this));
-
   },
 
   makeMapView: function () {
