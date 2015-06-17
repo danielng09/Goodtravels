@@ -6,7 +6,6 @@ Goodtravels.Views.MapShow = Backbone.View.extend({
 
   initialize: function () {
     this._markers = {};
-
   },
 
   initMap: function () {
@@ -14,7 +13,10 @@ Goodtravels.Views.MapShow = Backbone.View.extend({
     // need to be deliberate about calling it. The important part is that the
     // map object should only be instantiated ONCE for a given MapShow view.
     var mapOptions = {
-      center: { lat: 37.7833, lng: -122.4167 },
+      center: {
+        lat: parseFloat(this.model.get('lat')),
+        lng: parseFloat(this.model.get('lng'))
+      },
       zoom: 13
     };
 
@@ -25,9 +27,11 @@ Goodtravels.Views.MapShow = Backbone.View.extend({
   addMarker: function (listing) {
     if (this._markers[listing.id]) { return; }
     var view = this;
-
     var marker = new google.maps.Marker({
-      position: { lat: listing.get('lat'), lng: listing.get('lng') },
+      position: {
+        lat: parseFloat(listing.get('lat')),
+        lng: parseFloat(listing.get('lng'))
+        },
       map: this._map,
       title: listing.get('title')
     });
