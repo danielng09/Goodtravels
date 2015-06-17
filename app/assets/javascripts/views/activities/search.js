@@ -6,6 +6,10 @@ Goodtravels.Views.Search = Backbone.View.extend({
     'click .search-button':"search"
   },
 
+  initialize: function () {
+    this.searchActivities = new Goodtravels.Collections.SearchedActivities();
+  },
+
   render: function () {
     var content = this.template({ activity: this.model });
     this.$el.html(content);
@@ -14,25 +18,13 @@ Goodtravels.Views.Search = Backbone.View.extend({
 
   search: function (event) {
     event.preventDefault();
-    var formData = this.$el.find('.search-form').serializeJSON().searchParams;
-    var searchedActivities = new Goodtravels.Collections.SearchedActivities();
-    debugger;
-
-
-    // var searchRegex = new RegExp('' + formData.toLowerCase());
-    // var filteredActivities = this.collection.filter(function(activity) {
-    //   return !!searchRegex.exec(activity.escape('title').toLowerCase());
-    // });
-    //
-    // this.collection.each(function (activity) {
-    //   this.removeActivitiesIndexItemSubview(activity);
-    // }.bind(this));
-    //
-    // filteredActivities.forEach(function (activity) {
-    //   this.addActivitiesIndexItemSubview(activity);
-    // }.bind(this));
-
-    this.render();
-  }
+    var searchInput = this.$el.find('.search-form').serializeJSON();
+    this.searchActivities.fetch({data: searchInput});
+    var searchIndexView = new Goodtravels.Views.ActivitiesIndex({
+      collection: this.searchActivities
+    });
+    //zombie view?
+    $('.backdrop').html(searchIndexView.render().$el);
+  },
 
 });

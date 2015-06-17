@@ -26,16 +26,13 @@ module Api
     end
 
     def search
-      fail
       if params[:query].present?
-        @users = User.where("username ~ ?", params[:query])
+        @activities = Activity.where("lower(title) LIKE ?", "%#{params[:query]}%")
       else
-        @users = User.none
+        @activities = Activity.all
       end
 
-      respond_to do |format|
-        format.json { render :search }
-      end
+      render :index
     end
 
     private
