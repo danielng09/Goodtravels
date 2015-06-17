@@ -160,13 +160,14 @@
 
 // div placeholder
 .activity-map {
-  padding: 5px;
+  // border: 1px solid #dddddd;
+  padding: 0px;
   background-color: white;
   float: right;
   height: 405px;
   width: 496px;
-  margin-bottom: 30px;
-  box-shadow: 0 1px 2px #626262;
+  box-shadow: 0 2px 2px #626262;
+  margin-bottom: 50px;
 }
 
 .review-username {
