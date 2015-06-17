@@ -2,8 +2,12 @@
   <img class="avatar" src="<%= user.get('image_url') %>"</img>
   <p class='username'><%= user.get('username') %></p>
   <p>Traveling since <%= user.get('created_at') %></p>
+  <div class="badges">
+    <span class="badge"><%= user.reviews().length %> Reviews</span>
+    <span class="badge"><%= user.wants().length %> Wants</span>
+  </div>
   <% if (user.get('current_user')) { %>
-    <br><br><br><br><br><button type='button' class='btn btn-primary'>Upload Avatar</button>
+    <br><br><br><br><button type='button' class='btn btn-primary'>Upload Avatar</button>
   <% } %>
 </div>
 

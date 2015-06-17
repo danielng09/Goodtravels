@@ -73,7 +73,7 @@ time permits.
 - [ ] Carousel feature for images in activity detail
 - [ ] Pagination/infinite scroll
 - [x] User avatars
-- [ ] Google map with pins for activity location
+- [x] Google map with pins for activity location
 - [ ] Allow friend association between users
 - [x] View another users activities
 - [ ] Display closest activities
