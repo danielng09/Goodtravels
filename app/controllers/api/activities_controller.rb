@@ -25,6 +25,19 @@ module Api
       @reviews = @activity.reviews.includes(:user)
     end
 
+    def search
+      fail
+      if params[:query].present?
+        @users = User.where("username ~ ?", params[:query])
+      else
+        @users = User.none
+      end
+
+      respond_to do |format|
+        format.json { render :search }
+      end
+    end
+
     private
 
     def activity_params
