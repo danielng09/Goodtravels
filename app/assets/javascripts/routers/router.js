@@ -24,14 +24,6 @@ Goodtravels.Routers.Router = Backbone.Router.extend({
     this._swapView(indexView);
   },
 
-  newActivity: function () {
-
-  },
-
-  editActivity: function () {
-
-  },
-
   showActivity: function (id) {
     var activity = this.activities.getOrFetch(id);
     var currentUser = this.users.getOrFetch(CURRENT_USER_ID);
@@ -73,11 +65,10 @@ Goodtravels.Routers.Router = Backbone.Router.extend({
   },
 
   _swapView: function (view) {
-   if (this._currentView) {
-     this._currentView.remove();
-   }
-
+   this._currentView && this._currentView.remove();
    this._currentView = view;
-   this.$rootEl.html(view.render().$el);
+
+   this.$rootEl.html(view.$el);
+   view.render();
    }
 });

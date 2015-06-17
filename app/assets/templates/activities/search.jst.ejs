@@ -3,6 +3,15 @@
     <div class="input-group-addon">Find</div>
     <input type="text" class="form-control" placeholder="exploratorium" name="query">
   </div>
+
+  <div class="btn-group">
+    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle">Checked option <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><input type="radio" id="user-search-arg" name="query" value="users"><label for="user-search-arg">Users</label></li>
+        <li><input type="radio" id="activities-search-arg" name="query" value="activities"><label for="activities-search-arg">Activities</label></li>
+      </ul>
+  </div>
+
   <button type='submit' class='btn btn-primary search-button' value='search' aria-label="Left Align">
     <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
   </button>
