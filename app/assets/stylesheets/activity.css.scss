@@ -11,7 +11,7 @@
   position: relative;
   overflow: hidden;
   margin-right: 10px;
-  box-shadow-bottom: 0 1px 2px #626262;
+  box-shadow: 0 1px 2px #626262;
 }
 
 .activitity-detail-name {
@@ -160,10 +160,13 @@
 
 // div placeholder
 .activity-map {
+  padding: 5px;
+  background-color: white;
   float: right;
-  border: black 1px solid;
   height: 405px;
   width: 496px;
+  margin-bottom: 30px;
+  box-shadow: 0 1px 2px #626262;
 }
 
 .review-username {

@@ -7,19 +7,19 @@ Goodtravels.Views.MapShow = Backbone.View.extend({
   initialize: function () {
     this._markers = {};
 
-    this.listenTo(this.collection, 'add', this.addMarker);
-    this.listenTo(this.collection, 'remove', this.removeMarker);
   },
 
   initMap: function () {
+    // Call this method `render` if you like; I've changed the name so users
+    // need to be deliberate about calling it. The important part is that the
+    // map object should only be instantiated ONCE for a given MapShow view.
     var mapOptions = {
       center: { lat: 37.7833, lng: -122.4167 },
-      zoom: 12
+      zoom: 13
     };
 
     this._map = new google.maps.Map(this.el, mapOptions);
-
-    this.collection.each(this.addMarker.bind(this));
+    this.addMarker(this.model);
   },
 
   addMarker: function (listing) {
@@ -29,7 +29,7 @@ Goodtravels.Views.MapShow = Backbone.View.extend({
     var marker = new google.maps.Marker({
       position: { lat: listing.get('lat'), lng: listing.get('lng') },
       map: this._map,
-      title: listing.get('name')
+      title: listing.get('title')
     });
 
     google.maps.event.addListener(marker, 'click', function (event) {
@@ -39,18 +39,12 @@ Goodtravels.Views.MapShow = Backbone.View.extend({
     this._markers[listing.id] = marker;
   },
 
-  removeMarker: function (listing) {
-    var marker = this._markers[listing.id];
-    marker.setMap(null);
-    delete this._markers[listing.id];
-  },
-
   showMarkerInfo: function (event, marker) {
-    var infoWindow = new google.maps.infoWindow({
+    var infoWindow = new google.maps.InfoWindow({
       content: marker.title
     });
 
     infoWindow.open(this._map, marker);
-  },
+  }
 
 });

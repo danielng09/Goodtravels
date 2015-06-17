@@ -13,6 +13,13 @@ Goodtravels.Routers.Router = Backbone.Router.extend({
     'users': 'indexUsers',
     'users/:id/wantlist': 'showWants',
     'users/:id': 'showUser',
+    'basic': 'basicMapShow',
+  },
+
+  basicMapShow: function () {
+    var view = new Goodtravels.Views.MapShow();
+    this._swapView(view);
+    view.initMap();
   },
 
   indexActivities: function () {
@@ -68,7 +75,7 @@ Goodtravels.Routers.Router = Backbone.Router.extend({
    this._currentView && this._currentView.remove();
    this._currentView = view;
 
-   this.$rootEl.html(view.$el);
-   view.render();
+    this.$rootEl.html(view.$el);
+    view.render();
    }
 });

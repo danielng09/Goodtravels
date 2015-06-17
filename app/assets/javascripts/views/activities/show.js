@@ -21,13 +21,17 @@ Goodtravels.Views.ShowActivity = Backbone.CompositeView.extend({
       this.addReviewSubView(review);
     }.bind(this));
 
+    this.mapView = new Goodtravels.Views.MapShow({ model: this.model });
   },
 
   render: function () {
     var content = this.template({ activity: this.model });
     this.$el.html(content);
-
     this.attachSubviews();
+
+    this.$('.activity-map').html(this.mapView.$el);
+    this.mapView.initMap();
+
     return this;
   },
 
