@@ -5,15 +5,6 @@
 
 //activity details information
 
-.activity-picture-container {
-  height: 300px;
-  float: left;
-  position: relative;
-  overflow: hidden;
-  margin-right: 10px;
-  box-shadow: 0 1px 2px #626262;
-}
-
 .activitity-detail-name {
   color: #3b65a7;
   font-size: 18px;
@@ -35,17 +26,18 @@
   height: 300px;
   position: relative;
   box-shadow: 0 1px 3px #626262;
+  // background-size: cover;
+  // background-position: center;
 }
 
 .activity-information {
-  width: 519px;
+  width: 530px;
   height: 300px;
   margin-left: 10px;
   padding: 10px;
   padding-left: 20px;
-  float: left;
+  float: right;
   position: relative;
-  background-color: #fff;
   box-shadow: 0 1px 3px #626262;
 }
 
@@ -57,6 +49,7 @@
 
 .activity-reviews {
   padding: 0px 0px;
+  margin-bottom: 25px;
 }
 
 .activity-review-item {
@@ -68,7 +61,6 @@
   background-color: #fff;
   box-shadow: 0 2px 2px #626262;
   width: 100%;
-  border: 1px solid #e8ebe9;
 }
 
 .activity-review-item p {
@@ -133,6 +125,7 @@
 }
 
 //everything else
+
 .additional-activity-info {
   padding: 0px 0px 0px 0px;
 }
@@ -159,8 +152,8 @@
 }
 
 // div placeholder
+
 .activity-map {
-  // border: 1px solid #dddddd;
   padding: 0px;
   background-color: white;
   float: right;

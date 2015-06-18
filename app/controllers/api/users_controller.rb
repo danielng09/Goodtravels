@@ -6,7 +6,7 @@ module Api
 
     def show
       @user = User.find(params[:id])
-      @activities = @user.activity_wants.includes(:reviews)
+      @activities = @user.activity_wants
     end
 
     def update

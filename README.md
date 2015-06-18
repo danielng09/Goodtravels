@@ -80,7 +80,6 @@ time permits.
 - [ ] Feed of friend reviews
 - [ ] Typeahead search bar
 - [ ] Group and search activities by type
-- [ ] Add more details to activity such as cost and hours
 - [ ] User can comment on another user's review
 - [ ] User receives suggested activity based on preferences filter
 - [x] Modal view when creating new review

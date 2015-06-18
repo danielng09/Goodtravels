@@ -17,7 +17,7 @@ module Api
     end
 
     def index
-      @activities = Activity.all.includes(:reviews)
+      @activities = Activity.all
     end
 
     def show
