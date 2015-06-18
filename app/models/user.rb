@@ -12,6 +12,10 @@
 #
 
 class User < ActiveRecord::Base
+  def self.truncate_me!
+    ActiveRecord::Base.connection.execute("ALTER TABLE #{self.table_name} AUTO_INCREMENT = 1")
+  end
+
   validates :username, :password_digest, :session_token, presence: true
   validates :username, uniqueness: true
   validate :ensure_session_token

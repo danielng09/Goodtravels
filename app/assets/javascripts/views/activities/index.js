@@ -2,6 +2,10 @@ Goodtravels.Views.ActivitiesIndex = Backbone.CompositeView.extend({
   className: "activities col-md-10 col-md-offset-1",
   template: JST['activities/index'],
 
+  events: {
+    
+  },
+
   initialize: function () {
     this.listenTo(this.collection, 'add', this.addActivitiesIndexItemSubview);
     this.listenTo(this.collection, 'remove', this.removeActivitiesIndexItemSubview);
