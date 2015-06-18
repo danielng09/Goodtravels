@@ -39,10 +39,11 @@ Goodtravels.Views.ActivitiesIndex = Backbone.CompositeView.extend({
 
   sortByReviews: function (event) {
     event.preventDefault();
-
     this.eachSubview(function (subview) {
       subview.remove();
-    }.bind(this));
+    });
+
+    this._subviews = {};
 
     var sortedCollection = this.collection.sortBy(function (activity) {
       return activity.get('review_count');
@@ -55,9 +56,13 @@ Goodtravels.Views.ActivitiesIndex = Backbone.CompositeView.extend({
   },
 
   sortByRatings: function (event) {
+    event.preventDefault();
+
     this.eachSubview(function (subview) {
       subview.remove();
-    }.bind(this));
+    });
+
+    this._subviews = {};
 
     var sortedCollection = this.collection.sortBy(function (activity) {
       return activity.get('average_rating');
@@ -69,9 +74,13 @@ Goodtravels.Views.ActivitiesIndex = Backbone.CompositeView.extend({
   },
 
   sortByWants: function (event) {
+    event.preventDefault();
+
     this.eachSubview(function (subview) {
       subview.remove();
-    }.bind(this));
+    });
+
+    this._subviews = {};
 
     var sortedCollection = this.collection.sortBy(function (activity) {
       return activity.get('want_count');
@@ -83,11 +92,16 @@ Goodtravels.Views.ActivitiesIndex = Backbone.CompositeView.extend({
   },
 
   sortByAll: function (event) {
+    event.preventDefault();
+
     this.eachSubview(function (subview) {
       subview.remove();
-    }.bind(this));
+    });
+    this._subviews = {};
 
-    this.render();
+    this.collection.each(function (activity) {
+      this.addActivitiesIndexItemSubview(activity);
+    }.bind(this));
   },
 
 });
