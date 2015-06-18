@@ -27,7 +27,7 @@ module Api
 
     def search
       if params[:query].present?
-        @activities = Activity.where("lower(title) LIKE ?", "%#{params[:query]}%")
+        @activities = Activity.where("lower(title) LIKE ?", "%#{params[:query].downcase}%")
       else
         @activities = Activity.all
       end
