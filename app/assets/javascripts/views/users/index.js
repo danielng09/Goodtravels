@@ -1,4 +1,5 @@
 Goodtravels.Views.UsersIndexView = Backbone.CompositeView.extend({
+  className: 'col-md-10 col-md-offset-1',  
   template: JST['users/index'],
 
   initialize: function (options) {

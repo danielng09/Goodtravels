@@ -1,3 +1,33 @@
-// Place all the styles related to the users controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.users-list-item {
+  overflow: hidden;
+  position: relative;
+  padding: 5px 5px;
+  float: left;
+  margin: 0px 0px 20px 0px;
+  background-color: #fff;
+  box-shadow: 0 2px 2px #626262;
+  width: 100%;
+  border: 1px solid #e8ebe9;
+}
+
+.users-list-item p {
+  margin-bottom: 0px;
+}
+
+.users-list-item:hover {
+  cursor: pointer;
+  cursor: hand;
+  opacity: .7;
+}
+
+.users-filler {
+  border: 1px black solid;
+  height: 200px;
+}
+
+.usernames {
+  color: #3b65a7;
+  font-size: 16px;
+  margin-top: 4px;
+  margin-bottom: 3px;
+}
