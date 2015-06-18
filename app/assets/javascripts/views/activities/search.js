@@ -23,7 +23,7 @@ Goodtravels.Views.Search = Backbone.View.extend({
     var searchIndexView = new Goodtravels.Views.ActivitiesIndex({
       collection: this.searchActivities
     });
-    
+
     //zombie view?
     $('.backdrop').html(searchIndexView.render().$el);
   },

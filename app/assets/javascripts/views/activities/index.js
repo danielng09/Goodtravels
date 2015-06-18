@@ -3,7 +3,10 @@ Goodtravels.Views.ActivitiesIndex = Backbone.CompositeView.extend({
   template: JST['activities/index'],
 
   events: {
-    
+    'click #select-sort-reviews':'sortByReviews',
+    'click #select-sort-ratings':'sortByRatings',
+    'click #select-sort-wants':'sortByWants',
+    'click #select-sort-all':'sortByAll'
   },
 
   initialize: function () {
@@ -32,6 +35,59 @@ Goodtravels.Views.ActivitiesIndex = Backbone.CompositeView.extend({
 
   removeActivitiesIndexItemSubview: function (activity) {
     this.removeModelSubview('div.activities', activity);
+  },
+
+  sortByReviews: function (event) {
+    event.preventDefault();
+
+    this.eachSubview(function (subview) {
+      subview.remove();
+    }.bind(this));
+
+    var sortedCollection = this.collection.sortBy(function (activity) {
+      return activity.get('review_count');
+    }).reverse();
+
+    sortedCollection.forEach(function (activity) {
+      this.addActivitiesIndexItemSubview(activity);
+    }.bind(this));
+
+  },
+
+  sortByRatings: function (event) {
+    this.eachSubview(function (subview) {
+      subview.remove();
+    }.bind(this));
+
+    var sortedCollection = this.collection.sortBy(function (activity) {
+      return activity.get('average_rating');
+    }).reverse();
+
+    sortedCollection.forEach(function (activity) {
+      this.addActivitiesIndexItemSubview(activity);
+    }.bind(this));
+  },
+
+  sortByWants: function (event) {
+    this.eachSubview(function (subview) {
+      subview.remove();
+    }.bind(this));
+
+    var sortedCollection = this.collection.sortBy(function (activity) {
+      return activity.get('want_count');
+    }).reverse();
+
+    sortedCollection.forEach(function (activity) {
+      this.addActivitiesIndexItemSubview(activity);
+    }.bind(this));
+  },
+
+  sortByAll: function (event) {
+    this.eachSubview(function (subview) {
+      subview.remove();
+    }.bind(this));
+
+    this.render();
   },
 
 });

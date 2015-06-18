@@ -14,4 +14,5 @@
 class Activity < ActiveRecord::Base
   validates :title, :location, presence: true
   has_many :reviews
+  has_many :wants
 end

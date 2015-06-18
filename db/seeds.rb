@@ -5,7 +5,6 @@ Activity.delete_all
 Review.delete_all
 Want.delete_all
 
-
 #users
 user_attributes = [
   { username: 'admin', password: 'password' },
@@ -24,7 +23,6 @@ end
 
 #activities
 activities = []
-
 activities.push(Activity.create(title: "App Academy",
                 location: ["1061 Market St #4", "San Francisco, CA 94103"].join('\n'),
                 description: "Located in the heart of SF!",
@@ -54,7 +52,6 @@ parse_yelp.each do |data|
 end
 
 #reviews
-
 review_combos = []
 
 until review_combos.length == 50 do
@@ -71,7 +68,6 @@ review_combos.each do |user_id, activity_id|
                   rating: ratings.sample
                 })
 end
-
 
 # Review.create(activity_id: 2,
 #               user_id: 4,
