@@ -86,7 +86,7 @@ end
 # wants
 want_combos = []
 until want_combos.length == 100 do
-  combo = [(rand * 5).round + 1, (rand * 28).round]
+  combo = [users.sample.id, activities.sample.id]
   want_combos.push(combo) unless want_combos.include?(combo)
 end
 
