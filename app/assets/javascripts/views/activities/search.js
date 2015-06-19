@@ -8,6 +8,10 @@ Goodtravels.Views.Search = Backbone.View.extend({
 
   initialize: function () {
     this.searchActivities = new Goodtravels.Collections.SearchedActivities();
+
+    this.searchIndexView = new Goodtravels.Views.ActivitiesIndex({
+      collection: this.searchActivities
+    });
   },
 
   render: function () {
@@ -20,12 +24,8 @@ Goodtravels.Views.Search = Backbone.View.extend({
     event.preventDefault();
     var searchInput = this.$el.find('.search-form').serializeJSON();
     this.searchActivities.fetch({data: searchInput});
-    var searchIndexView = new Goodtravels.Views.ActivitiesIndex({
-      collection: this.searchActivities
-    });
 
-    //zombie view?
-    $('.backdrop').html(searchIndexView.render().$el);
+    $('.backdrop').html(this.searchIndexView.render().$el);
   },
 
 });
