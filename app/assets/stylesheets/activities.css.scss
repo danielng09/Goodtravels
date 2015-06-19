@@ -1,5 +1,10 @@
+.index-top > hr {
+  margin-top: 5px;
+}
+
 #activity-title {
-  align: center;
+  margin-bottom: 0px;
+  margin-left: 30px;
 }
 
 .activities {
@@ -20,7 +25,7 @@
   height: 156px;
   box-shadow: 0 1px 3px #626262;
   background-size: cover;
-  background-position: center; 
+  background-position: center;
 }
 
 .activities-index-item {
@@ -57,5 +62,5 @@
 .filter-activities {
   position: absolute;
   bottom: 10px;
-  left: 0px;
+  right: 0px;
 }
