@@ -34,7 +34,8 @@ Goodtravels.Views.UserShowView = Backbone.CompositeView.extend({
 
   addUserReview: function (review) {
     var reviewView = new Goodtravels.Views.UserShowItem({
-      model: review
+      model: review,
+      collection: this.model.reviews()
     });
 
     this.addSubview('.user-reviews', reviewView);

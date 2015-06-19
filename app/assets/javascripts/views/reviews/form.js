@@ -9,6 +9,7 @@ Goodtravels.Views.ReviewForm = Backbone.View.extend({
 
   initialize: function (options) {
     this.activity = options.activity;
+    this.activity_id = options.activity_id;
   },
 
   render: function () {
@@ -34,13 +35,16 @@ Goodtravels.Views.ReviewForm = Backbone.View.extend({
     event.preventDefault();
     var formData = this.$('.m-content > form').serializeJSON();
     this.model.set(formData);
-    this.model.set({ "activity_id": this.activity.id });
+    this.model.set({ "activity_id": this.activity ? this.activity.id : this.activity_id });
     var that = this;
     this.model.save({}, {
       success: function () {
-        that.collection.add(that.model, { merge: true });
+        if (that.collection) {
+          that.collection.add(that.model, { merge: true });
+        }
         that.remove();
-        that.activity.fetch();
+
+        if (that.activity) { that.activity.fetch(); }
       }
     });
   }

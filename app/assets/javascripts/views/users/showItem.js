@@ -3,7 +3,10 @@ Goodtravels.Views.UserShowItem = Backbone.View.extend({
   template: JST['users/showItem'],
 
   events: {
-    'click':'linkToActivity'
+    'click button.edit-review':'openReviewForm',
+    'click':'linkToActivity',
+    'mouseenter ':'toggleEditButton',
+    'mouseleave ':'toggleEditButton',
   },
 
   initialize: function () {
@@ -26,10 +29,26 @@ Goodtravels.Views.UserShowItem = Backbone.View.extend({
     return this;
   },
 
+  openReviewForm: function (event) {
+    event.stopPropagation();
+    var modal = new Goodtravels.Views.ReviewForm({
+      activity_id: this.model.get('activity_id'),
+      model: this.model, // review
+      collection: this.collection // activities reviews
+    });
+    $('body').prepend(modal.render().$el);
+  },
+
   linkToActivity: function (event) {
     event.preventDefault();
     var activityId = this.$el.data('id');
     Backbone.history.navigate('activities/'+ activityId, { trigger: true });
-  }
+  },
+
+  toggleEditButton: function (event) {
+    if ($(event.currentTarget).data('id') === this.model.get('activity_id')) {
+      $('.edit-review').toggleClass('hidden');
+    }
+  },
 
 });
