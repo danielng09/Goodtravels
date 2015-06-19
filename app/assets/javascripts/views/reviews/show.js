@@ -5,8 +5,6 @@ Goodtravels.Views.ReviewItem = Backbone.View.extend({
   events: {
     'click button.edit-review':'openReviewForm',
     'click':'linkToUser',
-    // 'mouseenter ':'toggleEditButton',
-    // 'mouseleave ':'toggleEditButton',
   },
 
   initialize: function (options) {
@@ -40,12 +38,6 @@ Goodtravels.Views.ReviewItem = Backbone.View.extend({
     var userId = this.$el.data('id');
     Backbone.history.navigate('users/'+ userId, { trigger: true });
   },
-
-  // toggleEditButton: function (event) {
-  //   if (this.model.get('users_review')) {
-  //     $('.edit-review').toggleClass('hidden');
-  //   }
-  // },
 
   openReviewForm: function (event) {
     event.stopPropagation();
