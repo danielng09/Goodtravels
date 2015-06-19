@@ -10,6 +10,7 @@ Goodtravels.Views.ReviewItem = Backbone.View.extend({
   },
 
   initialize: function (options) {
+    //may need to pass collection of activities
     this.activity = options.activity;
     this.listenTo(this.activity, 'sync', this.render);
     this.$el.attr('data-id', this.model.get('user_id'));
@@ -49,8 +50,9 @@ Goodtravels.Views.ReviewItem = Backbone.View.extend({
   openReviewForm: function (event) {
     event.stopPropagation();
     var modal = new Goodtravels.Views.ReviewForm({
-      model: this.model,
-      // collection: this.model.reviews(),
+      activity: this.activity,
+      model: this.model, // review
+      collection: this.collection // activities reviews
     });
     $('body').prepend(modal.render().$el);
   },

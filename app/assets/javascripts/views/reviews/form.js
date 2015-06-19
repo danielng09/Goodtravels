@@ -7,8 +7,12 @@ Goodtravels.Views.ReviewForm = Backbone.View.extend({
     'submit .new-review': 'submitReview',
   },
 
+  initialize: function (options) {
+    this.activity = options.activity;
+  },
+
   render: function () {
-    this.$el.html(this.template({ activity: this.model }));
+    this.$el.html(this.template({ review: this.model }));
 
     var that = this;
     setTimeout(function () {
@@ -18,7 +22,8 @@ Goodtravels.Views.ReviewForm = Backbone.View.extend({
         click: function (score, event) {
           var roundedScore = (Math.round(score * 2) / 2).toFixed(1);
           that.$('#rating-value').attr('value', roundedScore);
-        }
+        },
+        score: this.model.get('rating'),
       });
     }.bind(this), 100);
 
@@ -28,14 +33,14 @@ Goodtravels.Views.ReviewForm = Backbone.View.extend({
   submitReview: function (event) {
     event.preventDefault();
     var formData = this.$('.m-content > form').serializeJSON();
-    var review = new Goodtravels.Models.Review(formData);
-    review.set({ "activity_id": this.model.id });
+    this.model.set(formData);
+    this.model.set({ "activity_id": this.activity.id });
     var that = this;
-    review.save({}, {
+    this.model.save({}, {
       success: function () {
-        that.collection.add(review);
+        that.collection.add(that.model, { merge: true });
         that.remove();
-        that.model.fetch();
+        that.activity.fetch();
       }
     });
   }

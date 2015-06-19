@@ -24,7 +24,10 @@ Goodtravels.Views.ShowActivity = Backbone.CompositeView.extend({
   },
 
   makeMapView: function () {
-    var mapView = new Goodtravels.Views.MapShow({ model: this.model });
+    var mapView = new Goodtravels.Views.MapShow({
+      model: this.model,
+
+    });
     this.addSubview('.activity-map', mapView);
     mapView.initMap();
   },
@@ -39,8 +42,9 @@ Goodtravels.Views.ShowActivity = Backbone.CompositeView.extend({
 
   addReviewSubView: function (review) {
     var reviewView = new Goodtravels.Views.ReviewItem({
+      model: review,
       activity: this.model,
-      model: review
+      collection: this.model.reviews(),
     });
 
     this.addSubview('div.activity-reviews', reviewView);

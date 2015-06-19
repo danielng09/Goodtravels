@@ -1,10 +1,10 @@
 <div class="m-backdrop"></div>
 <div class="m-content">
   <button class="close">&times;</button>
-    <h3>New Review</h3>
+    <h3><%= review.isNew() ? "New Review" : "Edit Review" %></h3>
   <form class="new-review">
     Description:<br>
-    <textarea class="form-control" rows="4" name="review[body]"></textarea>
+    <textarea class="form-control" rows="4" name="review[body]"><%= review.escape('body') %></textarea>
     <br>
 
     Rating:<br>
