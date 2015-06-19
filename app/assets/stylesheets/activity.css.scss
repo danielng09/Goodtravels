@@ -91,6 +91,10 @@
   opacity: .7;
 }
 
+.activity-review-item:hover button.edit-review {
+  visibility: visible;
+}
+
 // new review
 .activity-new-review {
   padding: 10px 10px;

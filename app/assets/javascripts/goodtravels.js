@@ -7,14 +7,14 @@ window.Goodtravels = {
     var activities = new Goodtravels.Collections.Activities();
     var users = new Goodtravels.Collections.Users();
 
-    new Goodtravels.Routers.Router({
+    var router = new Goodtravels.Routers.Router({
         $rootEl: $('.backdrop'),
         activities: activities,
         users: users
     });
 
     Backbone.history.start();
-    var search = new Goodtravels.Views.Search();
+    var search = new Goodtravels.Views.Search({ router: router });
     $('#search-bar-placeholder').html(search.render().$el);
   }
 };

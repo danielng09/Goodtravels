@@ -5,8 +5,8 @@ Goodtravels.Views.UserShowItem = Backbone.View.extend({
   events: {
     'click button.edit-review':'openReviewForm',
     'click':'linkToActivity',
-    'mouseenter ':'toggleEditButton',
-    'mouseleave ':'toggleEditButton',
+    // 'mouseenter ':'toggleEditButton',
+    // 'mouseleave ':'toggleEditButton',
   },
 
   initialize: function () {
@@ -45,10 +45,10 @@ Goodtravels.Views.UserShowItem = Backbone.View.extend({
     Backbone.history.navigate('activities/'+ activityId, { trigger: true });
   },
 
-  toggleEditButton: function (event) {
-    if ($(event.currentTarget).data('id') === this.model.get('activity_id')) {
-      $('.edit-review').toggleClass('hidden');
-    }
-  },
+  // toggleEditButton: function (event) {
+  //   if ($(event.currentTarget).data('id') === this.model.get('activity_id')) {
+  //     $('.edit-review').toggleClass('hidden');
+  //   }
+  // },
 
 });

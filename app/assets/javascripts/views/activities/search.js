@@ -6,9 +6,10 @@ Goodtravels.Views.Search = Backbone.View.extend({
     'click .search-button':"search"
   },
 
-  initialize: function () {
-    this.searchActivities = new Goodtravels.Collections.SearchedActivities();
+  initialize: function (options) {
+    this.router = options.router;
 
+    this.searchActivities = new Goodtravels.Collections.SearchedActivities();
     this.searchIndexView = new Goodtravels.Views.ActivitiesIndex({
       collection: this.searchActivities
     });
@@ -25,6 +26,7 @@ Goodtravels.Views.Search = Backbone.View.extend({
     var searchInput = this.$el.find('.search-form').serializeJSON();
     this.searchActivities.fetch({data: searchInput});
 
+    // this.router._swapView(this.searchIndexView);
     $('.backdrop').html(this.searchIndexView.render().$el);
   },
 

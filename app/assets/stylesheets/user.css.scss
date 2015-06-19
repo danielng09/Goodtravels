@@ -79,6 +79,16 @@
   opacity: .7;
 }
 
+.edit-review {
+  visibility: hidden;
+}
+
+.user-review-item:hover button.edit-review{
+  visibility: visible;
+}
+
+
+
 .profile-review-date {
   position: absolute;
   right: 10px;
