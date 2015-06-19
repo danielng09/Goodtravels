@@ -1,5 +1,5 @@
 <div class='user-details col-md-8'>
-  <img class="avatar" src="<%= user.get('image_url') %>"</img>
+  <div id="avatar-container"><img class="avatar" src="<%= user.get('image_url') %>"></div>
   <p class='username'><%= user.get('username') %></p>
   <p>Traveling since <%= user.get('created_at') %></p>
   <div class="badges">
@@ -7,7 +7,7 @@
     <span class="badge"><%= user.wants().length %> Wants</span>
   </div>
   <% if (user.get('current_user')) { %>
-    <br><br><br><br><button type='button' class='btn btn-primary'>Upload Avatar</button>
+    <button type='button' class='btn btn-primary upload-avatar' id="yza">Upload Avatar</button>
   <% } %>
 </div>
 

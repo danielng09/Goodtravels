@@ -13,7 +13,8 @@
   padding: 0px 0px;
   background-color: #fff;
   box-shadow: 0 1px 3px #626262;
-  margin-bottom: 10px
+  margin-bottom: 10px;
+  position: relative;
 }
 
 .username {
@@ -25,6 +26,17 @@
 
 .badges > .badge {
   background-color: rgb(59, 101, 167);
+}
+
+.upload-avatar {
+  position: absolute;
+  left: 50px;
+  bottom: 10px;
+  visibility: hidden;
+}
+
+.user-details:hover .upload-avatar {
+  visibility: visible;
 }
 
 //bottom div

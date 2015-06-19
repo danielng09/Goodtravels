@@ -14,6 +14,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'bootstrap-sass'
 gem 'figaro'
 gem 'faker'
+gem 'newrelic_rpm'
 
 group :doc do
   gem 'sdoc', require: false

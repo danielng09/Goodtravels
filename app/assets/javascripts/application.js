@@ -13,13 +13,14 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery-ui/sortable
-//= require jquery.raty.js
+//= require jquery.raty
 //= require underscore
 //= require backbone
 //= require bootstrap
 //= require underscore
 //= require backbone
 //= require goodtravels
+//= require typeahead.bundle
 //= require_tree ../templates
 //= require_tree ./utils
 //= require_tree ./models
