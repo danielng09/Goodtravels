@@ -1,3 +1,7 @@
+#activity {
+  padding: 0px 0px;
+}
+
 .show-activity.row {
   width: 100%;
   margin: 0px 0px 0px 0px;
@@ -49,6 +53,7 @@
 }
 
 .activity-reviews {
+  float:left;
   padding: 0px 0px;
   margin-bottom: 25px;
 }
@@ -158,8 +163,8 @@
   padding: 0px;
   background-color: white;
   float: right;
-  height: 405px;
-  width: 496px;
+  height: 337px;
+  width: 413px;
   box-shadow: 0 2px 2px #626262;
   margin-bottom: 50px;
 }
