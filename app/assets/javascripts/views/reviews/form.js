@@ -8,7 +8,7 @@ Goodtravels.Views.ReviewForm = Backbone.View.extend({
   },
 
   render: function () {
-    this.$el.html(this.template());
+    this.$el.html(this.template({ activity: this.model }));
 
     var that = this;
     setTimeout(function () {

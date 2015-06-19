@@ -23,6 +23,7 @@ json.reviews @activity.reviews do |review|
   json.extract! review, :activity_id, :user_id, :body, :rating
   json.id review.id
   json.created_at review.created_at.strftime("%m/%d/%Y")
+  json.users_review review.user_id == current_user.id
   json.user do
     json.extract! review.user, :id, :username, :image_url
   end
