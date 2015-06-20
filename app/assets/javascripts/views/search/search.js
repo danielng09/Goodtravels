@@ -28,9 +28,9 @@ Goodtravels.Views.GoodSearch = Backbone.View.extend({
     }, {
       name: 'activities',
       display: 'title',
-      source: stories,
+      source: activities,
       templates: {
-        header: '<h3 class="search-activity-name">Stories</h3>'
+        header: '<h3 class="search-activity-name">Activities</h3>'
       }
     });
 
