@@ -58,6 +58,10 @@
   padding: 0px 0px;
 }
 
+.user-review-list {
+  padding: 0px 0px 0px 0px;
+}
+
 .user-review-item {
   overflow: hidden;
   position: relative;
@@ -100,8 +104,6 @@
 .user-review-item:hover button.edit-review{
   visibility: visible;
 }
-
-
 
 .profile-review-date {
   position: absolute;

@@ -7,12 +7,14 @@ Goodtravels.Views.UserShowItem = Backbone.View.extend({
     'click':'linkToActivity',
   },
 
-  initialize: function () {
+  initialize: function (options) {
     this.$el.attr('data-id', this.model.get('activity_id'));
   },
 
   render: function () {
-    var content = this.template({ review: this.model });
+    var content = this.template({
+      review: this.model,
+    });
     this.$el.html(content);
 
     setTimeout( function () {
@@ -34,6 +36,7 @@ Goodtravels.Views.UserShowItem = Backbone.View.extend({
       model: this.model, // review
       collection: this.collection // activities reviews
     });
+
     $('body').prepend(modal.render().$el);
   },
 

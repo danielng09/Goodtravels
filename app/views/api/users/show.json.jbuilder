@@ -1,6 +1,5 @@
 json.extract! @user, :username, :image_url
 json.created_at @user.created_at.strftime("%m/%d/%Y")
-json.current_user @user.id == current_user.id
 
 json.wants do
   json.array! @activities do |activity|
@@ -18,6 +17,7 @@ end
 
 json.reviews @user.reviews do |review|
   json.extract! review, :id, :activity_id, :body, :rating
+  json.users_review review.user_id == current_user.id
   json.activity_title review.activity.title
   json.image_url review.activity.image_url
 
