@@ -1,12 +1,14 @@
-<div class= 'avatar-thumb' style=
-  '<%= 'background-image: url(' + user.get('image_url') + ');' %>'>
-</div>
+<div class='col-md-6 users-list-item-container'>
+  <div class='avatar-thumb' style=
+    '<%= 'background-image: url(' + user.get('image_url') + ');' %>'>
+  </div>
 
-<p class="usernames"><%= user.get('username') %></p>
+  <p class="usernames"><%= user.get('username') %></p>
 
-<p>Traveling since <%= user.get('created_at') %></p>
+  <p>Traveling since <%= user.get('created_at') %></p>
 
-<div class="badges">
-  <span class="badge"><%= user.get('review_count') %> Reviews</span>
-  <span class="badge"><%= user.get('want_count') %> Wants</span>
+  <div class="badges">
+    <span class="badge"><%= user.get('review_count') %> Reviews</span>
+    <span class="badge"><%= user.get('want_count') %> Wants</span>
+  </div>
 </div>

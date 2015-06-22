@@ -1,5 +1,5 @@
 Goodtravels.Views.UsersIndexItem = Backbone.View.extend({
-  className: 'users-list-item',
+  className: 'users-list-item col-md-6',
 
   events: {
     'click':'linkToUser'

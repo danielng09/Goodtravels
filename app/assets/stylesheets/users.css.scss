@@ -1,5 +1,9 @@
-#users-container {
+#users-page {
   padding: 0px 0px 0px 0px;
+}
+
+#users-container {
+  padding: 0px 7.5px 0px 0px;
 }
 
 #users-title {
@@ -10,11 +14,12 @@
   margin: 5px 0px 15px 0px;
 }
 
+// list of users
 .users-index {
   padding: 0px 0px 0px 0px;
 }
 
-.users-list-item {
+.users-list-item-container {
   overflow: hidden;
   position: relative;
   padding: 5px 5px;
@@ -24,6 +29,10 @@
   box-shadow: 0 2px 2px #626262;
   width: 100%;
   border: 1px solid #e8ebe9;
+}
+
+.users-list-item {
+  // padding: 0px 7.5px 0px 7.5px;
 }
 
 .users-list-item p {
@@ -36,14 +45,25 @@
   opacity: .7;
 }
 
-.users-filler {
-  border: 1px black solid;
-  height: 200px;
-}
-
 .usernames {
   color: #3b65a7;
   font-size: 16px;
   margin-top: 4px;
   margin-bottom: 3px;
+}
+
+//top list
+
+#top-title {
+  margin: 0px 0px 5px 15px;
+}
+
+#top-title-bar {
+  margin: 5px 0px 15px 0px;
+}
+
+.users-filler {
+  padding: 0px 0px 0px 7.5px;
+  border: 1px black solid;
+  height: 200px;
 }

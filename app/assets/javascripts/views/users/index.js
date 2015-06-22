@@ -1,15 +1,15 @@
 Goodtravels.Views.UsersIndexView = Backbone.CompositeView.extend({
-  className: 'col-md-10 col-md-offset-1',  
+  id: 'users-page',
+  className: 'col-md-10 col-md-offset-1',
   template: JST['users/index'],
 
   initialize: function (options) {
     this.listenTo(this.collection, 'add', this.addUserSubview);
     this.listenTo(this.collection, 'sync', this.render);
-    // this.listenTo(this.collection, 'remove', this.removeReviewSubview);
+
     this.collection.each(function(user) {
       this.addUserSubview(user);
     }.bind(this));
-
   },
 
   render: function () {
