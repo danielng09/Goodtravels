@@ -17,6 +17,7 @@ Goodtravels.Views.ShowDetails = Backbone.View.extend({
     this.$el.html(content);
     this.$('.activity-picture-container').css("background-size", "cover");
     this.$('.activity-picture-container').css("background-position", "center");
+    this.$('.activity-picture-container').css("background-color", "white");
 
     if (this.model.get('user_wanted')) {
       this.$('.want-button').addClass('activity-wanted');

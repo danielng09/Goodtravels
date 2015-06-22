@@ -57,7 +57,7 @@ def yelp
         "url": "http://www.yelp.com/biz/coit-tower-san-francisco",
         "is_closed": false,
         "phone": "4152490995",
-        "snippet_text": "Coit Tower, a slender white concrete column rising from the top of Telegraph Hill, has been an emblem of San Francisco’s skyline since its completion in 1933, a welcoming beacon to visitors and residents alike. Its observation deck, reached by elevator (tickets can be purchased in the gift shop), provides 360-degree views of the city and bay, including the Golden Gate and Bay bridges.",
+        "snippet_text": "Coit Tower, a slender white concrete column rising from the top of Telegraph Hill, has been an emblem of San Francisco’s skyline since its completion in 1933, a welcoming beacon to visitors and residents alike. Its observation deck, reached by elevator, provides 360-degree views of the city and bay, including the Golden Gate and Bay bridges.",
         "image_url": "http://res.cloudinary.com/ds6oys8ca/image/upload/v1435011298/coit_tower_qgfw5w.jpg",
         "categories": [
             [
@@ -107,7 +107,7 @@ def yelp
         "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
         "url": "http://www.yelp.com/biz/yoda-fountain-at-lucasfilms-hq-san-francisco",
         "is_closed": false,
-        "snippet_text": "Within sight of the Golden Gate Bridge lies a landmark cherished by a small but fervent group of travelers: a full-size replica of Yoda, George Lucas' master of the Force. Since the statue of the Jedi sage went up amid the Presidio's landscaped lawns in 2005, Star Wars fans have made a pilgrimage to take pictures with their beloved character and take in Lucasfilm Ltd.'s sleek headquarters.",
+        "snippet_text": "Within sight of the Golden Gate Bridge lies a landmark cherished by a small but fervent group of travelers: a full-size replica of Yoda, George Lucas' master of the Force. Star Wars fans can be seen taking pictures with their beloved character at Lucasfilm's headquarters.",
         "image_url": "http://res.cloudinary.com/ds6oys8ca/image/upload/v1435007969/yoda_fountain_kdenmn.jpg",
         "categories": [
             [
@@ -295,7 +295,7 @@ def yelp
         "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
         "url": "http://www.yelp.com/biz/the-painted-ladies-san-francisco",
         "is_closed": false,
-        "snippet_text": "The famous Painted Ladies of San Francisco are a row of colorful Victorian houses located at 710–720 Steiner Street, across from Alamo Square park, in San Francisco. Built between 1892 and 1896, these Victorian-style houses are one of the thousands built in San Francisco during its booming growth at the end of the nineteenth century. The ones on Steiner Street are the most popular and a famous attraction of the city, having frequently appeared in media such as the tv show 'Full House'.",
+        "snippet_text": "The famous Painted Ladies of San Francisco are a row of colorful Victorian houses across from Alamo Square park, in San Francisco. Built between 1892 and 1896, these Victorian-style houses are a famous attraction of the city, popularized by the tv show 'Full House'.",
         "image_url": "http://res.cloudinary.com/ds6oys8ca/image/upload/v1435007960/full_house_psgw9g.jpg",
         "categories": [
             [
@@ -340,7 +340,7 @@ def yelp
         "url": "http://www.yelp.com/biz/city-hall-san-francisco",
         "is_closed": false,
         "phone": "4157012311",
-        "snippet_text": "San Francisco City Hall is the seat of government for the City and County of San Francisco, California. Re-opened in 1915 in its open space area in the city's Civic Center, it is a Beaux-Arts monument to the City Beautiful movement that epitomized the high-minded American Renaissance of the 1880s to 1917. The structure's dome is the fifth largest in the world—taller than that of the United States Capitol by 42 feet.",
+        "snippet_text": "Re-opened in 1915 in its open space area in the city's Civic Center, it is a Beaux-Arts monument to the City Beautiful movement that epitomized the high-minded American Renaissance of the 1880s to 1917. The structure's dome is the fifth largest in the world—taller than that of the United States Capitol by 42 feet.",
         "image_url": "http://res.cloudinary.com/ds6oys8ca/image/upload/v1435012458/city_hall2_oy1ycq.jpg",
         "categories": [
             [
@@ -474,7 +474,7 @@ def yelp
         "is_closed": false,
         "phone": "4155615300",
         "snippet_text": "The Presidio of San Francisco (originally, El Presidio Real de San Francisco or The Royal Fortress of Saint Francis) is a park and former military base on the northern tip of the San Francisco Peninsula in San Francisco, California, and is part of the Golden Gate National Recreation Area.",
-        "image_url": "http://s3-media1.fl.yelpcdn.com/bphoto/lnIo2qpBbpn5TOwdDOQg0w/ms.jpg",
+        "image_url": "http://res.cloudinary.com/ds6oys8ca/image/upload/v1435015049/presidio_wdbufz.jpg",
         "categories": [
             [
                 "Landmarks & Historical Buildings",
@@ -527,7 +527,7 @@ def yelp
         "url": "http://www.yelp.com/biz/wave-organ-san-francisco",
         "is_closed": false,
         "phone": "4155610360",
-        "snippet_text": "The Wave Organ is an acoustic sculpture constructed on the shore of San Francisco Bay in May 1986 by the Exploratorium. Through a series of pipes, the wave organ interacts with the waves of the bay and conveys their sound to listeners at several different stations. The effects produced vary depending on the level of the tide but include rumbles, gurgles, sloshes, hisses, and other more typical wave sounds. The structure incorporates stone platforms and benches where visitors may sit near the mouths of pipes, listening.",
+        "snippet_text": "The Wave Organ is an acoustic sculpture constructed on the shore of San Francisco Bay in May 1986 by the Exploratorium. Through a series of pipes, the wave organ interacts with the waves of the bay and conveys their sound to listeners at several different stations.",
         "image_url": "http://s3-media3.fl.yelpcdn.com/bphoto/acPaj_-lRrVM8C3CQ1862Q/ms.jpg",
         "categories": [
             [
@@ -630,7 +630,7 @@ def yelp
         "url": "http://www.yelp.com/biz/exploratorium-san-francisco-2",
         "is_closed": false,
         "phone": "4155284444",
-        "snippet_text": "The Exploratorium is a museum of science, art, and human perception located in San Francisco, California. We believe that following your curiosity and asking questions can lead to amazing moments of discovery, learning, and awareness and can increase your confidence in your ability to understand how the world works. We also believe that being playful and having fun is an important part of the process for people of all ages.",
+        "snippet_text": "The Exploratorium is a museum of science, art, and human perception located in San Francisco, California. Follow your curiosity to amazing moments of discovery, learning, and awareness while increasing your confidence in your ability to understand how the world works.",
         "image_url": "http://res.cloudinary.com/ds6oys8ca/image/upload/v1435007960/exploratorium_isji6n.jpg",
         "categories": [
             [
