@@ -39,14 +39,6 @@ activities.push(Activity.create(title: "Golden Gate Bridge",
                 lng: -122.4786
                 ))
 
-activities.push(Activity.create(title: "Twin Peaks",
-                location: ["501 Twin Peaks Boulevard", "San Francisco, CA 94114"].join('\n'),
-                description: "Renowned, 180-degree views of the Bay Area are offered at this 64-acre park with hiking trails.",
-                image_url: 'http://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Twinpeaks_longexposure.jpg/1599px-Twinpeaks_longexposure.jpg',
-                lat: 37.781668,
-                lng: -122.410920
-                ))
-
 parse_yelp.each do |data|
   activities.push(Activity.create(data))
 end
