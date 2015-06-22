@@ -203,7 +203,7 @@ def yelp
         "url": "http://www.yelp.com/biz/lombard-street-san-francisco-3",
         "is_closed": false,
         "snippet_text": "Lombard Street is an east–west street in San Francisco, California that is famous for a steep, one-block section with eight hairpin turns. The street was named after Lombard Street in Philadelphia by San Francisco surveyor Jasper O'Farrell.",
-        "image_url": "http://s3-media2.fl.yelpcdn.com/bphoto/3LzYWEMvdsCIAfpXx-UV7g/ms.jpg",
+        "image_url": "http://res.cloudinary.com/ds6oys8ca/image/upload/v1435014212/lombard_street_ea38si.jpg",
         "categories": [
             [
                 "Landmarks & Historical Buildings",
@@ -473,7 +473,7 @@ def yelp
         "url": "http://www.yelp.com/biz/the-presidio-san-francisco",
         "is_closed": false,
         "phone": "4155615300",
-        "snippet_text": "This is just an incredible place to go explore. To go walk around, take pictures. It feels so peaceful, especially in the afternoon with the breeze...",
+        "snippet_text": "The Presidio of San Francisco (originally, El Presidio Real de San Francisco or The Royal Fortress of Saint Francis) is a park and former military base on the northern tip of the San Francisco Peninsula in San Francisco, California, and is part of the Golden Gate National Recreation Area.",
         "image_url": "http://s3-media1.fl.yelpcdn.com/bphoto/lnIo2qpBbpn5TOwdDOQg0w/ms.jpg",
         "categories": [
             [
@@ -527,7 +527,7 @@ def yelp
         "url": "http://www.yelp.com/biz/wave-organ-san-francisco",
         "is_closed": false,
         "phone": "4155610360",
-        "snippet_text": "Hidden Gem in San Francisco ! the best views of the Golden gate and the city from the same spot !Make sure to check High tide times before you make your...",
+        "snippet_text": "The Wave Organ is an acoustic sculpture constructed on the shore of San Francisco Bay in May 1986 by the Exploratorium. Through a series of pipes, the wave organ interacts with the waves of the bay and conveys their sound to listeners at several different stations. The effects produced vary depending on the level of the tide but include rumbles, gurgles, sloshes, hisses, and other more typical wave sounds. The structure incorporates stone platforms and benches where visitors may sit near the mouths of pipes, listening.",
         "image_url": "http://s3-media3.fl.yelpcdn.com/bphoto/acPaj_-lRrVM8C3CQ1862Q/ms.jpg",
         "categories": [
             [
@@ -579,7 +579,7 @@ def yelp
         "url": "http://www.yelp.com/biz/magowans-infinite-mirror-maze-san-francisco",
         "is_closed": false,
         "phone": "4158350019",
-        "snippet_text": "I got a Groupon for 4 people for $10! What a steal =] the usual price is $5 a person too.I came here on a Sunday evening in November and Pier 39 has never...",
+        "snippet_text": "Challenge yourself to find your way through the infinite hallways, endless circles and dead-ends of the most fascinating maze in San Francisco.",
         "image_url": "http://s3-media3.fl.yelpcdn.com/bphoto/MnhICGx-vqQ5_UpGCdJ_Tw/ms.jpg",
         "categories": [
             [
@@ -736,8 +736,8 @@ def yelp
         "url": "http://www.yelp.com/biz/palace-of-fine-arts-san-francisco",
         "is_closed": false,
         "phone": "4155636504",
-        "snippet_text": "WOWZERS!!!!   What a beautiful place.   Don't get me started with the pictures. This place is fantastic for taking pictures. It is crowded during the...",
-        "image_url": "http://s3-media4.fl.yelpcdn.com/bphoto/l3vvId4C-jH3fNtypDPrRA/ms.jpg",
+        "snippet_text": "The Palace of Fine Arts in the Marina District of San Francisco, California, is a monumental structure originally constructed for the 1915 Panama-Pacific Exposition in order to exhibit works of art presented there.",
+        "image_url": "http://res.cloudinary.com/ds6oys8ca/image/upload/v1435013921/palace_of_fine_arts_xwugsn.jpg",
         "categories": [
             [
                 "Performing Arts",
@@ -786,7 +786,7 @@ def yelp
         "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
         "url": "http://www.yelp.com/biz/dolores-park-movie-night-san-francisco",
         "is_closed": false,
-        "snippet_text": "A ridiculously good time.  It was freezing but everyone was free to put on their booze coats and certainly did.  Some technical difficulties made everyone...",
+        "snippet_text": "Dolores Park is a city park in San Francisco, California. It is located two blocks south of Mission Dolores at the western edge of the Mission District.",
         "image_url": "http://res.cloudinary.com/ds6oys8ca/image/upload/v1435007961/dolores_park_qfs43u.jpg",
         "categories": [
             [
@@ -833,7 +833,7 @@ def yelp
         "url": "http://www.yelp.com/biz/the-walt-disney-family-museum-san-francisco",
         "is_closed": false,
         "phone": "4153456800",
-        "snippet_text": "This was truly a highlight of our visit to San Francisco.  The size of this archive is a bit overwhelming even for a Disney fan but, wow, what a collection...",
+        "snippet_text": "The Walt Disney Family Museum is an American museum that features the life and legacy of Walt Disney. The museum is located in The Presidio of San Francisco, part of the Golden Gate National Recreation Area in San Francisco.",
         "image_url": "http://s3-media2.fl.yelpcdn.com/bphoto/x3X1IQAatHJ56Nwy4JzOLg/ms.jpg",
         "categories": [
             [
@@ -881,8 +881,8 @@ def yelp
         "url": "http://www.yelp.com/biz/orpheum-theatre-san-francisco",
         "is_closed": false,
         "phone": "8887461799",
-        "snippet_text": "Came up to San Francisco Orpheum Theater just for the nostalgic atmosphere.  When I decide to purchase season tickets, I will make sure they are 1st row...",
-        "image_url": "http://s3-media1.fl.yelpcdn.com/bphoto/wg8h9uYw8A3x642BjNc-wg/ms.jpg",
+        "snippet_text": "Built in 1926 as a showcase for theatre magnate Alexander Pantages, the Orpheum has featured vaudeville, silent films, motion pictures, musical comedy and other theatrical entertainment.",
+        "image_url": "http://res.cloudinary.com/ds6oys8ca/image/upload/v1435014094/orpheum_theater_v627ij.jpg",
         "categories": [
             [
                 "Performing Arts",
