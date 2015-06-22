@@ -57,7 +57,7 @@ def yelp
         "url": "http://www.yelp.com/biz/coit-tower-san-francisco",
         "is_closed": false,
         "phone": "4152490995",
-        "snippet_text": "Coit Tower, a slender white concrete column rising from the top of Telegraph Hill, has been an emblem of San Francisco’s skyline since its completion in 1933, a welcoming beacon to visitors and residents alike. Its observation deck, reached by elevator, provides 360-degree views of the city and bay, including the Golden Gate and Bay bridges.",
+        "snippet_text": "Coit Tower, a slender white concrete column rising from the top of Telegraph Hill, has been an emblem of San Francisco’s skyline since its completion in 1933, a welcoming beacon to visitors and residents alike. Its observation deck, reached by elevator, provides 360-degree views of the city and bay.",
         "image_url": "http://res.cloudinary.com/ds6oys8ca/image/upload/v1435011298/coit_tower_qgfw5w.jpg",
         "categories": [
             [
@@ -123,7 +123,6 @@ def yelp
             "display_address": [
                 "The Presidio",
                 "1 Letterman Dr",
-                "Presidio",
                 "San Francisco, CA 94129"
             ],
             "geo_accuracy": 9.5,
@@ -548,7 +547,6 @@ def yelp
             "display_address": [
                 "1 Yacht Rd",
                 "Marind Blvd, End of the jetty",
-                "Marina/Cow Hollow",
                 "San Francisco, CA 94123"
             ],
             "geo_accuracy": 9.5,
@@ -800,7 +798,6 @@ def yelp
         "location": {
             "city": "San Francisco",
             "display_address": [
-                "Dolores Park",
                 "20th St & Dolores St",
                 "Castro",
                 "San Francisco, CA 94114"
@@ -848,9 +845,8 @@ def yelp
         "location": {
             "city": "San Francisco",
             "display_address": [
-                "Presidio of San Francisco",
-                "104 Montgomery St",
                 "Presidio",
+                "104 Montgomery St",
                 "San Francisco, CA 94129"
             ],
             "geo_accuracy": 9.5,
@@ -913,62 +909,6 @@ def yelp
             "coordinate": {
                 "latitude": 37.7789052575827,
                 "longitude": -122.414588481188
-            },
-            "state_code": "CA"
-        }
-    },
-    {
-        "is_claimed": true,
-        "rating": 5.0,
-        "mobile_url": "http://m.yelp.com/biz/endgames-improv-san-francisco",
-        "rating_img_url": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
-        "review_count": 84,
-        "name": "EndGames Improv",
-        "rating_img_url_small": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
-        "url": "http://www.yelp.com/biz/endgames-improv-san-francisco",
-        "is_closed": false,
-        "phone": "4156278147",
-        "snippet_text": "Brilliant !!!!! Byob About relationships!!!!  Go to site for tickets in advance!  ATMOSPHERE: Narrow tiered seating pretty cozy and low key. In the middle...",
-        "image_url": "http://s3-media4.fl.yelpcdn.com/bphoto/3TsWkUULmuaRSwnNaz8tPw/ms.jpg",
-        "categories": [
-            [
-                "Performing Arts",
-                "theater"
-            ],
-            [
-                "Comedy Clubs",
-                "comedyclubs"
-            ],
-            [
-                "Specialty Schools",
-                "specialtyschools"
-            ]
-        ],
-        "display_phone": "+1-415-627-8147",
-        "rating_img_url_large": "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
-        "id": "endgames-improv-san-francisco",
-        "snippet_image_url": "http://s3-media4.fl.yelpcdn.com/photo/agLsDtNTCWvrtiyf_XPZRQ/ms.jpg",
-        "location": {
-            "city": "San Francisco",
-            "display_address": [
-                "StageWerx Theater",
-                "446 Valencia St",
-                "Mission",
-                "San Francisco, CA 94103"
-            ],
-            "geo_accuracy": 9.5,
-            "neighborhoods": [
-                "Mission"
-            ],
-            "postal_code": "94103",
-            "country_code": "US",
-            "address": [
-                "StageWerx Theater",
-                "446 Valencia St"
-            ],
-            "coordinate": {
-                "latitude": 37.7656430440733,
-                "longitude": -122.422049045563
             },
             "state_code": "CA"
         }
