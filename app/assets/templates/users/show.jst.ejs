@@ -2,7 +2,7 @@
   <div id="avatar-container">
     <img class="avatar" src="<%= user.get('image_url') %>">
     <% if (user.get('current_user')) { %>
-      <button type='button' class='btn btn-primary upload-avatar'>Upload Avatar</button>
+      <button type='button' class='btn btn-primary upload-avatar'><span class="glyphicon glyphicon-camera" aria-hidden="true"></span> Upload Avatar</button>
     <% } %>
   </div>
   <p class='username'><%= user.get('username') %></p>
