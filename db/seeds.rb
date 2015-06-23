@@ -7,7 +7,7 @@ Want.delete_all
 
 #users
 user_attributes = [
-  { username: 'admin', password: 'password' },
+  { username: 'Brett', password: 'password' },
   { username: 'Lana', password: 'password', image_url: 'http://s3-ak.buzzfeed.com/static/2014-03/enhanced/webdr03/22/15/enhanced-buzz-13493-1395516498-1.jpg' },
   { username: 'Archer', password: 'password', image_url: 'http://s3-ak.buzzfeed.com/static/2014-03/enhanced/webdr02/22/15/enhanced-buzz-26973-1395516656-0.jpg' },
   { username: 'Cheryl', password: 'password', image_url: 'http://s3-ak.buzzfeed.com/static/2014-03/enhanced/webdr05/22/15/enhanced-buzz-15537-1395516379-11.jpg' },

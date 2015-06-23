@@ -2,14 +2,16 @@
 .navbar-default {
   background-color: rgba(0, 0, 0, .9);
   border: none;
+  // font-family: 'Montserrat';
 }
 
 /* title */
 .navbar-default .navbar-brand {
   color: #f2f2f2;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
+  // text-transform: uppercase;
+  letter-spacing: 1.25px;
   font-weight: bold;
+  margin-right: 35px;
 }
 
 /* link */
@@ -17,7 +19,7 @@
   font-size: 14px;
   color: #f2f2f2;
   // text-transform: uppercase;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.25px;
   font-weight: bold;
 }
 
@@ -26,11 +28,13 @@ navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:focus {
   color: #f2f2f2;
   background-color: #3b3b3b;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.25px;
   font-weight: bold;
 }
 
 #logo {
   height: 25px;
-  margin-top: 8px;
+  position: absolute;
+  top: 10px;
+  left: 138px;
 }

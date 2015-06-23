@@ -31,7 +31,7 @@
 
 .activities-index-item {
   float:left;
-  margin: 0px 7px 20px 7px;
+  margin: 0px 7px 15px 7px;
   padding: 0px;
   font-size: 12px;
   position: relative;
@@ -51,9 +51,15 @@
 .review-count {
   float: left;
   font-size: 14px;
+  // position: absolute;
+  // bottom: -11px;
+  // left: 124px;
+}
+
+.users-item-want-badge {
   position: absolute;
-  bottom: -11px;
-  left: 124px;
+  right: 0px;
+  background-color: rgb(59, 101, 167);
 }
 
 .index-top {
