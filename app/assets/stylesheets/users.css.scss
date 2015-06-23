@@ -7,7 +7,7 @@
 }
 
 #users-title {
-  margin: 0px 0px 5px 15px;
+  margin: 20px 0px 5px 30px;
 }
 
 #users-title-bar {
@@ -52,18 +52,9 @@
   margin-bottom: 3px;
 }
 
-//top list
-
-#top-title {
-  margin: 0px 0px 5px 15px;
-}
-
-#top-title-bar {
-  margin: 5px 0px 15px 0px;
-}
-
-.users-filler {
-  padding: 0px 0px 0px 7.5px;
-  border: 1px black solid;
-  height: 200px;
+.filter-users {
+  position: absolute;
+  top: 22px;
+  right: 0px;
+  margin-right: 7.5px;
 }

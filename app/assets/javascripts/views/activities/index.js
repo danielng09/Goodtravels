@@ -29,7 +29,6 @@ Goodtravels.Views.ActivitiesIndex = Backbone.CompositeView.extend({
     var activitiesIndexItemView = new Goodtravels.Views.ActivitiesIndexItem({
       model: activity
     });
-
     this.addSubview('div.activities', activitiesIndexItemView);
   },
 
@@ -39,17 +38,9 @@ Goodtravels.Views.ActivitiesIndex = Backbone.CompositeView.extend({
 
   sortByReviews: function (event) {
     event.preventDefault();
-    this.eachSubview(function (subview) {
-      subview.remove();
-    });
+    this.removeOldViews();
 
-    this._subviews = {};
-
-    var sortedCollection = this.collection.sortBy(function (activity) {
-      return activity.get('review_count');
-    }).reverse();
-
-    sortedCollection.forEach(function (activity) {
+    this.sortCollection('review_count').forEach(function (activity) {
       this.addActivitiesIndexItemSubview(activity);
     }.bind(this));
 
@@ -57,51 +48,42 @@ Goodtravels.Views.ActivitiesIndex = Backbone.CompositeView.extend({
 
   sortByRatings: function (event) {
     event.preventDefault();
+    this.removeOldViews();
 
-    this.eachSubview(function (subview) {
-      subview.remove();
-    });
-
-    this._subviews = {};
-
-    var sortedCollection = this.collection.sortBy(function (activity) {
-      return activity.get('average_rating');
-    }).reverse();
-
-    sortedCollection.forEach(function (activity) {
+    this.sortCollection('average_rating').forEach(function (activity) {
       this.addActivitiesIndexItemSubview(activity);
     }.bind(this));
   },
 
   sortByWants: function (event) {
     event.preventDefault();
+    this.removeOldViews();
 
-    this.eachSubview(function (subview) {
-      subview.remove();
-    });
-
-    this._subviews = {};
-
-    var sortedCollection = this.collection.sortBy(function (activity) {
-      return activity.get('want_count');
-    }).reverse();
-
-    sortedCollection.forEach(function (activity) {
+    this.sortCollection('want_count').forEach(function (activity) {
       this.addActivitiesIndexItemSubview(activity);
     }.bind(this));
   },
 
   sortByAll: function (event) {
     event.preventDefault();
-
-    this.eachSubview(function (subview) {
-      subview.remove();
-    });
-    this._subviews = {};
+    this.removeOldViews();
 
     this.collection.each(function (activity) {
       this.addActivitiesIndexItemSubview(activity);
     }.bind(this));
+  },
+
+  removeOldViews: function () {
+    this.eachSubview(function (subview) {
+      subview.remove();
+    });
+    this._subviews = {};
+  },
+
+  sortCollection: function (attribute) {
+    return this.collection.sortBy(function (activity) {
+      return activity.get(attribute);
+    }).reverse();
   },
 
 });
