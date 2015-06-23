@@ -14,7 +14,7 @@ window.Goodtravels = {
     });
 
     Backbone.history.start();
-    var search = new Goodtravels.Views.GoodSearch({ router: router });
+    var search = new Goodtravels.Views.Search({ router: router });
     $('#search-bar-placeholder').html(search.render().$el);
   }
 };

@@ -1,4 +1,4 @@
-Goodtravels.Views.GoodSearch = Backbone.View.extend({
+Goodtravels.Views.Search = Backbone.View.extend({
   template: JST['search/search'],
 
   events: {
@@ -27,15 +27,12 @@ Goodtravels.Views.GoodSearch = Backbone.View.extend({
       }
     });
 
-    activities.initialize();
-    users.initialize();
-
     this.$('#multiple-datasets .typeahead').typeahead({}, {
       name: 'activities',
       display: 'title',
       source: activities,
       templates: {
-        header: '<p class="search-cat">Activities</p>',
+        header: '<p class="search-type">Activities</p>',
         suggestion: function (activity) {
           return "<div class='search-activity-item' data-id='" + activity.id + "'>" + activity.title + "</div>";
         }
@@ -45,7 +42,7 @@ Goodtravels.Views.GoodSearch = Backbone.View.extend({
       display: 'username',
       source: users,
       templates: {
-        header: '<p class="search-cat">Users</p>',
+        header: '<p class="search-type">Users</p>',
         suggestion: function (user) {
           return "<div class='search-user-item' data-id='" + user.id + "'>" + user.username + "</div>";
         }
