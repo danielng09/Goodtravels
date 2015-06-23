@@ -23,6 +23,11 @@ end
 
 #activities
 activities = []
+
+parse_yelp.each do |data|
+  activities.push(Activity.create(data))
+end
+
 activities.push(Activity.create(title: "App Academy",
                 location: ["1061 Market St #4", "San Francisco, CA 94103"].join('\n'),
                 description: "App Academy is an immersive web development and job placement program in San Francisco and New York City. It's San Francisco branch is located in the heart of SF!",
@@ -38,10 +43,6 @@ activities.push(Activity.create(title: "Golden Gate Bridge",
                 lat: 37.8197,
                 lng: -122.4786
                 ))
-
-parse_yelp.each do |data|
-  activities.push(Activity.create(data))
-end
 
 #reviews
 review_combos = []

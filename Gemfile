@@ -15,6 +15,7 @@ gem 'bootstrap-sass'
 gem 'figaro'
 gem 'faker'
 gem 'newrelic_rpm'
+gem 'kaminari'
 
 group :doc do
   gem 'sdoc', require: false
