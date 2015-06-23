@@ -2,7 +2,7 @@
 
 [Goodtravels link][heroku]
 
-[heroku]: #
+[heroku]: http://www.goodtravels.io/
 
 ## Minimum Viable Product
 Goodtravels is a clone of Good Reads built on Rails and Backbone. Users review
@@ -78,7 +78,7 @@ time permits.
 - [x] View another users activities
 - [ ] Display closest activities
 - [ ] Feed of friend reviews
-- [ ] Typeahead search bar
+- [x] Typeahead search bar
 - [ ] Group and search activities by type
 - [ ] User can comment on another user's review
 - [ ] User receives suggested activity based on preferences filter
