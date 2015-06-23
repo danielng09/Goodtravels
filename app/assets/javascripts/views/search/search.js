@@ -1,6 +1,11 @@
 Goodtravels.Views.GoodSearch = Backbone.View.extend({
   template: JST['search/search'],
 
+  events: {
+    'click .search-activity-item':'linkToActivity',
+    'click .search-user-item':'linkToUser',
+  },
+
   render: function() {
     var content = this.template();
     this.$el.html(content);
@@ -31,6 +36,9 @@ Goodtravels.Views.GoodSearch = Backbone.View.extend({
       source: activities,
       templates: {
         header: '<p class="search-cat">Activities</p>',
+        suggestion: function (activity) {
+          return "<div class='search-activity-item' data-id='" + activity.id + "'>" + activity.title + "</div>";
+        }
       },
     }, {
       name: 'users',
@@ -38,11 +46,28 @@ Goodtravels.Views.GoodSearch = Backbone.View.extend({
       source: users,
       templates: {
         header: '<p class="search-cat">Users</p>',
+        suggestion: function (user) {
+          return "<div class='search-user-item' data-id='" + user.id + "'>" + user.username + "</div>";
+        }
       }
     });
 
     return this;
-  }
+  },
+
+  linkToActivity: function (event) {
+    event.preventDefault();
+    link = '#activities/' + $(event.currentTarget).data('id');
+    $('.tt-input').val('');
+    Backbone.history.navigate(link, { trigger: true });
+  },
+
+  linkToUser: function (event) {
+    event.preventDefault();
+    link = '#users/' + $(event.currentTarget).data('id');
+    $('.tt-input').val('');
+    Backbone.history.navigate(link, { trigger: true });
+  },
 
 
 });
