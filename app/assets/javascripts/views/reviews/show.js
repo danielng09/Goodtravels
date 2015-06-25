@@ -1,5 +1,5 @@
 Goodtravels.Views.ReviewItem = Backbone.View.extend({
-  className: 'activity-review-item',
+  className: 'activity-review-item row',
   template: JST['reviews/show'],
 
   events: {
