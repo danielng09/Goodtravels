@@ -1,68 +1,169 @@
-require_relative 'yelp_data.rb'
-
-User.delete_all
-Activity.delete_all
-Review.delete_all
-Want.delete_all
-
-#users
-brett = User.create(username: 'Brett', password: 'password')
-lana = User.create(username: 'Lana', password: 'password', image_url: 'http://s3-ak.buzzfeed.com/static/2014-03/enhanced/webdr03/22/15/enhanced-buzz-13493-1395516498-1.jpg')
-archer = User.create(username: 'Archer', password: 'password', image_url: 'http://s3-ak.buzzfeed.com/static/2014-03/enhanced/webdr02/22/15/enhanced-buzz-26973-1395516656-0.jpg')
-cheryl = User.create(username: 'Cheryl', password: 'password', image_url: 'http://s3-ak.buzzfeed.com/static/2014-03/enhanced/webdr05/22/15/enhanced-buzz-15537-1395516379-11.jpg')
-cyril = User.create(username: 'Cyril', password: 'password', image_url: 'http://s3-ak.buzzfeed.com/static/2014-03/enhanced/webdr06/22/15/enhanced-buzz-24708-1395516082-5.jpg')
-krieger = User.create(username: 'Krieger', password: 'password', image_url: 'http://s3-ak.buzzfeed.com/static/2014-03/enhanced/webdr04/22/15/enhanced-buzz-28685-1395516565-25.jpg')
-woodhouse = User.create(username: 'Woodhouse', password: "JA0sl294j2s", image_url: "http://res.cloudinary.com/ds6oys8ca/image/upload/v1434420066/woodhouse_jfgxxr.jpg")
-
-users = [brett, lana, archer, cheryl, cyril, krieger, woodhouse]
-
-#activities
-activities = []
-
-activities.push(Activity.create(title: "Golden Gate Bridge",
-                location: ["Golden Gate Bridge", "California"].join('\n'),
-                description: "The Golden Gate Bridge is a suspension bridge spanning the Golden Gate strait, the mile-wide, three-mile-long channel between San Francisco Bay and the Pacific Ocean. The bridge is one of the most internationally recognized symbols of San Francisco, California, and the United States. It has been declared one of the Wonders of the Modern World by the American Society of Civil Engineers.",
-                image_url: "http://upload.wikimedia.org/wikipedia/commons/0/0c/GoldenGateBridge-001.jpg",
-                lat: 37.8197,
-                lng: -122.4786
-                ))
-
-parse_yelp.each do |data|
-  activities.push(Activity.create(data))
-end
-
-activities.push(Activity.create(title: "App Academy",
-                location: ["1061 Market St #4", "San Francisco, CA 94103"].join('\n'),
-                description: "App Academy is an immersive web development and job placement program in San Francisco and New York City. It's San Francisco branch is located in the heart of SF!",
-                image_url: "http://res.cloudinary.com/ds6oys8ca/image/upload/c_pad,h_306,w_450/v1435014293/app_academy_nfo9mx.png",
-                lat: 37.7816,
-                lng: -122.4109
-                ))
-
-#reviews
-
-archer.reviews.create(activity_id: 1, rating: 5, body: "I drove across the golden gate bridge singing 'Highway to the Danger Zone, I'm gonna take you, Right into the Danger Zone, Highway to the Danger Zone, Right into the Danger Zone'")
-cheryl.reviews.create(activity_id: 1, rating: 4, body: "Went on a nice day and walked acrossed the bridge. I had a great view of SF while walking across the bridge")
-lana.reviews.create(activity_id: 1, rating: 3, body: "I had a rough time finding parking. Still a must-see but beware of the hordes of tourists.")
-cyril.reviews.create(activity_id: 2, rating: 5, body: "Severe case of acrophobia, thought this would be a breeze. Got really fatigued and had a panic attack about midway and turned back around again. There are pretty flowers and it apparently takes you to Coit Tower. 10/10 would have nightmares for the next few days about free falling again.")
-lana.reviews.create(activity_id: 2, rating: 4, body: "Definitely a unique way to see San Francisco. And it was even a nice quiet area to enjoy a beautiful view!")
-brett.reviews.create(activity_id: 2, rating: 5, body: "For anybody planning on visiting Coit tower, I would recommend taking the 15 minutes to climb up the Filbert steps.  It's great exercise and you get to admire some scenic views and cool neighborhoods on the way")
-cyril.reviews.create(activity_id: 3, rating: 3, body: "Situated on top of Telegraph Hill, this tower which is visible from many points in the city is a nice place to come and visit.  For $8, you can take an elevator to the observation deck.  However, it sways a bit and if you're terrified of heights like me, it may be a bit much to handle.")
-cheryl.reviews.create(activity_id: 3, rating: 5, body: "Went at daytime, parked at the bottom of the hill then climbed up to see a gorgeous and spectacular view of San Frans. Workout and then chill top-hill.We were unfortunate to get inside the tower,what a bummer! I Think it will be a perfect spot for a romantic picnic!")
-krieger.reviews.create(activity_id: 4, rating: 2, body: "Mit höheren Steuern und einer großen Pensionsreform will die griechische Regierung die Gläubiger zufriedenstellen.")
-brett.reviews.create(activity_id: 5, rating: 2, body: "It's a great place to bring visiting family that wanted a good view of San Francisco and take some touristy pictures. Dress in layers as the weather can be unpredictable up here. Enjoy the hike and take in the scenery.")
-krieger.reviews.create(activity_id: 8, rating: 4, body: "Aus allem, was er fragte, war nur so viel herauszubringen, dass das Kind mehrere Jahre mit Bettlern herumgezogen sei und dass es jetzt da sei. Als der Mann mit seiner Familie zu Abend aß, setzte sich das fremde Kind auch an den Tisch.")
-woodhouse.reviews.create(activity_id: 9, rating: 3, body: "Originally called 'Los Pechos de la Choca'  Twin peaks is now capped by a 64 acre city park with great views and a chance to see the plants that once covered San Francisco before development. The north peak is the highest point in San Francisco second only to Mt Davidson in the bay area.")
-krieger.reviews.create(activity_id: 9, rating: 4, body: "Jetzt hat er das Kind schon vier Winter und vier Sommer. Denn das Kind tut gut, ist folgsam und dankbar und fleißig in der Schule. Wer das fremde Töchterlein unter den andern")
-krieger.reviews.create(activity_id: 15, rating: 4, body: "Wer das fremde Töchterlein unter den andern in der Schule sieht, sollt es nicht erkennen, so gut sieht es aus, und so sauber ist es gekleidet. So etwas tut wohl.")
-
-# wants
-want_combos = []
-until want_combos.length == 100 do
-  combo = [users.sample.id, activities.sample.id]
-  want_combos.push(combo) unless want_combos.include?(combo)
-end
-
-want_combos.each do |user_id, activity_id|
-  Want.create(user_id: user_id, activity_id: activity_id)
-end
+Activity.create!([
+  {title: "Golden Gate Bridge", location: "Golden Gate Bridge\\nCalifornia", description: "The Golden Gate Bridge is a suspension bridge spanning the Golden Gate strait, the mile-wide, three-mile-long channel between San Francisco Bay and the Pacific Ocean. The bridge is one of the most internationally recognized symbols of San Francisco, California, and the United States. It has been declared one of the Wonders of the Modern World by the American Society of Civil Engineers.", image_url: "http://upload.wikimedia.org/wikipedia/commons/0/0c/GoldenGateBridge-001.jpg", lng: -122.4786, lat: 37.8197},
+  {title: "Filbert Steps", location: "Filbert St & Sansome St\\nNorth Beach/Telegraph Hill\\nSan Francisco, CA 94111", description: "The stairs are impressive for their length, their wonderful views of San Francisco, the well tended gardens on either side, and the beautiful art deco buildings along the way.  One of the most spectacular buildings features three-story high reliefs of San Francisco.", image_url: "http://res.cloudinary.com/ds6oys8ca/image/upload/v1435007966/filbert-steps_cddutc.jpg", lng: -122.403445243835, lat: 37.8021103651335},
+  {title: "Coit Tower", location: "1 Telegraph Hill Blvd\\nNorth Beach/Telegraph Hill\\nSan Francisco, CA 94133", description: "Coit Tower, a slender white concrete column rising from the top of Telegraph Hill, has been an emblem of San Francisco’s skyline since its completion in 1933, a welcoming beacon to visitors and residents alike. Its observation deck, reached by elevator, provides 360-degree views of the city and bay.", image_url: "http://res.cloudinary.com/ds6oys8ca/image/upload/v1435011298/coit_tower_qgfw5w.jpg", lng: -122.405983, lat: 37.8026962},
+  {title: "Yoda Fountain at Lucasfilms HQ", location: "The Presidio\\n1 Letterman Dr\\nSan Francisco, CA 94129", description: "Within sight of the Golden Gate Bridge lies a landmark cherished by a small but fervent group of travelers: a full-size replica of Yoda, George Lucas' master of the Force. Star Wars fans can be seen taking pictures with their beloved character at Lucasfilm's headquarters.", image_url: "http://res.cloudinary.com/ds6oys8ca/image/upload/v1435007969/yoda_fountain_kdenmn.jpg", lng: -122.450587078929, lat: 37.798848424964},
+  {title: "Twin Peaks", location: "501 Twin Peaks Blvd\\nTwin Peaks\\nSan Francisco, CA 94114", description: "Renowned, 180-degree views of the Bay Area are offered at this 64-acre park with hiking trails.", image_url: "http://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Twinpeaks_longexposure.jpg/1599px-Twinpeaks_longexposure.jpg", lng: -122.447519302368, lat: 37.7521564122127},
+  {title: "Lombard Street", location: "1000-1099 Lombard St\\nRussian Hill\\nSan Francisco, CA 94133", description: "Lombard Street is an east–west street in San Francisco, California that is famous for a steep, one-block section with eight hairpin turns. The street was named after Lombard Street in Philadelphia by San Francisco surveyor Jasper O'Farrell.", image_url: "http://res.cloudinary.com/ds6oys8ca/image/upload/v1435014212/lombard_street_ea38si.jpg", lng: -122.4181671, lat: 37.8022804},
+  {title: "Japantown", location: "Post and Buchanan\\nJapantown\\nSan Francisco, CA 94115", description: "Japantown (日本町, J Town, or 'Nihonmachi') is a neighborhood in the Western Addition district of San Francisco, California. It comprises about six square city blocks. San Francisco's Japantown is the largest and oldest such enclave in the United States.", image_url: "http://res.cloudinary.com/ds6oys8ca/image/upload/v1435013458/japan_town_vqmbbl.jpg", lng: -122.432974790985, lat: 37.7852318770523},
+  {title: "The Painted Ladies", location: "701-799 Steiner St\\nAlamo Square\\nSan Francisco, CA 94117", description: "The famous Painted Ladies of San Francisco are a row of colorful Victorian houses across from Alamo Square park, in San Francisco. Built between 1892 and 1896, these Victorian-style houses are a famous attraction of the city, popularized by the tv show 'Full House'.", image_url: "http://res.cloudinary.com/ds6oys8ca/image/upload/v1435007960/full_house_psgw9g.jpg", lng: -122.432991, lat: 37.7755737},
+  {title: "City Hall", location: "1 Dr Carlton B Goodlett Pl\\nCivic Center\\nSan Francisco, CA 94102", description: "Re-opened in 1915 in its open space area in the city's Civic Center, it is a Beaux-Arts monument to the City Beautiful movement that epitomized the high-minded American Renaissance of the 1880s to 1917. The structure's dome is the fifth largest in the world—taller than that of the United States Capitol by 42 feet.", image_url: "http://res.cloudinary.com/ds6oys8ca/image/upload/v1435012458/city_hall2_oy1ycq.jpg", lng: -122.418615818024, lat: 37.7793900915108},
+  {title: "Fort Point", location: "Marine Dr\\nPresidio\\nSan Francisco, CA 94123", description: "From its vantage point overlooking the spectacular Golden Gate, Fort Point defended the San Francisco Bay following California's Gold Rush through World War II. Its beautifully arched casemates display the art of 3rd system brick masonry and interacts gracefully with the Golden Gate Bridge.", image_url: "http://res.cloudinary.com/ds6oys8ca/image/upload/v1435007962/fort_point_sijqfm.jpg", lng: -122.476830482483, lat: 37.8103264355348},
+  {title: "Treasure Island", location: "San Francisco, CA 94130", description: "Treasure Island is an artificial island in San Francisco Bay and a neighborhood of the City of San Francisco. Built 1936–37 for the 1939 Golden Gate International Exposition, the island's World’s Fair site is a California Historical Landmark.", image_url: "http://res.cloudinary.com/ds6oys8ca/image/upload/v1435007963/treasure_island_m4jjut.jpg", lng: -122.37441380719, lat: 37.8203303452753},
+  {title: "The Presidio", location: "103 Montgomery St\\nPresidio\\nSan Francisco, CA 94129", description: "The Presidio of San Francisco (originally, El Presidio Real de San Francisco or The Royal Fortress of Saint Francis) is a park and former military base on the northern tip of the San Francisco Peninsula in San Francisco, California, and is part of the Golden Gate National Recreation Area.", image_url: "http://res.cloudinary.com/ds6oys8ca/image/upload/v1435015049/presidio_wdbufz.jpg", lng: -122.459043, lat: 37.800862},
+  {title: "Wave Organ", location: "1 Yacht Rd\\nMarind Blvd, End of the jetty\\nSan Francisco, CA 94123", description: "The Wave Organ is an acoustic sculpture constructed on the shore of San Francisco Bay in May 1986 by the Exploratorium. Through a series of pipes, the wave organ interacts with the waves of the bay and conveys their sound to listeners at several different stations.", image_url: "http://s3-media3.fl.yelpcdn.com/bphoto/acPaj_-lRrVM8C3CQ1862Q/o.jpg", lng: -122.44017443921, lat: 37.808564684112},
+  {title: "Magowan's Infinite Mirror Maze", location: "Pier 39\\nNorth Beach/Telegraph Hill\\nSan Francisco, CA 94133", description: "Challenge yourself to find your way through the infinite hallways, endless circles and dead-ends of the most fascinating maze in San Francisco.", image_url: "http://s3-media3.fl.yelpcdn.com/bphoto/MnhICGx-vqQ5_UpGCdJ_Tw/o.jpg", lng: -122.410207092762, lat: 37.809906859557},
+  {title: "Exploratorium", location: "Pier 15\\nEmbarcadero\\nSan Francisco, CA 94111", description: "The Exploratorium is a museum of science, art, and human perception located in San Francisco, California. Follow your curiosity to amazing moments of discovery, learning, and awareness while increasing your confidence in your ability to understand how the world works.", image_url: "http://res.cloudinary.com/ds6oys8ca/image/upload/v1435007960/exploratorium_isji6n.jpg", lng: -122.398619, lat: 37.800875},
+  {title: "The Fillmore", location: "1805 Geary Blvd\\nWestern Addition\\nSan Francisco, CA 94115", description: "The Fillmore has a rich history dating back to its opening in 1912 having operated as a dance hall, roller rink, music venue, private club and back to its current operations as a music venue.", image_url: "http://res.cloudinary.com/ds6oys8ca/image/upload/v1435007960/fillmore_jqxeun.jpg", lng: -122.4334611, lat: 37.7841038},
+  {title: "Palace Of Fine Arts", location: "3301 Lyon Street\\nMarina/Cow Hollow\\nSan Francisco, CA 94123", description: "The Palace of Fine Arts in the Marina District of San Francisco, California, is a monumental structure originally constructed for the 1915 Panama-Pacific Exposition in order to exhibit works of art presented there.", image_url: "http://res.cloudinary.com/ds6oys8ca/image/upload/v1435013921/palace_of_fine_arts_xwugsn.jpg", lng: -122.447846531868, lat: 37.8013996034861},
+  {title: "Dolores Park", location: "20th St & Dolores St\\nCastro\\nSan Francisco, CA 94114", description: "Dolores Park is a city park in San Francisco, California. It is located two blocks south of Mission Dolores at the western edge of the Mission District.", image_url: "http://res.cloudinary.com/ds6oys8ca/image/upload/v1435007961/dolores_park_qfs43u.jpg", lng: -122.425830289721, lat: 37.758210003376},
+  {title: "The Walt Disney Family Museum", location: "Presidio\\n104 Montgomery St\\nSan Francisco, CA 94129", description: "The Walt Disney Family Museum is an American museum that features the life and legacy of Walt Disney. The museum is located in The Presidio of San Francisco, part of the Golden Gate National Recreation Area in San Francisco.", image_url: "http://s3-media2.fl.yelpcdn.com/bphoto/x3X1IQAatHJ56Nwy4JzOLg/o.jpg", lng: -122.458505630493, lat: 37.8009002347234},
+  {title: "Orpheum Theatre", location: "1192 Market St\\nCivic Center\\nSan Francisco, CA 94102", description: "Built in 1926 as a showcase for theatre magnate Alexander Pantages, the Orpheum has featured vaudeville, silent films, motion pictures, musical comedy and other theatrical entertainment.", image_url: "http://res.cloudinary.com/ds6oys8ca/image/upload/v1435014094/orpheum_theater_v627ij.jpg", lng: -122.414588481188, lat: 37.7789052575827},
+  {title: "App Academy", location: "1061 Market St #4\\nSan Francisco, CA 94103", description: "App Academy is an immersive web development and job placement program in San Francisco and New York City. It's San Francisco branch is located in the heart of SF!", image_url: "http://res.cloudinary.com/ds6oys8ca/image/upload/c_pad,h_306,w_450/v1435014293/app_academy_nfo9mx.png", lng: -122.4109, lat: 37.7816}
+])
+Review.create!([
+  {activity_id: 1, user_id: 3, body: "I drove across the golden gate bridge singing 'Highway to the Danger Zone, I'm gonna take you, Right into the Danger Zone, Highway to the Danger Zone, Right into the Danger Zone'", rating: 5.0},
+  {activity_id: 1, user_id: 4, body: "Went on a nice day and walked acrossed the bridge. I had a great view of SF while walking across the bridge", rating: 4.0},
+  {activity_id: 1, user_id: 2, body: "I had a rough time finding parking. Still a must-see but beware of the hordes of tourists.", rating: 3.0},
+  {activity_id: 2, user_id: 5, body: "Severe case of acrophobia, thought this would be a breeze. Got really fatigued and had a panic attack about midway and turned back around again. There are pretty flowers and it apparently takes you to Coit Tower. 10/10 would have nightmares for the next few days about free falling again.", rating: 5.0},
+  {activity_id: 2, user_id: 2, body: "Definitely a unique way to see San Francisco. And it was even a nice quiet area to enjoy a beautiful view!", rating: 4.0},
+  {activity_id: 2, user_id: 1, body: "For anybody planning on visiting Coit tower, I would recommend taking the 15 minutes to climb up the Filbert steps.  It's great exercise and you get to admire some scenic views and cool neighborhoods on the way", rating: 5.0},
+  {activity_id: 3, user_id: 5, body: "Situated on top of Telegraph Hill, this tower which is visible from many points in the city is a nice place to come and visit.  For $8, you can take an elevator to the observation deck.  However, it sways a bit and if you're terrified of heights like me, it may be a bit much to handle.", rating: 3.0},
+  {activity_id: 3, user_id: 4, body: "Went at daytime, parked at the bottom of the hill then climbed up to see a gorgeous and spectacular view of San Frans. Workout and then chill top-hill.We were unfortunate to get inside the tower,what a bummer! I Think it will be a perfect spot for a romantic picnic!", rating: 5.0},
+  {activity_id: 4, user_id: 6, body: "Mit höheren Steuern und einer großen Pensionsreform will die griechische Regierung die Gläubiger zufriedenstellen.", rating: 2.0},
+  {activity_id: 5, user_id: 1, body: "It's a great place to bring visiting family that wanted a good view of San Francisco and take some touristy pictures. Dress in layers as the weather can be unpredictable up here. Enjoy the hike and take in the scenery.", rating: 2.0},
+  {activity_id: 8, user_id: 6, body: "Aus allem, was er fragte, war nur so viel herauszubringen, dass das Kind mehrere Jahre mit Bettlern herumgezogen sei und dass es jetzt da sei. Als der Mann mit seiner Familie zu Abend aß, setzte sich das fremde Kind auch an den Tisch.", rating: 4.0},
+  {activity_id: 9, user_id: 7, body: "Originally called 'Los Pechos de la Choca'  Twin peaks is now capped by a 64 acre city park with great views and a chance to see the plants that once covered San Francisco before development. The north peak is the highest point in San Francisco second only to Mt Davidson in the bay area.", rating: 3.0},
+  {activity_id: 9, user_id: 6, body: "Jetzt hat er das Kind schon vier Winter und vier Sommer. Denn das Kind tut gut, ist folgsam und dankbar und fleißig in der Schule. Wer das fremde Töchterlein unter den andern", rating: 4.0},
+  {activity_id: 15, user_id: 6, body: "Wer das fremde Töchterlein unter den andern in der Schule sieht, sollt es nicht erkennen, so gut sieht es aus, und so sauber ist es gekleidet. So etwas tut wohl.", rating: 4.0},
+  {activity_id: 7, user_id: 7, body: "San Francisco may be known for housing the largest Chinese population outside of China, and having a great Chinatown, however; I was thoroughly impressed and excited that SF also has a pretty decent J Town (personally think it's better than LA's)! Love, love, love Japanese! ", rating: 4.0},
+  {activity_id: 13, user_id: 7, body: "Talk about amazing works of art! This is such a neat place to visit! I suggest before visiting, you check out the times for the tide, because then you can really get the feel for the organ made by the waves! You will have to take a bit of a walk to get out to the organ but it is amazing and worth the walk. ", rating: 5.0},
+  {activity_id: 17, user_id: 7, body: "Love it.... The PoFA is such an iconic landmark in San Francisco. It stands shoulder to shoulder with all the other famous sights in the city. My personal preference is to visit it at night. It's beautifully lit and really breathtaking to look at. ", rating: 4.5},
+  {activity_id: 21, user_id: 7, body: "I highly recommend App Academy. It has been key in helping me turn around my career (personal butler) so quickly (7 months) and focus on a field that I am excited about and interested in pursuing.", rating: 5.0},
+  {activity_id: 21, user_id: 2, body: "TL;DR If you get into App Academy and stick with it, you'll become an amazing developer, so much so that you'll surprise those around you that you learned to code from a \"programming bootcamp.\" ", rating: 3.5},
+  {activity_id: 20, user_id: 2, body: "Location, location, location! With convenient access to the BART, this is a great location! It's also a 10-minute walk to Westfield Mall on Market Street. Along the way, you can find a diverse catchment of restaurants to dine before a show.", rating: 3.5},
+  {activity_id: 10, user_id: 2, body: "On a clear day, three bridges and sweeping views of the Bay Area are visible from Fort Point: Marin in the North; Alcatraz, Angel Island, & the East Bay across the water; and to the far right, across Crissy Field, you'll spot San Francisco's famous skyline. ", rating: 3.5},
+  {activity_id: 12, user_id: 2, body: "This is just an incredible place to go explore. \r\n\r\nTo go walk around, take pictures. \r\n\r\nIt feels so peaceful, especially in the afternoon with the breeze hitting your face.", rating: 4.0},
+  {activity_id: 12, user_id: 4, body: "The Presidio is a great place to visit when in San Francisco.  It's rich in both history and nature.  The best part about it, it's flat!!!  You can even rent a bike and take an easy ride through it along the water.", rating: 3.0},
+  {activity_id: 6, user_id: 4, body: "Holy Canoli! \r\nThis place is a legit TOURIST TRAP!\r\nThe poor people that live here probably never get a break from people driving down the street & people taking pictures in front of their street.", rating: 2.0},
+  {activity_id: 3, user_id: 3, body: "Had a stunning view of Coit tower while touring San Fran. Too bad, we didn't have enough time to go into the tower.", rating: 4.5},
+  {activity_id: 6, user_id: 3, body: "Eh. I wasn't really impressed by the windy roads of Lombard Street. Why are people so impressed by a street that has turns and is a pain in the arse to go up and down. And what's with all the tourists? \r\n", rating: 2.5},
+  {activity_id: 5, user_id: 3, body: "This view though.\r\nBeen here a handful of times, all at night & the view is ABSOLUTELY freakin' AMAZING! The city lights are gorgeous. Takes your breath away.", rating: 4.5},
+  {activity_id: 18, user_id: 3, body: "My friend took me to Dolores Park for the first time. I felt like such a noob! Apparently there's a special map for Dolores Park mapping out hipsters, families, gay beach, the bench, etc. Pretty awesome! ", rating: 4.0},
+  {activity_id: 20, user_id: 3, body: "Beautiful theater. A little small in the lobby. Confusion with seating. Bathrooms all around which was nice. Assessable seating are regular padded chairs without arm rests but it's nice to be able to sit with your party. ", rating: 2.5},
+  {activity_id: 20, user_id: 6, body: "Es war ein super-schwüller Tag. Wir konnten die Hitze kaum ertragen und entschlossen uns deshalb zum Strand zu gehen. Wir haben den richtigen Samstag gewählt, denn es gab ein Sandskulpturen-Wettbewerb.", rating: 4.0},
+  {activity_id: 20, user_id: 5, body: "A classic San Francisco establishment.  If you are paying the money and coming to the City for a Broadway show, then chances are Orpheum is the place.  The inside is beautiful, the ushering and getting people to where they need to be is a working machine.", rating: 5.0},
+  {activity_id: 20, user_id: 1, body: "The Orpheum Theater is gorgeous. A completely world class venue. Looking at the seventeen lions that are arranged on the ceiling, you can see the detail that went into the design. I have rarely had a bad seat here, even in the balcony.", rating: 5.0},
+  {activity_id: 15, user_id: 1, body: "Located between San Francisco Ferry Building and Pier 39 you will find the beautiful new Exploratorium along the Embarcadero Waterfront which is a PERFECT location (Valet parking is right across the street)", rating: 4.5}
+])
+User.create!([
+  {session_token: "Sy63DwHG2ua0fL1zxdIy4w", image_url: "http://res.cloudinary.com/ds6oys8ca/image/upload/v1434420066/woodhouse_jfgxxr.jpg", username: "Woodhouse", password_digest: "$2a$10$/78D1CJjbroozuu/LzI1T.pNxfGFF0D7PxrDYlijuq.vcNnxIFmou"},
+  {session_token: "d6XNWmSv5HZMJgA2WTdAGw", image_url: "http://s3-ak.buzzfeed.com/static/2014-03/enhanced/webdr03/22/15/enhanced-buzz-13493-1395516498-1.jpg", username: "Lana", password_digest: "$2a$10$uuNQFaQd4D8rPQS5zmJKbefYMQQ6GbI3SR1r5b6N84s9S2eEKIGYO"},
+  {session_token: "UiO4oHWCP5LP6ueHk_PMBw", image_url: "http://s3-ak.buzzfeed.com/static/2014-03/enhanced/webdr05/22/15/enhanced-buzz-15537-1395516379-11.jpg", username: "Cheryl", password_digest: "$2a$10$C5uRi4vn/3vmVusbqvqrZOv9HXDijBhpGjo6xwVG5oMlgHucMVwaG"},
+  {session_token: "RRePNxIqgzgYjokbm5dd6A", image_url: "http://s3-ak.buzzfeed.com/static/2014-03/enhanced/webdr02/22/15/enhanced-buzz-26973-1395516656-0.jpg", username: "Archer", password_digest: "$2a$10$QU3Y0NKOU1NPlGYrEwRYlObJdP9vfiVMUkMPwhIPUdk67yRGkp8wC"},
+  {session_token: "t3-eaQ-Lpda-yEy31vOL4Q", image_url: "http://s3-ak.buzzfeed.com/static/2014-03/enhanced/webdr04/22/15/enhanced-buzz-28685-1395516565-25.jpg", username: "Krieger", password_digest: "$2a$10$B3rzTu0qecvhp7JVdZ38oOSs8BWRb9DG4T.o0xzLWn3AqaUoW6eQm"},
+  {session_token: "63Ca6AjqFn63kBeuLpHwGQ", image_url: "http://s3-ak.buzzfeed.com/static/2014-03/enhanced/webdr06/22/15/enhanced-buzz-24708-1395516082-5.jpg", username: "Cyril", password_digest: "$2a$10$9IPfc.TlArF8C4dScpliLOwiSHdou2bnQzEdmhpgDXQTwtO5BbQhC"},
+  {session_token: "4GWOCQRHaHsY5MNnHYOw1A", image_url: "http://res.cloudinary.com/ds6oys8ca/image/upload/v1434519521/brett_b3orzt.png", username: "Brett", password_digest: "$2a$10$Y7Gta8Fp476FPrQHYcQKuec67ExZIRNwIjPN7e6gXrRsMRh1k38ay"}
+])
+Want.create!([
+  {user_id: 4, activity_id: 16},
+  {user_id: 1, activity_id: 4},
+  {user_id: 2, activity_id: 1},
+  {user_id: 6, activity_id: 11},
+  {user_id: 2, activity_id: 10},
+  {user_id: 4, activity_id: 12},
+  {user_id: 7, activity_id: 21},
+  {user_id: 1, activity_id: 9},
+  {user_id: 3, activity_id: 19},
+  {user_id: 1, activity_id: 5},
+  {user_id: 1, activity_id: 19},
+  {user_id: 3, activity_id: 18},
+  {user_id: 4, activity_id: 10},
+  {user_id: 4, activity_id: 4},
+  {user_id: 3, activity_id: 13},
+  {user_id: 1, activity_id: 11},
+  {user_id: 2, activity_id: 6},
+  {user_id: 4, activity_id: 9},
+  {user_id: 7, activity_id: 11},
+  {user_id: 1, activity_id: 1},
+  {user_id: 7, activity_id: 3},
+  {user_id: 3, activity_id: 3},
+  {user_id: 5, activity_id: 18},
+  {user_id: 2, activity_id: 4},
+  {user_id: 3, activity_id: 21},
+  {user_id: 7, activity_id: 5},
+  {user_id: 3, activity_id: 4},
+  {user_id: 5, activity_id: 9},
+  {user_id: 5, activity_id: 12},
+  {user_id: 4, activity_id: 1},
+  {user_id: 3, activity_id: 11},
+  {user_id: 5, activity_id: 19},
+  {user_id: 3, activity_id: 8},
+  {user_id: 4, activity_id: 2},
+  {user_id: 5, activity_id: 7},
+  {user_id: 5, activity_id: 10},
+  {user_id: 6, activity_id: 20},
+  {user_id: 6, activity_id: 15},
+  {user_id: 7, activity_id: 20},
+  {user_id: 4, activity_id: 15},
+  {user_id: 4, activity_id: 19},
+  {user_id: 1, activity_id: 6},
+  {user_id: 1, activity_id: 2},
+  {user_id: 1, activity_id: 21},
+  {user_id: 3, activity_id: 2},
+  {user_id: 2, activity_id: 11},
+  {user_id: 2, activity_id: 13},
+  {user_id: 2, activity_id: 5},
+  {user_id: 7, activity_id: 19},
+  {user_id: 2, activity_id: 20},
+  {user_id: 5, activity_id: 16},
+  {user_id: 5, activity_id: 13},
+  {user_id: 7, activity_id: 13},
+  {user_id: 6, activity_id: 17},
+  {user_id: 3, activity_id: 16},
+  {user_id: 6, activity_id: 19},
+  {user_id: 7, activity_id: 12},
+  {user_id: 2, activity_id: 9},
+  {user_id: 6, activity_id: 9},
+  {user_id: 6, activity_id: 1},
+  {user_id: 6, activity_id: 14},
+  {user_id: 1, activity_id: 10},
+  {user_id: 1, activity_id: 20},
+  {user_id: 6, activity_id: 2},
+  {user_id: 3, activity_id: 15},
+  {user_id: 7, activity_id: 7},
+  {user_id: 3, activity_id: 5},
+  {user_id: 3, activity_id: 12},
+  {user_id: 3, activity_id: 17},
+  {user_id: 5, activity_id: 3},
+  {user_id: 2, activity_id: 7},
+  {user_id: 3, activity_id: 20},
+  {user_id: 1, activity_id: 18},
+  {user_id: 2, activity_id: 14},
+  {user_id: 6, activity_id: 8},
+  {user_id: 3, activity_id: 6},
+  {user_id: 6, activity_id: 10},
+  {user_id: 4, activity_id: 17},
+  {user_id: 7, activity_id: 1},
+  {user_id: 2, activity_id: 19},
+  {user_id: 3, activity_id: 9},
+  {user_id: 2, activity_id: 17},
+  {user_id: 4, activity_id: 7},
+  {user_id: 7, activity_id: 9},
+  {user_id: 4, activity_id: 11},
+  {user_id: 5, activity_id: 17},
+  {user_id: 5, activity_id: 14},
+  {user_id: 2, activity_id: 2},
+  {user_id: 1, activity_id: 3},
+  {user_id: 2, activity_id: 18},
+  {user_id: 6, activity_id: 5},
+  {user_id: 6, activity_id: 21},
+  {user_id: 7, activity_id: 8},
+  {user_id: 1, activity_id: 13},
+  {user_id: 6, activity_id: 12},
+  {user_id: 6, activity_id: 4},
+  {user_id: 4, activity_id: 13},
+  {user_id: 4, activity_id: 14},
+  {user_id: 2, activity_id: 15},
+  {user_id: 2, activity_id: 3}
+])
