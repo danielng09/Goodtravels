@@ -1,6 +1,8 @@
 Goodtravels.Views.ShowDetails = Backbone.View.extend({
   template: JST['activities/showDetails'],
 
+  className: 'row',
+
   events: {
     'click .want-button':'toggleWant',
     'click .new-review-button': 'openReviewForm'

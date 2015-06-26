@@ -1,27 +1,31 @@
-<div class="activity-picture-container" style=
-  "<%= 'background: url(' + activity.escape('image_url') + ');' %>">
+<div class='col-md-6'>
+  <div class="activity-picture-container" style=
+    "<%= 'background: url(' + activity.escape('image_url') + ');' %>">
+  </div>
 </div>
 
-<div class="activity-information">
-  <p class='activitity-detail-name'><%= activity.escape('title') %></p>
-  <hr>
+<div class='col-md-6'>
+  <div class="activity-information">
+    <p class='activitity-detail-name'><%= activity.escape('title') %></p>
+    <hr>
 
-  <p class='address'><% activity.escape('location').split(/\\n/).forEach(function(adLine) { %>
-    <%= adLine %><br>
-  <% }) %></p>
+    <p class='address'><% activity.escape('location').split(/\\n/).forEach(function(adLine) { %>
+      <%= adLine %><br>
+    <% }) %></p>
 
-  <p class="activity-detail-reviews"><%= activity.get('review_count') %>
-    <%= activity.get('review_count') === 1 ? 'review' : 'reviews' %></p>
+    <p class="activity-detail-reviews"><%= activity.get('review_count') %>
+      <%= activity.get('review_count') === 1 ? 'review' : 'reviews' %></p>
 
-  <div class='activity-detail-stars'></div>
+    <div class='activity-detail-stars'></div>
 
-  <button type="button" class="want-button btn btn-success">
-    Want to do
-  </button>
+    <button type="button" class="want-button btn btn-success">
+      Want to do
+    </button>
 
-  <button type="button" class='new-review-button btn btn-success'>
-    Write a Review
-  </button>
-  <br><br>
-  <p><%= activity.escape('description') %></p>
+    <button type="button" class='new-review-button btn btn-success'>
+      Write a Review
+    </button>
+    <br><br>
+    <p><%= activity.escape('description') %></p>
+  </div>
 </div>

@@ -26,8 +26,8 @@
 
 .activity-picture-container {
   float: left;
-  width: 485px;
-  height: 300px;
+  width: 100%;
+  height: 24vw;
   position: relative;
   box-shadow: 0 1px 3px #626262;
   background-color: white;
@@ -36,13 +36,8 @@
 }
 
 .activity-information {
-  width: 525px;
-  height: 300px;
-  margin-left: 10px;
-  padding: 10px;
-  padding-left: 20px;
-  float: right;
-  position: relative;
+  height: 24vw;
+  padding: 0px 15px 0px 20px;
   box-shadow: 0 1px 3px #626262;
 }
 
@@ -62,9 +57,6 @@
 }
 
 // reviews
-#reviews-container {
-  padding: 0px 0px 0px 0px;
-}
 
 .review-details {
   padding: 0px 0px 0px 0px;
@@ -115,15 +107,15 @@
 .activity-detail-stars {
   z-index: 100;
   position: absolute;
-  top: 70px;
-  right: 25px;
+  top: 60px;
+  right: 35px;
 }
 
 .activity-detail-reviews {
   width: 65px;
   position: absolute;
-  right: 18px;
-  top: 91px;
+  right: 30px;
+  top: 82px;
 }
 
 .want-button {
@@ -185,8 +177,9 @@
   padding: 0px;
   background-color: white;
   float: right;
+  width: 100%;
   height: 337px;
-  width: 413px;
+  width: 100%;
   box-shadow: 0 2px 2px #626262;
   margin-bottom: 50px;
 }
