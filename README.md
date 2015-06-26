@@ -1,11 +1,15 @@
 # Goodtravels
 
-[Goodtravels link][heroku]
+Live Link: [www.goodtravels.io](http://www.goodtravels.io/)
 
-[heroku]: http://www.goodtravels.io/
+## Features
+* Users can save activities to a "Want To Do" collection [[source]](https://github.com/danielng09/Goodtravels/blob/master/app/assets/javascripts/views/activities/showDetails.js)
+* Users rate an activity by sliding up and down a scale in half star increments. [[source]](https://github.com/danielng09/Goodtravels/blob/master/app/assets/javascripts/views/reviews/form.js)
+* Search bar suggests activities and users in real time as you type [[source]](https://github.com/danielng09/Goodtravels/blob/master/app/assets/javascripts/views/search/search.js)
+* Activities are sortable by reviews, ratings, and wants [[source]](https://github.com/danielng09/Goodtravels/blob/master/app/assets/javascripts/views/activities/index.js)
 
 ## Minimum Viable Product
-Goodtravels is a clone of Good Reads built on Rails and Backbone. Users review
+Goodtravels is built on Rails and Backbone and is inspired by Goodreads. Users review
 travel related content and can:
 
 <!-- This is a Markdown checklist. Use it to keep track of your progress! -->
@@ -23,10 +27,8 @@ travel related content and can:
 - [x] Search for activity by name
 
 ## Design Docs
-* [View Wireframes][views]
 * [DB schema][schema]
 
-[views]: ./docs/views.md
 [schema]: ./docs/schema.md
 
 ## Implementation Timeline
@@ -79,7 +81,7 @@ time permits.
 - [ ] Display closest activities
 - [ ] Feed of friend reviews
 - [x] Typeahead search bar
-- [ ] Group and search activities by type
+- [ ] Group and search activities by categories
 - [ ] User can comment on another user's review
 - [ ] User receives suggested activity based on preferences filter
 - [x] Modal view when creating new review
