@@ -2,8 +2,8 @@
 
 Live Link: [www.goodtravels.io](http://www.goodtravels.io/)
 
-## Features
-* Users can save activities to a "Want To Do" collection [[source]](https://github.com/danielng09/Goodtravels/blob/master/app/assets/javascripts/views/activities/showDetails.js)
+## Feature Highlights
+* Users can save activities to a personal "Want To Do" collection [[source]](https://github.com/danielng09/Goodtravels/blob/master/app/assets/javascripts/views/activities/showDetails.js)
 * Users rate an activity by sliding up and down a scale in half star increments. [[source]](https://github.com/danielng09/Goodtravels/blob/master/app/assets/javascripts/views/reviews/form.js)
 * Search bar suggests activities and users in real time as you type [[source]](https://github.com/danielng09/Goodtravels/blob/master/app/assets/javascripts/views/search/search.js)
 * Activities are sortable by reviews, ratings, and wants [[source]](https://github.com/danielng09/Goodtravels/blob/master/app/assets/javascripts/views/activities/index.js)
