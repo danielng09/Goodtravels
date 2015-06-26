@@ -55,14 +55,14 @@ Goodtravels.Views.Search = Backbone.View.extend({
   linkToActivity: function (event) {
     event.preventDefault();
     link = '#activities/' + $(event.currentTarget).data('id');
-    $('.tt-input').val('');
+    $('.typeahead').typeahead('val', '');
     Backbone.history.navigate(link, { trigger: true });
   },
 
   linkToUser: function (event) {
     event.preventDefault();
     link = '#users/' + $(event.currentTarget).data('id');
-    $('.tt-input').val('');
+    $('.typeahead').typeahead('val', '');
     Backbone.history.navigate(link, { trigger: true });
   },
 
