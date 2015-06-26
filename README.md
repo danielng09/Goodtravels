@@ -56,19 +56,19 @@ activities by name.
 
 [Details][phase-three]
 
-### Phase 5: User Views (~2 days)
+### Phase 4: User Views (~2 days)
 I will add a user API route to serve JSON data for users. Then I will add a
 Backbone model and collection to fetch data from the API point. Users should be
 able to view an index of all users as well as view specific profiles of each user.
 
-[Details][phase-five]
+[Details][phase-four]
 
-### Phase 4: Sorting Activities and Users (~1-2 days)
+### Phase 5: Sorting Activities and Users (~1-2 days)
 I will enable users to view activities by selecting filters. Filters will include
 their list of bookmarked activities, activities they have reviewed, top rated
 activities, and most popular activities.
 
-[Details][phase-four]
+[Details][phase-five]
 
 
 ### Bonus Features (TBD)
