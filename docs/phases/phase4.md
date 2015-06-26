@@ -1,32 +1,27 @@
-# Phase 4: Filtering Activities
+# Phase 4: Styling and Bonus Features
 
 ## Rails
 ### Models
-* Bookmark
 
 ### Controllers
-Api::BookmarksController
-Api::ActivitiesController (most_reviewed)
-Api::ActivitiesController (top_reviewed)
+Api::UsersController (index, show)
 
 ### Views
-users/show.json.jbuilder
-activities/most_reviewed.json.jbuilder
-activities/most_viewed.json.jbuilder
+* users/show.html.erb
+* users/index.html.erb
 
 ## Backbone
-
 ### Models
-* User (parse nested `bookmarks` and `reviews` associations)
-* Bookmark
+* User (parse nested 'wants' and 'reviews' associations)
 
 ### Collections
-* Bookmarks
+* Users
 
 ### Views
-* BookmarksIndex (composite view, contains BookmarksIndexItem subview)
-* BookmarksIndexItem
-* ReviewedIndex (composite view, contains ReviewedIndexItem subview)
-* ReviewedIndexItem
+* UsersIndex (composite view containing UsersIndexItem subviews)
+* UsersIndexItem
+* UsersShow (composite view containing UsersShowItem and UsersWants subviews)
+* UsersShowItem
+* UsersWants
 
 ## Gems/Libraries

@@ -42,7 +42,7 @@ moving on to phase 2.
 
 [Details][phase-one]
 
-### Phase 2: Viewing and Creating Activity Reviews (~2 days)
+### Phase 2: Viewing Activities and Creating Reviews (~2 days)
 I will add API routes to serve activity and review data as JSON, then add Backbone
 models and collections that fetch data from those routes. By the end of this
 phase, users will be able to view activities as well as rate and review
@@ -56,18 +56,20 @@ activities by name.
 
 [Details][phase-three]
 
-### Phase 4: Filtering Activities (~1-2 days)
+### Phase 5: User Views (~2 days)
+I will add a user API route to serve JSON data for users. Then I will add a
+Backbone model and collection to fetch data from the API point. Users should be
+able to view an index of all users as well as view specific profiles of each user.
+
+[Details][phase-five]
+
+### Phase 4: Sorting Activities and Users (~1-2 days)
 I will enable users to view activities by selecting filters. Filters will include
 their list of bookmarked activities, activities they have reviewed, top rated
 activities, and most popular activities.
 
 [Details][phase-four]
 
-### Phase 5: Styling and Bonus Features (~2 days)
-I will add styling to the application and implement bonus features if
-time permits.
-
-[Details][phase-five]
 
 ### Bonus Features (TBD)
 - [x] User avatars
