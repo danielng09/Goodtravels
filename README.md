@@ -70,21 +70,21 @@ time permits.
 [Details][phase-five]
 
 ### Bonus Features (TBD)
+- [x] User avatars
+- [x] View another user's saved "Want To Do" activities
+- [x] Modal view when creating new review
+- [x] Google map with pins for activity location
+- [x] Typeahead search bar
 - [ ] Create new activities
 - [ ] Upload photos onto activity page
 - [ ] Carousel feature for images in activity detail
 - [ ] Pagination/infinite scroll
-- [x] User avatars
-- [x] Google map with pins for activity location
 - [ ] Allow friend association between users
-- [x] View another users activities
-- [ ] Display closest activities
-- [ ] Feed of friend reviews
-- [x] Typeahead search bar
-- [ ] Group and search activities by categories
 - [ ] User can comment on another user's review
+- [ ] Feed of friend reviews
+- [ ] Group and search activities by categories
+- [ ] Display closest activities
 - [ ] User receives suggested activity based on preferences filter
-- [x] Modal view when creating new review
 
 [phase-one]: ./docs/phases/phase1.md
 [phase-two]: ./docs/phases/phase2.md
