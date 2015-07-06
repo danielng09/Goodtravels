@@ -31,25 +31,25 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
-  .m-content {
-    z-index: 101;
-    background-color: white;
-    border-radius: 3px;
-    padding: 20px;
-    height: 325px;
-    width: 600px;
-    position: fixed;
-    top: 25%;
-    // margin-top: 20%;
-    left: 25%;
-  }
+.m-content {
+  z-index: 101;
+  background-color: white;
+  border-radius: 3px;
+  padding: 20px;
+  height: 325px;
+  width: 600px;
+  position: fixed;
+  top: 25%;
+  // margin-top: 20%;
+  left: 25%;
+}
 
-  .m-backdrop {
-    position: fixed;
-    background-color: rgba(170, 169, 176, .7);
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 75;
-  }
+.m-backdrop {
+  position: fixed;
+  background-color: rgba(170, 169, 176, .7);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 75;
+}
