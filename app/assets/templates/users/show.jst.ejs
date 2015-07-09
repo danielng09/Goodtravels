@@ -1,26 +1,37 @@
-<div class='user-details col-md-8'>
-  <div id="avatar-container">
-    <img class="avatar" src="<%= user.get('image_url') %>">
-    <% if (user.get('current_user')) { %>
-      <button type='button' class='btn btn-primary upload-avatar'><span class="glyphicon glyphicon-camera" aria-hidden="true"></span> Upload Avatar</button>
-    <% } %>
-  </div>
-  <p class='username'><%= user.get('username') %></p>
-  <p>Traveling since <%= user.get('created_at') %></p>
-  <div class="badges">
-    <span class="badge"><%= user.reviews().length %> Reviews</span>
-    <span class="badge"><%= user.wants().length %> Wants</span>
-  </div>
-</div>
+<div class='col-md-12' id="users-container">
+  <div class='.row'>
 
-<div class='user-want-list-background col-md-4'>
-  <h4 id="todo-list-title">Want To Do List</h4>
-  <div class='user-want-list col-md-12'>
-  </div>
-</div>
+    <div class="col-md-8">
 
-<div class='user-review-list col-md-8'>
-  <h3 id="user-review-title">My Reviews</h3>
-  <hr id="user-review-title-bar">
-  <div class="user-reviews"></div>
+      <div class='user-details clearfix'>
+        <div id="avatar-container">
+          <img class="avatar" src="<%= user.get('image_url') %>">
+          <% if (user.get('current_user')) { %>
+            <button type='button' class='btn btn-primary upload-avatar'><span class="glyphicon glyphicon-camera" aria-hidden="true"></span> Upload Avatar</button>
+          <% } %>
+        </div>
+        <p class='username'><%= user.get('username') %></p>
+        <p>Traveling since <%= user.get('created_at') %></p>
+        <div class="badges">
+          <span class="badge"><%= user.reviews().length %> Reviews</span>
+          <span class="badge"><%= user.wants().length %> Wants</span>
+        </div>
+      </div>
+
+      <div class='user-review-list'>
+        <h3 id="user-review-title">My Reviews</h3>
+        <hr id="user-review-title-bar">
+        <div class="user-reviews"></div>
+      </div>
+
+    </div>
+
+    <div class='col-md-4'>
+      <div class='user-want-list-background'>
+        <h4 id="todo-list-title">Want To Do List</h4>
+        <div class='user-want-list'></div>
+      </div>
+    </div>
+
+  </div>
 </div>
