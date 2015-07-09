@@ -3,23 +3,23 @@ button#guest-login {
 }
 
 .log-background {
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  position: fixed;
+  position: relative;
   background-image: url("<%= asset_path('log_background.jpg') %>");
   background-position: center;
+  height: 100vh;
 }
 
 .log-form {
-  background-color: rgba(255, 255, 255, .7);
   width: 316px;
-  margin-top: 10%;
-  margin-left: 38%;
+  height: 290px;
+  position: absolute;
+  top: 35%;
+  left: 52%;
+  margin: -70px 0 0 -170px;
+  background-color: rgba(255, 255, 255, .7);
   padding: 5px 10px 5px 10px;
-  height: 300px;
   color: black;
+  box-shadow: 0 1px 3px #626262;
 }
 
 .log-form input {
