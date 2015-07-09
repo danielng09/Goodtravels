@@ -61,8 +61,8 @@ User.create!([
   {session_token: "d6XNWmSv5HZMJgA2WTdAGw", image_url: "http://s3-ak.buzzfeed.com/static/2014-03/enhanced/webdr03/22/15/enhanced-buzz-13493-1395516498-1.jpg", username: "Lana", password_digest: "$2a$10$uuNQFaQd4D8rPQS5zmJKbefYMQQ6GbI3SR1r5b6N84s9S2eEKIGYO"},
   {session_token: "UiO4oHWCP5LP6ueHk_PMBw", image_url: "http://s3-ak.buzzfeed.com/static/2014-03/enhanced/webdr05/22/15/enhanced-buzz-15537-1395516379-11.jpg", username: "Cheryl", password_digest: "$2a$10$C5uRi4vn/3vmVusbqvqrZOv9HXDijBhpGjo6xwVG5oMlgHucMVwaG"},
   {session_token: "RRePNxIqgzgYjokbm5dd6A", image_url: "http://s3-ak.buzzfeed.com/static/2014-03/enhanced/webdr02/22/15/enhanced-buzz-26973-1395516656-0.jpg", username: "Archer", password_digest: "$2a$10$QU3Y0NKOU1NPlGYrEwRYlObJdP9vfiVMUkMPwhIPUdk67yRGkp8wC"},
-  {session_token: "t3-eaQ-Lpda-yEy31vOL4Q", image_url: "http://s3-ak.buzzfeed.com/static/2014-03/enhanced/webdr04/22/15/enhanced-buzz-28685-1395516565-25.jpg", username: "Krieger", password_digest: "$2a$10$B3rzTu0qecvhp7JVdZ38oOSs8BWRb9DG4T.o0xzLWn3AqaUoW6eQm"},
   {session_token: "63Ca6AjqFn63kBeuLpHwGQ", image_url: "http://s3-ak.buzzfeed.com/static/2014-03/enhanced/webdr06/22/15/enhanced-buzz-24708-1395516082-5.jpg", username: "Cyril", password_digest: "$2a$10$9IPfc.TlArF8C4dScpliLOwiSHdou2bnQzEdmhpgDXQTwtO5BbQhC"},
+  {session_token: "t3-eaQ-Lpda-yEy31vOL4Q", image_url: "http://s3-ak.buzzfeed.com/static/2014-03/enhanced/webdr04/22/15/enhanced-buzz-28685-1395516565-25.jpg", username: "Krieger", password_digest: "$2a$10$B3rzTu0qecvhp7JVdZ38oOSs8BWRb9DG4T.o0xzLWn3AqaUoW6eQm"},
   {session_token: "4GWOCQRHaHsY5MNnHYOw1A", image_url: "http://res.cloudinary.com/ds6oys8ca/image/upload/v1434519521/brett_b3orzt.png", username: "Brett", password_digest: "$2a$10$Y7Gta8Fp476FPrQHYcQKuec67ExZIRNwIjPN7e6gXrRsMRh1k38ay"}
 ])
 Want.create!([
