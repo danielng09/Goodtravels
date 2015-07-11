@@ -2,6 +2,13 @@
 
 Live Link: [www.goodtravels.io](http://www.goodtravels.io/)
 
+<img src="docs/screens/activities.png" width="31%">
+<img src="docs/screens/activity.png" width="31%">
+<img src="docs/screens/review.png" width="31%">
+<img src="docs/screens/user.png" width="31%">
+<img src="docs/screens/search.png" width="31%">
+
+
 ## Feature Highlights
 * Users can save activities to a personal "Want To Do" collection [[source]](https://github.com/danielng09/Goodtravels/blob/master/app/assets/javascripts/views/activities/showDetails.js)
 * Users rate an activity by sliding up and down a scale in half star increments. [[source]](https://github.com/danielng09/Goodtravels/blob/master/app/assets/javascripts/views/reviews/form.js)
