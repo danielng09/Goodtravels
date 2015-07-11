@@ -2,10 +2,11 @@
 
 Live Link: [www.goodtravels.io](http://www.goodtravels.io/)
 
-<img src="docs/screens/activities.png" width="50%">
+### View Activities
+<img src="docs/screens/activities.png" width="70%">
 <img src="docs/screens/activity.png" width="50%">
-<img src="docs/screens/review.png" width="50%">
-<img src="docs/screens/search.png" width="50%">
+<img src="docs/screens/review.png" width="45%">
+<img src="docs/screens/search.png" width="45%">
 
 
 ## Feature Highlights
