@@ -2,11 +2,14 @@
 
 Live Link: [www.goodtravels.io](http://www.goodtravels.io/)
 
-#### View Activities
+###### View Activities
 <img src="docs/screens/activities.png" width="100%">
-<img src="docs/screens/activity.png" width="45%">
-<img src="docs/screens/review.png" width="45%">
-<img src="docs/screens/search.png" width="45%">
+###### Find an Activity
+<img src="docs/screens/activity.png" width="100%">
+###### Write Reviews
+<img src="docs/screens/review.png" width="100%">
+###### Search for Activities or Users
+<img src="docs/screens/search.png" width="100%">
 
 
 ## Feature Highlights
