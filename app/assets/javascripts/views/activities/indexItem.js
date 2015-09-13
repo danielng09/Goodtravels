@@ -10,7 +10,9 @@ Goodtravels.Views.ActivitiesIndexItem = Backbone.View.extend({
   },
 
   render: function () {
-    var content = this.template({ activity: this.model });
+    var url = this.model.escape('image_url');
+    url = "http://res.cloudinary.com/ds6oys8ca/image/upload/w_500/" + url.substring(url.lastIndexOf('/') + 1)
+    var content = this.template({ activity: this.model, url: url });
     this.$el.html(content);
 
     setTimeout( function () {
